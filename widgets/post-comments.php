@@ -3,9 +3,6 @@ namespace PressElements\Widgets;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
-use Elementor\Scheme_Color;
-use Elementor\Scheme_Typography;
-use Elementor\Group_Control_Typography;
 
 
 
