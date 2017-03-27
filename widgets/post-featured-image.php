@@ -55,7 +55,7 @@ class Press_Elements_Post_Featured_Image extends Widget_Base
 						<i class="elementor-panel-nerd-box-icon fa fa-lock"></i>
 						<div class="elementor-panel-nerd-box-title">' . __( 'Premium Feature', 'press-elements' ) . '</div>
 						<div class="elementor-panel-nerd-box-message">' . __( 'This feature is available only for Press Elements Pro.', 'press-elements' ) . '</div>
-						<a class="elementor-panel-nerd-box-link elementor-button elementor-button-default elementor-go-pro" href="' . press_elements_freemius()->get_upgrade_url() . '">' . __( 'Upgrade Now!', 'press-elements' ) . '</a>
+						<a class="elementor-panel-nerd-box-link elementor-button elementor-button-default elementor-go-pro" href="' . press_elements_freemius()->get_upgrade_url() . '" target="_blank">' . __( 'Upgrade Now!', 'press-elements' ) . '</a>
 						</div>',
             'separator' => 'none',
         ) );
@@ -70,7 +70,7 @@ class Press_Elements_Post_Featured_Image extends Widget_Base
 						<i class="elementor-panel-nerd-box-icon fa fa-lock"></i>
 						<div class="elementor-panel-nerd-box-title">' . __( 'Premium Feature', 'press-elements' ) . '</div>
 						<div class="elementor-panel-nerd-box-message">' . __( 'This feature is available only for Press Elements Pro.', 'press-elements' ) . '</div>
-						<a class="elementor-panel-nerd-box-link elementor-button elementor-button-default elementor-go-pro" href="' . press_elements_freemius()->get_upgrade_url() . '">' . __( 'Upgrade Now!', 'press-elements' ) . '</a>
+						<a class="elementor-panel-nerd-box-link elementor-button elementor-button-default elementor-go-pro" href="' . press_elements_freemius()->get_upgrade_url() . '" target="_blank">' . __( 'Upgrade Now!', 'press-elements' ) . '</a>
 						</div>',
             'separator' => 'none',
         ) );

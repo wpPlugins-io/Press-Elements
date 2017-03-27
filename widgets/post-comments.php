@@ -3,6 +3,9 @@ namespace PressElements\Widgets;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
+use Elementor\Scheme_Color;
+use Elementor\Scheme_Typography;
+use Elementor\Group_Control_Typography;
 
 
 
@@ -62,15 +65,13 @@ class Press_Elements_Post_Comments extends Widget_Base {
 		);
 
 		$this->add_control(
-			'separate_comments',
+			'logo',
 			[
-				'label' => __( 'Separate Comments', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
-				'options' => [
-					'true'  => __( 'True', 'press-elements' ),
-					'false' => __( 'False', 'press-elements' ),
-				],
-				'default' => 'false',
+				'type' => Controls_Manager::RAW_HTML,
+				'raw' => __( 'This widget displays the default Comments Template included in the current Theme.', 'press-elements' ) .
+						'<br><br>' .
+						__( 'No custom styling can be applied as each theme uses it\'s own CSS classes and IDs.', 'press-elements' ),
+				'content_classes' => 'elementor-descriptor',
 			]
 		);
 
@@ -79,15 +80,10 @@ class Press_Elements_Post_Comments extends Widget_Base {
 	}
 
 	protected function render() {
-
-		$settings = $this->get_settings();
-		comments_template( '/comments.php', $settings['separate_comments'] );
-
+		comments_template();
 	}
 
 	protected function _content_template() {
-
 		comments_template();
-
 	}
 }

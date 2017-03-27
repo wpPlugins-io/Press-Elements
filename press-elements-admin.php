@@ -154,6 +154,8 @@ class Press_Elements_Admin {
 					<ol>
 						<li><?php esc_html_e( 'Site Title', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Site Description', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Site Logo', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Site Counters', 'press-elements' ); ?></li>
 					</ol>
 					<p><?php esc_html_e( 'Post Elements:', 'press-elements' ); ?></p>
 					<ol>
@@ -181,18 +183,18 @@ class Press_Elements_Admin {
 
 					<figure>
 						<a href="<?php echo esc_url( plugins_url( 'screenshot-1.png', __FILE__ ) ); ?>" target="_blank">
-							<img src="<?php echo esc_url( plugins_url( 'screenshot-1.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'WordPress Post Elemets', 'press-elements' ); ?>">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-1.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Post edit screen with WordPress elements.', 'press-elements' ); ?>">
 						</a>
-						<figcaption><?php esc_html_e( 'WordPress Post Elemets', 'press-elements' ); ?></figcaption>
+						<figcaption><?php esc_html_e( 'Post edit screen with WordPress elements.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 					<br>
 
 					<figure>
 						<a href="<?php echo esc_url( plugins_url( 'screenshot-2.png', __FILE__ ) ); ?>" target="_blank">
-							<img src="<?php echo esc_url( plugins_url( 'screenshot-2.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Elementor widgets for each post element.', 'press-elements' ); ?>">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-2.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Elementor widgets for each site and post element.', 'press-elements' ); ?>">
 						</a>
-						<figcaption><?php esc_html_e( 'Elementor widgets for each post element.', 'press-elements' ); ?></figcaption>
+						<figcaption><?php esc_html_e( 'Elementor widgets for each site and post element.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 					<br>
@@ -220,6 +222,15 @@ class Press_Elements_Admin {
 							<img src="<?php echo esc_url( plugins_url( 'screenshot-5.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Create your own author bio section.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Create your own author bio section.', 'press-elements' ); ?></figcaption>
+					</figure>
+
+					<br>
+
+					<figure>
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-6.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-6.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Widgets for your site logo, site name and site description.', 'press-elements' ); ?>">
+						</a>
+						<figcaption><?php esc_html_e( 'Widgets for your site logo, site name and site description.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 				</div>
@@ -347,7 +358,7 @@ class Press_Elements_Admin {
 		$file = file_exists( plugin_dir_path( __FILE__ ) . '/readme.txt' ) ? plugin_dir_path( __FILE__ ) . '/readme.txt' : null;
 
 		if ( ! $file ) {
-			$readme = '<p>' . esc_html__( 'No valid changlog was found.', 'press-elements' ) . '</p>';
+			$readme = '<p>' . esc_html__( 'No valid changelog was found.', 'press-elements' ) . '</p>';
 		} else {
 			$readme = file_get_contents( $file );
 			$readme = nl2br( esc_html( $readme ) );

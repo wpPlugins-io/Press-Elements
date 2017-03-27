@@ -3,9 +3,8 @@ namespace PressElements\Widgets;
 
 use Elementor\Widget_Base;
 use Elementor\Controls_Manager;
-use Elementor\Scheme_Color;
-use Elementor\Scheme_Typography;
-use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Box_Shadow;
 
 
 
@@ -17,63 +16,45 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Press Elements Post Date
+ * Press Elements Site Logo
  *
- * Single post/page date element for elementor.
+ * Site logo element for elementor.
  *
- * @since 1.0.0
+ * @since 1.2.0
  */
-class Press_Elements_Post_Date extends Widget_Base {
+class Press_Elements_Site_logo extends Widget_Base {
 
 	public function get_name() {
-		return 'post-date';
+		return 'site-logo';
 	}
 
 	public function get_title() {
-		$queried_object = get_queried_object();
-		$post_type_object = get_post_type_object( get_post_type( $queried_object ) );
-
-		return sprintf(
-			/* translators: %s: Post type singular name (e.g. Post or Page) */
-			__( '%s Date', 'press-elements' ),
-			$post_type_object->labels->singular_name
-		);
+		return __( 'Site Logo', 'press-elements' );
 	}
 
 	public function get_icon() {
-		return 'fa fa-clock-o';
+		return 'fa fa-crosshairs';
 	}
 
 	public function get_categories() {
-		return [ 'press-elements-post-elements' ];
+		return [ 'press-elements-site-elements' ];
 	}
 
 	protected function _register_controls() {
 
-		$queried_object = get_queried_object();
-		$post_type_object = get_post_type_object( get_post_type( $queried_object ) );
-
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => sprintf(
-					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Date', 'press-elements' ),
-					$post_type_object->labels->singular_name
-				),
+				'label' => __( 'Site Logo', 'press-elements' ),
 			]
 		);
 
 		$this->add_control(
-			'date_type',
+			'logo',
 			[
-				'label' => __( 'Date Type', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
-				'options' => [
-					'publish' => __( 'Publish Date', 'press-elements' ),
-					'modified' => __( 'Last Modified Date', 'press-elements' ),
-				],
-				'default' => 'publish',
+				'type' => Controls_Manager::RAW_HTML,
+				'raw' => get_custom_logo(),
+				'separator' => 'none',
 			]
 		);
 
@@ -93,7 +74,7 @@ class Press_Elements_Post_Date extends Widget_Base {
 					'div' => __( 'div', 'press-elements' ),
 					'span' => __( 'span', 'press-elements' ),
 				],
-				'default' => 'p',
+				'default' => 'div',
 			]
 		);
 
@@ -135,11 +116,7 @@ class Press_Elements_Post_Date extends Widget_Base {
 				'default' => 'none',
 				'options' => [
 					'none' => __( 'None', 'press-elements' ),
-					'post' => sprintf(
-						/* translators: %s: Post type singular name (e.g. Post or Page) */
-						__( '%s URL', 'press-elements' ),
-						$post_type_object->labels->singular_name
-					),
+					'home' => __( 'Home URL', 'press-elements' ),
 					'custom' => __( 'Custom URL', 'press-elements' ),
 				],
 			]
@@ -166,37 +143,51 @@ class Press_Elements_Post_Date extends Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => sprintf(
-					/* translators: %s: Post type singular name (e.g. Post or Page) */
-					__( '%s Date', 'press-elements' ),
-					$post_type_object->labels->singular_name
-				),
+				'label' => __( 'Site Logo', 'press-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 
 		$this->add_control(
-			'color',
+			'space',
 			[
-				'label' => __( 'Text Color', 'press-elements' ),
-				'type' => Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_1,
+				'label' => __( 'Size (%)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 100,
+					'unit' => '%',
+				],
+				'size_units' => [ '%' ],
+				'range' => [
+					'%' => [
+						'min' => 1,
+						'max' => 100,
+					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .press-elements-date' => 'color: {{VALUE}};',
-					'{{WRAPPER}} .press-elements-date a' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .press-elements-site-logo img' => 'max-width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
 
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
+		$this->add_control(
+			'opacity',
 			[
-				'name' => 'typography',
-				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
-				'selector' => '{{WRAPPER}} .press-elements-date',
+				'label' => __( 'Opacity (%)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 1,
+				],
+				'range' => [
+					'px' => [
+						'max' => 1,
+						'min' => 0.10,
+						'step' => 0.01,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-site-logo img' => 'opacity: {{SIZE}};',
+				],
 			]
 		);
 
@@ -208,6 +199,35 @@ class Press_Elements_Post_Date extends Widget_Base {
 			]
 		);
 
+		$this->add_group_control(
+			Group_Control_Border::get_type(),
+			[
+				'name' => 'image_border',
+				'label' => __( 'Image Border', 'press-elements' ),
+				'selector' => '{{WRAPPER}} .press-elements-site-logo img',
+			]
+		);
+
+		$this->add_control(
+			'image_border_radius',
+			[
+				'label' => __( 'Border Radius', 'press-elements' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-site-logo img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Box_Shadow::get_type(),
+			[
+				'name' => 'image_box_shadow',
+				'selector' => '{{WRAPPER}} .press-elements-site-logo img',
+			]
+		);
+
 		$this->end_controls_section();
 
 	}
@@ -216,24 +236,9 @@ class Press_Elements_Post_Date extends Widget_Base {
 
 		$settings = $this->get_settings();
 
-		// Backwards compitability check
-		if ( $settings['date_type'] )
-			$date_type = $settings['date_type'];
-		else
-			$date_type = 'publish';
+		$logo = has_custom_logo() ? get_custom_logo() : '';
 
-		switch ( $date_type ) {
-			case 'modified' :
-				$date = get_the_modified_date();
-				break;
-
-			case 'publish' :
-			default:
-				$date = get_the_date();
-				break;
-		}
-
-		if ( empty( $date ) )
+		if ( empty( $logo ) )
 			return;
 
 		switch ( $settings['link_to'] ) {
@@ -245,8 +250,8 @@ class Press_Elements_Post_Date extends Widget_Base {
 				}
 				break;
 
-			case 'post' :
-				$link = get_the_permalink();
+			case 'home' :
+				$link = get_home_url();
 				break;
 
 			case 'none' :
@@ -258,11 +263,11 @@ class Press_Elements_Post_Date extends Widget_Base {
 
 		$animation_class = ! empty( $settings['hover_animation'] ) ? ' elementor-animation-' . $settings['hover_animation'] : '';
 
-		$html = sprintf( '<%1$s class="press-elements-date%2$s">', $settings['html_tag'], $animation_class );
+		$html = sprintf( '<%1$s class="press-elements-site-logo%2$s">', $settings['html_tag'], $animation_class );
 		if ( $link ) {
-			$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $date );
+			$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $logo );
 		} else {
-			$html .= $date;
+			$html .= $logo;
 		}
 		$html .= sprintf( '</%s>', $settings['html_tag'] );
 
@@ -272,27 +277,15 @@ class Press_Elements_Post_Date extends Widget_Base {
 	protected function _content_template() {
 		?>
 		<#
-			// Backwards compitability check
-			var datetype;
-			if (settings.date_type) {
-				datetype = settings.date_type;
-			} else {
-				datetype = "publish";
-			}
-
-			var data_fields = [];
-			data_fields[ "modified" ] = "<?php echo get_the_modified_date(); ?>";
-			data_fields[ "publish" ] = "<?php echo get_the_date(); ?>";
-
-			var date = data_fields[ datetype ];
+			var logo = '<?php echo has_custom_logo() ? get_custom_logo() : ''; ?>';
 
 			var link_url;
 			switch( settings.link_to ) {
 				case 'custom':
 					link_url = settings.link.url;
 					break;
-				case 'post':
-					link_url = '<?php echo get_the_permalink(); ?>';
+				case 'home':
+					link_url = '<?php echo get_home_url(); ?>';
 					break;
 				case 'none':
 				default:
@@ -305,16 +298,18 @@ class Press_Elements_Post_Date extends Widget_Base {
 				animation_class = ' elementor-animation-' + settings.hover_animation;
 			}
 
-			var html = '<' + settings.html_tag + ' class="press-elements-date' + animation_class + '">';
+			var html = '<' + settings.html_tag + ' class="press-elements-site-logo' + animation_class + '">';
 			if ( link_url ) {
-				html += '<a href="' + link_url + '" ' + target + '>' + date + '</a>';
+				html += '<a href="' + link_url + '" ' + target + '>' + logo + '</a>';
 			} else {
-				html += date;
+				html += logo;
 			}
 			html += '</' + settings.html_tag + '>';
 
 			print( html );
+
 		#>
 		<?php
 	}
+
 }

@@ -1,9 +1,9 @@
 === Press Elements for Elementor ===
-Contributors: ramiy, freemius
+Contributors: ramiy
 Tags: elementor, press elements, elements, widgets
-Requires at least: 4.4
+Requires at least: 4.7
 Tested up to: 4.7
-Stable tag: 1.1.2
+Stable tag: 1.2.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -29,6 +29,8 @@ Site Elements:
 
 * Site Title
 * Site Description
+* Site Logo
+* Site Counters
 
 Post Elements:
 
@@ -58,7 +60,7 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 4. Activate the plugin by pressing the "Activate" button.
 
 = Minimum Requirements =
-* WordPress version 4.4 or greater.
+* WordPress version 4.7 or greater.
 * PHP version 5.3 or greater.
 * MySQL version 5.0 or greater.
 
@@ -69,12 +71,28 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 
 == Screenshots ==
 1. Post edit screen with WordPress elements.
-2. Elementor widgets for each post element.
+2. Elementor widgets for each site and post element.
 3. Styling post title with a dedicated elementor widget.
 4. Display post custom fields.
 5. Create your own author bio section.
+6. Widgets for your site logo, site name and site description.
 
 == Changelog ==
+
+= 1.2.0 =
+
+**General**
+
+* Add Hover Animation field to all the widgets.
+* Enhance the "Post Date" with new select field to choose either "Publish Date" or "Last Modified Date".
+* Remove redundant hidden control in Post Title, Excerpt and Date widgets.
+* Fix reload glitch on "Post Author" widget.
+* Upgrade Minimum Requirements to WordPress 4.7 for the site logo feature.
+
+**New Widgets**
+
+* Site Logo
+* Site Counters
 
 = 1.1.2 =
 
@@ -82,6 +100,7 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 
 * Fix Freemius opt-in issue.
 * Upgrage Minimum Requirements to PHP 5.3.
+* Merge similar translation strings.
 
 = 1.1.1 =
 
@@ -100,7 +119,7 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 * Fix animations in "Post Featured Image" widget.
 * Extend the link field for all widgets.
 
-**Free Widgets**
+**New Widgets**
 
 * Post Terms
 * Post Comments
@@ -111,7 +130,7 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 
 * Initial release.
 
-**Free Widgets**
+**New Widgets**
 
 * Site Title
 * Site Description
@@ -119,8 +138,5 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 * Post Excerpt
 * Post Date
 * Post Author
-
-**Pro Widgets**
-
-* Post Featured Image
-* Post Custom Fields
+* Post Featured Image (Pro)
+* Post Custom Fields (Pro)

@@ -198,6 +198,14 @@ class Press_Elements_Post_Author extends Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'hover_animation',
+			[
+				'label' => __( 'Hover Animation', 'press-elements' ),
+				'type' => Controls_Manager::HOVER_ANIMATION,
+			]
+		);
+
 		$this->end_controls_section();
 
 	}
@@ -234,7 +242,9 @@ class Press_Elements_Post_Author extends Widget_Base {
 		}
 		$target = $settings['link']['is_external'] ? 'target="_blank"' : '';
 
-		$html = sprintf( '<%s class="press-elements-author">', $settings['html_tag'] );
+		$animation_class = ! empty( $settings['hover_animation'] ) ? ' elementor-animation-' . $settings['hover_animation'] : '';
+
+		$html = sprintf( '<%1$s class="press-elements-author%2$s">', $settings['html_tag'], $animation_class );
 		if ( $link ) {
 			$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $author );
 		} else {
@@ -273,7 +283,12 @@ class Press_Elements_Post_Author extends Widget_Base {
 			}
 			var target = settings.link.is_external ? 'target="_blank"' : '';
 
-			var html = '<' + settings.html_tag + ' class="press-elements-author">';
+			var animation_class;
+			if ( '' !== settings.hover_animation ) {
+				animation_class = ' elementor-animation-' + settings.hover_animation;
+			}
+
+			var html = '<' + settings.html_tag + ' class="press-elements-author' + animation_class + '">';
 			if ( link_url ) {
 				html += '<a href="' + link_url + '" ' + target + '>' + author + '</a>';
 			} else {
@@ -306,9 +321,9 @@ class Press_Elements_Post_Author extends Widget_Base {
 
 	protected function user_data( $selected = '' ) {
 
-		// Get cusrrent post data
-		$queried_object = get_queried_object();
-		$author_id = is_object( $queried_object ) ? $queried_object->post_author : 0;
+		global $post;
+
+		$author_id = $post->post_author;
 
 		$fields = [
 			'first_name'   => get_the_author_meta( 'first_name', $author_id ),

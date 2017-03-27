@@ -3,6 +3,8 @@ namespace PressElements;
 
 use PressElements\Widgets\Press_Elements_Site_Title;
 use PressElements\Widgets\Press_Elements_Site_Description;
+use PressElements\Widgets\Press_Elements_Site_Logo;
+use PressElements\Widgets\Press_Elements_Site_Counters;
 
 use PressElements\Widgets\Press_Elements_Post_Title;
 use PressElements\Widgets\Press_Elements_Post_Excerpt;
@@ -12,8 +14,6 @@ use PressElements\Widgets\Press_Elements_Post_Terms;
 use PressElements\Widgets\Press_Elements_Post_Featured_Image;
 use PressElements\Widgets\Press_Elements_Post_Custom_Field;
 use PressElements\Widgets\Press_Elements_Post_Comments;
-
-
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
@@ -76,7 +76,7 @@ class Press_Elements_Plugin {
 				'title' => __( 'Post Elements', 'press-elements' ),
 				'icon'  => 'font'
 			],
-			1
+			2
 		);
 	}
 
@@ -103,6 +103,8 @@ class Press_Elements_Plugin {
 		// Site Elements
 		require_once __DIR__ . '/widgets/site-title.php';
 		require_once __DIR__ . '/widgets/site-description.php';
+		require_once __DIR__ . '/widgets/site-logo.php';
+		require_once __DIR__ . '/widgets/site-counters.php';
 		// Post Elements
 		require_once __DIR__ . '/widgets/post-title.php';
 		require_once __DIR__ . '/widgets/post-excerpt.php';
@@ -125,6 +127,8 @@ class Press_Elements_Plugin {
 		// Site Elements
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Title() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Description() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Logo() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Counters() );
 		// Post Elements
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Title() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Excerpt() );

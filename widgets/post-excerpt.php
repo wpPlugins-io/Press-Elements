@@ -65,14 +65,6 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 		);
 
 		$this->add_control(
-			'excerpt',
-			[
-				'type' => Controls_Manager::HIDDEN,
-				'default' => get_the_excerpt(),
-			]
-		);
-
-		$this->add_control(
 			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
@@ -195,6 +187,14 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'hover_animation',
+			[
+				'label' => __( 'Hover Animation', 'press-elements' ),
+				'type' => Controls_Manager::HOVER_ANIMATION,
+			]
+		);
+
 		$this->end_controls_section();
 
 	}
@@ -227,7 +227,9 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 		}
 		$target = $settings['link']['is_external'] ? 'target="_blank"' : '';
 
-		$html = sprintf( '<%s class="press-elements-excerpt">', $settings['html_tag'] );
+		$animation_class = ! empty( $settings['hover_animation'] ) ? ' elementor-animation-' . $settings['hover_animation'] : '';
+
+		$html = sprintf( '<%1$s class="press-elements-excerpt%2$s">', $settings['html_tag'], $animation_class );
 		if ( $link ) {
 			$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $excerpt );
 		} else {
@@ -241,7 +243,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 	protected function _content_template() {
 		?>
 		<#
-			var excerpt = settings.excerpt;
+			var excerpt = '<?php echo get_the_excerpt(); ?>';
 
 			var link_url;
 			switch( settings.link_to ) {
@@ -257,7 +259,12 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			}
 			var target = settings.link.is_external ? 'target="_blank"' : '';
 
-			var html = '<' + settings.html_tag + ' class="press-elements-excerpt">';
+			var animation_class;
+			if ( '' !== settings.hover_animation ) {
+				animation_class = ' elementor-animation-' + settings.hover_animation;
+			}
+
+			var html = '<' + settings.html_tag + ' class="press-elements-excerpt' + animation_class + '">';
 			if ( link_url ) {
 				html += '<a href="' + link_url + '" ' + target + '>' + excerpt + '</a>';
 			} else {
