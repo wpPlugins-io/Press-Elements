@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Press Elements
+ * Plugin Name: Press Elements for Elementor
  * Description: An easy-to-use Elementor widgets that helps you design single page templates to display your content.
  * Plugin URI:  https://wordpress.org/plugins/press-elements/
- * Version:     1.1.0
+ * Version:     1.1.1
  * Author:      Rami Yushuvaev
  * Author URI:  https://wpPlugins.io/
  * Text Domain: press-elements
@@ -54,15 +54,16 @@ add_action( 'plugins_loaded', 'press_elements_load' );
 
 
 /**
- * Admin notices
+ * Admin notice
  *
- * Warning when Elementor is not installed and activated
+ * Warning when Elementor is not installed and activated.
  *
  * @since 1.1.0
  */
 function press_elements_admin_notice_missing_main_plugin() {
 	$class = 'notice notice-warning is-dismissible';
 	$message = sprintf(
+		/* translators: 1: Press Elements 2: Elementor */
 		esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'press-elements' ),
 		'<strong>' . esc_html__( 'Press Elements', 'press-elements' ) . '</strong>',
 		'<strong>' . esc_html__( 'Elementor', 'press-elements' ) . '</strong>'
@@ -74,7 +75,7 @@ function press_elements_admin_notice_missing_main_plugin() {
 
 
 /**
- * Admin notices
+ * Admin notice
  *
  * Warning when Elementor doen't have a minimum required version.
  *
@@ -84,6 +85,7 @@ function press_elements_admin_notice_main_plugin_required_version() {
 	$elementor_version_required = '1.3.4';
 	$class = 'notice notice-warning is-dismissible';
 	$message = sprintf(
+		/* translators: 1: Press Elements 2: Elementor 3: Elementor version */
 		esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'press-elements' ),
 		'<strong>' . esc_html__( 'Press Elements', 'press-elements' ) . '</strong>',
 		'<strong>' . esc_html__( 'Elementor', 'press-elements' ) . '</strong>',

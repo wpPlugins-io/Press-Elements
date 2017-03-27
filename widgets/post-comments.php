@@ -31,7 +31,7 @@ class Press_Elements_Post_Comments extends Widget_Base {
 		$post_type_object = get_post_type_object( get_post_type( $queried_object ) );
 
 		return sprintf(
-			/* translators: %s: Post type singular name */
+			/* translators: %s: Post type singular name (e.g. Post or Page) */
 			__( '%s Comments', 'press-elements' ),
 			$post_type_object->labels->singular_name
 		);
@@ -54,7 +54,7 @@ class Press_Elements_Post_Comments extends Widget_Base {
 			'section_content',
 			[
 				'label' => sprintf(
-					/* translators: %s: Post type singular name */
+					/* translators: %s: Post type singular name (e.g. Post or Page) */
 					__( '%s Comments', 'press-elements' ),
 					$post_type_object->labels->singular_name
 				),

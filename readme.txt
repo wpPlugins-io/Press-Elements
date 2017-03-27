@@ -1,9 +1,9 @@
-=== Press Elements ===
+=== Press Elements for Elementor ===
 Contributors: ramiy, freemius
 Tags: elementor, press elements, elements, widgets
 Requires at least: 4.4
 Tested up to: 4.7
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -75,23 +75,37 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 5. Create your own author bio section.
 
 == Changelog ==
-= 1.1.0 =
+
+= 1.1.1 =
+
 **General**
-* Add admin notices for missing parent plugin and minimum required version.
+
+* Fix Freemius "first-path" param on plugin activation.
+* Update translators comments for string placeholders.
+
+= 1.1.0 =
+
+**General**
+
+* Add admin notices for missing parent plugin and minimum required Elementor version.
 * Move Freemius init functions to a seperate file.
 * Upgrade Freemius SDK to version 1.2.1.6.1
 * Fix animations in "Post Featured Image" widget.
 * Extend the link field for all widgets.
 
 **Free Widgets**
+
 * Post Terms
 * Post Comments
 
 = 1.0.0 =
+
 **General**
+
 * Initial release.
 
 **Free Widgets**
+
 * Site Title
 * Site Description
 * Post Title
@@ -100,5 +114,6 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 * Post Author
 
 **Pro Widgets**
+
 * Post Featured Image
 * Post Custom Fields

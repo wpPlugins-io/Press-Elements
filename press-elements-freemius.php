@@ -27,10 +27,11 @@ function press_elements_freemius()
             'has_addons'     => false,
             'has_paid_plans' => true,
             'menu'           => array(
-            'slug'    => 'press-elements',
-            'contact' => false,
-            'support' => false,
-            'parent'  => array(
+            'slug'       => 'press-elements',
+            'first-path' => 'themes.php?page=press-elements&tab=getting-started',
+            'contact'    => false,
+            'support'    => false,
+            'parent'     => array(
             'slug' => 'themes.php',
         ),
         ),
