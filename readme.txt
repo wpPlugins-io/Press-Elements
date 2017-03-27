@@ -3,7 +3,7 @@ Contributors: ramiy, freemius
 Tags: elementor, press elements, elements, widgets
 Requires at least: 4.4
 Tested up to: 4.7
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -59,7 +59,7 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 
 = Minimum Requirements =
 * WordPress version 4.4 or greater.
-* PHP version 5.2.4 or greater.
+* PHP version 5.3 or greater.
 * MySQL version 5.0 or greater.
 
 = Recommended Requirements =
@@ -75,6 +75,13 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 5. Create your own author bio section.
 
 == Changelog ==
+
+= 1.1.2 =
+
+**General**
+
+* Fix Freemius opt-in issue.
+* Upgrage Minimum Requirements to PHP 5.3.
 
 = 1.1.1 =
 

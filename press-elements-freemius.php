@@ -27,11 +27,10 @@ function press_elements_freemius()
             'has_addons'     => false,
             'has_paid_plans' => true,
             'menu'           => array(
-            'slug'       => 'press-elements',
-            'first-path' => 'themes.php?page=press-elements&tab=getting-started',
-            'contact'    => false,
-            'support'    => false,
-            'parent'     => array(
+            'slug'    => 'press-elements',
+            'contact' => false,
+            'support' => false,
+            'parent'  => array(
             'slug' => 'themes.php',
         ),
         ),
@@ -42,21 +41,7 @@ function press_elements_freemius()
     return $press_elements_freemius;
 }
 
-/**
- * Settings URL
- *
- * @since 1.0.0
- *
- * @return string
- */
-function press_elements_freemius_settings_url()
-{
-    return admin_url( 'themes.php?page=press-elements&tab=about' );
-}
-
-// Init Freemius
+// Init Freemius.
 press_elements_freemius();
-// Set settings URL
-press_elements_freemius()->add_filter( 'connect_url', 'press_elements_freemius_settings_url' );
-press_elements_freemius()->add_filter( 'after_skip_url', 'press_elements_freemius_settings_url' );
-press_elements_freemius()->add_filter( 'after_connect_url', 'press_elements_freemius_settings_url' );
+// Signal that SDK was initiated.
+do_action( 'press_elements_freemius_loaded' );

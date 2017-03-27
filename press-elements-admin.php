@@ -57,7 +57,7 @@ class Press_Elements_Admin {
 
 		// About
 		add_theme_page(
-			esc_html__( 'Elementor Press Elements', 'press-elements' ),
+			esc_html__( 'Press Elements for Elementor', 'press-elements' ),
 			esc_html__( 'Press Elements', 'press-elements' ),
 			$capability,
 			'press-elements',
@@ -126,7 +126,7 @@ class Press_Elements_Admin {
 		?>
 		<div class="wrap about-wrap">
 
-			<h1><?php esc_html_e( 'Press Elements', 'press-elements' ); // echo get_admin_page_title(); ?></h1>
+			<h1><?php esc_html_e( 'Press Elements for Elementor', 'press-elements' ); ?></h1>
 
 			<p class="about-text"><?php esc_html_e( 'An easy-to-use Elementor widgets that helps you design single page templates to display your content.', 'press-elements' );?></p>
 

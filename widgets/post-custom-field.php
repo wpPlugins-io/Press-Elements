@@ -29,7 +29,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base
     {
         $queried_object = get_queried_object();
         $post_type_object = get_post_type_object( get_post_type( $queried_object ) );
-        return sprintf( __( '%s Custom Fields', 'press-elements' ), $post_type_object->labels->singular_name );
+        return sprintf( __( '%s Custom Field', 'press-elements' ), $post_type_object->labels->singular_name );
     }
     
     public function get_icon()

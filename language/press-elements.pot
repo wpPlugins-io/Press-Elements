@@ -14,11 +14,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: press-elements-admin.php:119
-msgid "Elementor Press Elements"
+#: press-elements-admin.php:119, press-elements-admin.php:257
+msgid "Press Elements for Elementor"
 msgstr ""
 
-#: press-elements-admin.php:121, press-elements-admin.php:257, press-elements.php:68, press-elements.php:90
+#: press-elements-admin.php:121, press-elements.php:77, press-elements.php:99
 msgid "Press Elements"
 msgstr ""
 
@@ -222,15 +222,15 @@ msgstr ""
 msgid "Post Elements"
 msgstr ""
 
-#: press-elements.php:67
+#: press-elements.php:76
 msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
 msgstr ""
 
-#: press-elements.php:69, press-elements.php:91
+#: press-elements.php:78, press-elements.php:100
 msgid "Elementor"
 msgstr ""
 
-#: press-elements.php:89
+#: press-elements.php:98
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
@@ -386,11 +386,7 @@ msgstr ""
 msgid "False"
 msgstr ""
 
-#: widgets/post-custom-field.php:38
-msgid "%s Custom Fields"
-msgstr ""
-
-#: widgets/post-custom-field.php:61, widgets/post-custom-field.php:201
+#: widgets/post-custom-field.php:38, widgets/post-custom-field.php:61, widgets/post-custom-field.php:201
 msgid "%s Custom Field"
 msgstr ""
 
