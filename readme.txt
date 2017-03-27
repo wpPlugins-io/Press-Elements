@@ -3,7 +3,7 @@ Contributors: ramiy, freemius
 Tags: elementor, press elements, elements, widgets
 Requires at least: 4.4
 Tested up to: 4.7
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -36,8 +36,10 @@ Post Elements:
 * Post Excerpt
 * Post Date
 * Post Author
+* Post Terms
 * Post Featured Image (Pro)
 * Post Custom Fields (Pro)
+* Post Comments
 
 = Dynamic Content =
 
@@ -70,9 +72,23 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 2. Elementor widgets for each post element.
 3. Styling post title with a dedicated elementor widget.
 4. Display post custom fields.
+5. Create your own author bio section.
 
 == Changelog ==
+= 1.1.0 =
+**General**
+* Add admin notices for missing parent plugin and minimum required version.
+* Move Freemius init functions to a seperate file.
+* Upgrade Freemius SDK to version 1.2.1.6.1
+* Fix animations in "Post Featured Image" widget.
+* Extend the link field for all widgets.
+
+**Free Widgets**
+* Post Terms
+* Post Comments
+
 = 1.0.0 =
+**General**
 * Initial release.
 
 **Free Widgets**

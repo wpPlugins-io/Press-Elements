@@ -3,12 +3,15 @@ namespace PressElements;
 
 use PressElements\Widgets\Press_Elements_Site_Title;
 use PressElements\Widgets\Press_Elements_Site_Description;
+
 use PressElements\Widgets\Press_Elements_Post_Title;
 use PressElements\Widgets\Press_Elements_Post_Excerpt;
 use PressElements\Widgets\Press_Elements_Post_Author;
 use PressElements\Widgets\Press_Elements_Post_Date;
+use PressElements\Widgets\Press_Elements_Post_Terms;
 use PressElements\Widgets\Press_Elements_Post_Featured_Image;
 use PressElements\Widgets\Press_Elements_Post_Custom_Field;
+use PressElements\Widgets\Press_Elements_Post_Comments;
 
 
 
@@ -105,8 +108,10 @@ class Press_Elements_Plugin {
 		require_once __DIR__ . '/widgets/post-excerpt.php';
 		require_once __DIR__ . '/widgets/post-date.php';
 		require_once __DIR__ . '/widgets/post-author.php';
+		require_once __DIR__ . '/widgets/post-terms.php';
 		require_once __DIR__ . '/widgets/post-featured-image.php';
 		require_once __DIR__ . '/widgets/post-custom-field.php';
+		require_once __DIR__ . '/widgets/post-comments.php';
 	}
 
 	/**
@@ -125,8 +130,10 @@ class Press_Elements_Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Excerpt() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Date() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Author() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Terms() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Featured_Image() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Custom_Field() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Comments() );
 	}
 
 }

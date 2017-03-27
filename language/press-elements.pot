@@ -14,1703 +14,227 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: admin.php:119
+#: press-elements-admin.php:119
 msgid "Elementor Press Elements"
 msgstr ""
 
-#: admin.php:121, admin.php:257
+#: press-elements-admin.php:121, press-elements-admin.php:257, press-elements.php:67, press-elements.php:88
 msgid "Press Elements"
 msgstr ""
 
-#: admin.php:163
+#: press-elements-admin.php:163
 msgid "About"
 msgstr ""
 
-#: admin.php:165, admin.php:469
+#: press-elements-admin.php:165, press-elements-admin.php:491
 msgid "Getting Started"
 msgstr ""
 
-#: admin.php:167, admin.php:623
+#: press-elements-admin.php:167, press-elements-admin.php:645
 msgid "Changelog"
 msgstr ""
 
-#: admin.php:169
+#: press-elements-admin.php:169
 msgid "Pro Version"
 msgstr ""
 
-#: admin.php:261
+#: press-elements-admin.php:261
 msgid "An easy-to-use Elementor widgets that helps you design single page templates to display your content."
 msgstr ""
 
-#: admin.php:269
+#: press-elements-admin.php:269
 msgid "Press Elements lets you style a single page with all the site and post elements, and display them within your favorite page builder!"
 msgstr ""
 
-#: admin.php:281
+#: press-elements-admin.php:281
 msgid "Template Design"
 msgstr ""
 
-#: admin.php:285
+#: press-elements-admin.php:285
 msgid "When using page builders, you need to create all the page element for each page over and over again. Currently you can't design single page templates and use the built in post data like the post title, excerpts, date and others."
 msgstr ""
 
-#: admin.php:289
+#: press-elements-admin.php:289
 msgid "Press Elements allows you to design different templates in minutes! You don't need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface!"
 msgstr ""
 
-#: admin.php:293
+#: press-elements-admin.php:293
 msgid "Design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library."
 msgstr ""
 
-#: admin.php:297
+#: press-elements-admin.php:297
 msgid "Developers use theme-functions to generate themes. With Press Elements you can use Elementor widgets to display and design your post elements! How cool is that?!"
 msgstr ""
 
-#: admin.php:301
+#: press-elements-admin.php:301
 msgid "Included Widgets"
 msgstr ""
 
-#: admin.php:305
+#: press-elements-admin.php:305
 msgid "Site Elements:"
 msgstr ""
 
-#: admin.php:309, widgets/site-title.php:33, widgets/site-title.php:49, widgets/site-title.php:128
+#: press-elements-admin.php:309, widgets/site-title.php:33, widgets/site-title.php:49, widgets/site-title.php:146
 msgid "Site Title"
 msgstr ""
 
-#: admin.php:311, widgets/site-description.php:33, widgets/site-description.php:49, widgets/site-description.php:128
+#: press-elements-admin.php:311, widgets/site-description.php:33, widgets/site-description.php:49, widgets/site-description.php:146
 msgid "Site Description"
 msgstr ""
 
-#: admin.php:315
+#: press-elements-admin.php:315
 msgid "Post Elements:"
 msgstr ""
 
-#: admin.php:319
+#: press-elements-admin.php:319
 msgid "Post Title"
 msgstr ""
 
-#: admin.php:321
+#: press-elements-admin.php:321
 msgid "Post Excerpt"
 msgstr ""
 
-#: admin.php:323
+#: press-elements-admin.php:323
 msgid "Post Date"
 msgstr ""
 
-#: admin.php:325
+#: press-elements-admin.php:325
 msgid "Post Author"
 msgstr ""
 
-#: admin.php:327
+#: press-elements-admin.php:327
+msgid "Post Terms"
+msgstr ""
+
+#: press-elements-admin.php:329
 msgid "Post Featured Image (Pro)"
 msgstr ""
 
-#: admin.php:329
+#: press-elements-admin.php:331
 msgid "Post Custom Fields (Pro)"
 msgstr ""
 
-#: admin.php:335
+#: press-elements-admin.php:333
+msgid "Post Comments"
+msgstr ""
+
+#: press-elements-admin.php:339
 msgid "Dynamic Content"
 msgstr ""
 
-#: admin.php:339
+#: press-elements-admin.php:343
 msgid "Regular Elementor widgets save the data as hard-coded content (text, images and other element). To change something you need to open the page builder and manualy change it inside the builder. Updating titles, expects, authors and other WordPress Element won't affect the builder."
 msgstr ""
 
-#: admin.php:343
+#: press-elements-admin.php:347
 msgid "Press Elements uses dynamic content architecture. It doesn't save the title and other element as hard-coded content it generates them on-the-fly, just like the WordPress theme system."
 msgstr ""
 
-#: admin.php:347
+#: press-elements-admin.php:351
 msgid "When you change titles, exerpts, feature-images, custom-fields and other elements from your WourdPress dashboard (outside of Elementor), they will be automatically updated in the content area and in the page builder."
 msgstr ""
 
-#: admin.php:363, admin.php:367
+#: press-elements-admin.php:367, press-elements-admin.php:371
 msgid "WordPress Post Elemets"
 msgstr ""
 
-#: admin.php:381, admin.php:385
+#: press-elements-admin.php:385, press-elements-admin.php:389
 msgid "Elementor widgets for each post element."
 msgstr ""
 
-#: admin.php:399, admin.php:403
+#: press-elements-admin.php:403, press-elements-admin.php:407
 msgid "Styling post title with a dedicated elementor widget."
 msgstr ""
 
-#: admin.php:417, admin.php:421
+#: press-elements-admin.php:421, press-elements-admin.php:425
 msgid "Display post custom fields."
 msgstr ""
 
-#: admin.php:473
+#: press-elements-admin.php:439, press-elements-admin.php:443
+msgid "Create your own author bio section."
+msgstr ""
+
+#: press-elements-admin.php:495
 msgid "Welcome to Press Elements getting started guide."
 msgstr ""
 
-#: admin.php:481
+#: press-elements-admin.php:503
 msgid "Getting started with Press Elements is easy! We put together this quick start guide to help first time users of the plugin. Our goal is to get you up and running in no time. Let's begin!"
 msgstr ""
 
-#: admin.php:493
+#: press-elements-admin.php:515
 msgid "STEP 1: Create a new post"
 msgstr ""
 
-#: admin.php:497
+#: press-elements-admin.php:519
 msgid "Navigate to \"Posts > Add New\" to create a new post. Enter a post title, write an excerpt, select a featured image, set an author, select a publish date and publish the post."
 msgstr ""
 
-#: admin.php:517
+#: press-elements-admin.php:539
 msgid "STEP 2: Design your own template"
 msgstr ""
 
-#: admin.php:521
+#: press-elements-admin.php:543
 msgid "Click the \"Edit with Elementor\" button and start designing the page layout. Design a page header, footer, and the content area."
 msgstr ""
 
-#: admin.php:525
+#: press-elements-admin.php:547
 msgid "Use \"Press Elements\" widgets to display the post title, post excerpt, post date and the other fields used by WordPress. Don't forget to style those elements!"
 msgstr ""
 
-#: admin.php:545
+#: press-elements-admin.php:567
 msgid "STEP 3: Save the template"
 msgstr ""
 
-#: admin.php:549
+#: press-elements-admin.php:571
 msgid "Click on the \"Add Template\" button located at the bottom, and save the design. You will see the newly created template at the \"My Templates\" tab."
 msgstr ""
 
-#: admin.php:553
+#: press-elements-admin.php:575
 msgid "You can save several templates for blogs posts, pages, and other post types. Or even several templates for a particular post type."
 msgstr ""
 
-#: admin.php:573
+#: press-elements-admin.php:595
 msgid "STEP 4: Apply the design to new posts"
 msgstr ""
 
-#: admin.php:577
+#: press-elements-admin.php:599
 msgid "For each new post you create, load the desired template and apply it to the post. The post will enherite the design but the elements will be updated with the current post data."
 msgstr ""
 
-#: admin.php:627
+#: press-elements-admin.php:649
 msgid "Press Elements changelog."
 msgstr ""
 
-#: admin.php:635
+#: press-elements-admin.php:657
 msgid "The Press Elements plugin is developed continuasly, this is the full changelog."
 msgstr ""
 
-#: admin.php:677
+#: press-elements-admin.php:699
 msgid "No valid changlog was found."
 msgstr ""
 
-#: freemius/includes/i18n.php:69
-msgid "Account"
-msgstr ""
-
-#: freemius/includes/i18n.php:71
-msgid "Add On"
-msgstr ""
-
-#: freemius/includes/i18n.php:73
-msgid "Contact Us"
-msgstr ""
-
-#: freemius/includes/i18n.php:75
-msgid "Contact Support"
-msgstr ""
-
-#: freemius/includes/i18n.php:77
-msgid "Change Ownership"
-msgstr ""
-
-#: freemius/includes/i18n.php:79
-msgid "Support"
-msgstr ""
-
-#: freemius/includes/i18n.php:81
-msgid "Support Forum"
-msgstr ""
-
-#: freemius/includes/i18n.php:83
-msgid "Add Ons"
-msgstr ""
-
-#: freemius/includes/i18n.php:85
-msgctxt "verb"
-msgid "Upgrade"
-msgstr ""
-
-#: freemius/includes/i18n.php:87
-msgid "Awesome"
-msgstr ""
-
-#: freemius/includes/i18n.php:89
-msgctxt "noun"
-msgid "Pricing"
-msgstr ""
-
-#: freemius/includes/i18n.php:91
-msgctxt "noun"
-msgid "Price"
-msgstr ""
-
-#: freemius/includes/i18n.php:93
-msgid "Unlimited Updates"
-msgstr ""
-
-#: freemius/includes/i18n.php:95
-msgctxt "verb"
-msgid "Downgrade"
-msgstr ""
-
-#: freemius/includes/i18n.php:97
-msgid "Cancel Trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:99
-msgid "Free Trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:101
-msgid "Start my free %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:103
-msgid "No commitment for %s - cancel anytime"
-msgstr ""
-
-#: freemius/includes/i18n.php:105
-msgid "After your free %s, pay as little as %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:107
-msgid "Details"
-msgstr ""
-
-#: freemius/includes/i18n.php:109
-msgid "Account Details"
-msgstr ""
-
-#: freemius/includes/i18n.php:111
-msgctxt "verb"
-msgid "Delete"
-msgstr ""
-
-#: freemius/includes/i18n.php:113
-msgctxt "verb"
-msgid "Show"
-msgstr ""
-
-#: freemius/includes/i18n.php:115
-msgctxt "verb"
-msgid "Hide"
-msgstr ""
-
-#: freemius/includes/i18n.php:117
-msgctxt "verb"
-msgid "Edit"
-msgstr ""
-
-#: freemius/includes/i18n.php:119
-msgctxt "verb"
-msgid "Update"
-msgstr ""
-
-#: freemius/includes/i18n.php:121
-msgid "Date"
-msgstr ""
-
-#: freemius/includes/i18n.php:123
-msgid "Amount"
-msgstr ""
-
-#: freemius/includes/i18n.php:125
-msgid "Invoice"
-msgstr ""
-
-#: freemius/includes/i18n.php:127
-msgid "Billing"
-msgstr ""
-
-#: freemius/includes/i18n.php:129
-msgid "Payments"
-msgstr ""
-
-#: freemius/includes/i18n.php:131
-msgid "Delete Account"
-msgstr ""
-
-#: freemius/includes/i18n.php:133
-msgctxt "as close a window"
-msgid "Dismiss"
-msgstr ""
-
-#: freemius/includes/i18n.php:135
-msgctxt "as product pricing plan"
-msgid "Plan"
-msgstr ""
-
-#: freemius/includes/i18n.php:137
-msgid "Change Plan"
-msgstr ""
-
-#: freemius/includes/i18n.php:139
-msgctxt "as download professional version"
-msgid "Download %s Version"
-msgstr ""
-
-#: freemius/includes/i18n.php:141
-msgctxt "as download professional version now"
-msgid "Download %s version now"
-msgstr ""
-
-#: freemius/includes/i18n.php:145
-msgctxt "as download latest version"
-msgid "Download Latest"
-msgstr ""
-
-#: freemius/includes/i18n.php:147
-msgctxt "E.g. you have a professional license."
-msgid "You have a %s license."
-msgstr ""
-
-#: freemius/includes/i18n.php:151
-msgid "New"
-msgstr ""
-
-#: freemius/includes/i18n.php:153
-msgid "Free"
-msgstr ""
-
-#: freemius/includes/i18n.php:155
-msgctxt "as trial plan"
-msgid "Trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:157
-msgctxt "as starting a trial plan"
-msgid "Start Trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:159
-msgctxt "verb"
-msgid "Purchase"
-msgstr ""
-
-#: freemius/includes/i18n.php:161
-msgid "Purchase License"
-msgstr ""
-
-#: freemius/includes/i18n.php:163
-msgctxt "verb"
-msgid "Buy"
-msgstr ""
-
-#: freemius/includes/i18n.php:165
-msgid "Buy License"
-msgstr ""
-
-#: freemius/includes/i18n.php:167
-msgid "Single Site License"
-msgstr ""
-
-#: freemius/includes/i18n.php:169
-msgid "Unlimited Licenses"
-msgstr ""
-
-#: freemius/includes/i18n.php:171
-msgid "Up to %s Sites"
-msgstr ""
-
-#: freemius/includes/i18n.php:173
-msgid "%sRenew your license now%s to access version %s features and support."
-msgstr ""
-
-#: freemius/includes/i18n.php:177
-msgid "Enter the email address you've used for the upgrade below and we will resend you the license key."
-msgstr ""
-
-#: freemius/includes/i18n.php:181
-msgctxt "e.g. Professional Plan"
-msgid "%s Plan"
-msgstr ""
-
-#: freemius/includes/i18n.php:183
-msgid "You are just one step away - %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:185
-msgctxt "%s - plugin name. As complete \"Jetpack\" activation now"
-msgid "Complete \"%s\" Activation Now"
-msgstr ""
-
-#: freemius/includes/i18n.php:189
-msgid "We made a few tweaks to the plugin, %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:191
-msgid "Opt-in to make \"%s\" Better!"
-msgstr ""
-
-#: freemius/includes/i18n.php:193
-msgid "Error"
-msgstr ""
-
-#: freemius/includes/i18n.php:195
-msgid "Freemius SDK couldn't find the plugin's main file. Please contact sdk@freemius.com with the current error."
-msgstr ""
-
-#: freemius/includes/i18n.php:203
-msgctxt "as expiration date"
-msgid "Expiration"
-msgstr ""
-
-#: freemius/includes/i18n.php:205
-msgctxt "as software license"
-msgid "License"
-msgstr ""
-
-#: freemius/includes/i18n.php:207
-msgid "not verified"
-msgstr ""
-
-#: freemius/includes/i18n.php:209
-msgid "Verify Email"
-msgstr ""
-
-#: freemius/includes/i18n.php:211
-msgctxt "e.g. expires in 2 months"
-msgid "Expires in %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:213
-msgctxt "e.g. auto renews in 2 months"
-msgid "Auto renews in %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:215
-msgid "No expiration"
-msgstr ""
-
-#: freemius/includes/i18n.php:217
-msgid "Expired"
-msgstr ""
-
-#: freemius/includes/i18n.php:219
-msgid "Cancelled"
-msgstr ""
-
-#: freemius/includes/i18n.php:221
-msgctxt "e.g. In 2 hours"
-msgid "In %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:223
-msgctxt "e.g. 2 min ago"
-msgid "%s ago"
-msgstr ""
-
-#: freemius/includes/i18n.php:225
-msgctxt "as plugin version"
-msgid "Version"
-msgstr ""
-
-#: freemius/includes/i18n.php:227
-msgid "Name"
-msgstr ""
-
-#: freemius/includes/i18n.php:229
-msgid "Email"
-msgstr ""
-
-#: freemius/includes/i18n.php:231
-msgid "Email address"
-msgstr ""
-
-#: freemius/includes/i18n.php:233
-msgid "Verified"
-msgstr ""
-
-#: freemius/includes/i18n.php:235
-msgid "Plugin"
-msgstr ""
-
-#: freemius/includes/i18n.php:237
-msgid "Plugins"
-msgstr ""
-
-#: freemius/includes/i18n.php:239
-msgid "Themes"
-msgstr ""
-
-#: freemius/includes/i18n.php:241
-msgctxt "as file/folder path"
-msgid "Path"
-msgstr ""
-
-#: freemius/includes/i18n.php:243
-msgid "Title"
-msgstr ""
-
-#: freemius/includes/i18n.php:245
-msgid "Free version"
-msgstr ""
-
-#: freemius/includes/i18n.php:247
-msgid "Premium version"
-msgstr ""
-
-#: freemius/includes/i18n.php:249
-msgctxt "as WP plugin slug"
-msgid "Slug"
-msgstr ""
-
-#: freemius/includes/i18n.php:251
-msgid "ID"
-msgstr ""
-
-#: freemius/includes/i18n.php:253
-msgid "Users"
-msgstr ""
-
-#: freemius/includes/i18n.php:255
-msgid "Plugin Installs"
-msgstr ""
-
-#: freemius/includes/i18n.php:257
-msgctxt "like websites"
-msgid "Sites"
-msgstr ""
-
-#: freemius/includes/i18n.php:259
-msgid "User ID"
-msgstr ""
-
-#: freemius/includes/i18n.php:261
-msgid "Site ID"
-msgstr ""
-
-#: freemius/includes/i18n.php:263
-msgid "Public Key"
-msgstr ""
-
-#: freemius/includes/i18n.php:265
-msgid "Secret Key"
-msgstr ""
-
-#: freemius/includes/i18n.php:267
-msgctxt "as secret encryption key missing"
-msgid "No Secret"
-msgstr ""
-
-#: freemius/includes/i18n.php:269
-msgid "No ID"
-msgstr ""
-
-#: freemius/includes/i18n.php:271
-msgctxt "as synchronize license"
-msgid "Sync License"
-msgstr ""
-
-#: freemius/includes/i18n.php:273
-msgctxt "as synchronize"
-msgid "Sync"
-msgstr ""
-
-#: freemius/includes/i18n.php:275
-msgid "Activate License"
-msgstr ""
-
-#: freemius/includes/i18n.php:277
-msgid "Activate Free Version"
-msgstr ""
-
-#: freemius/includes/i18n.php:279
-msgid "Please enter the license key that you received in the email right after the purchase:"
-msgstr ""
-
-#: freemius/includes/i18n.php:283
-msgid "Activating license..."
-msgstr ""
-
-#: freemius/includes/i18n.php:285
-msgid "Change License"
-msgstr ""
-
-#: freemius/includes/i18n.php:287
-msgid "Update License"
-msgstr ""
-
-#: freemius/includes/i18n.php:289
-msgid "Deactivate License"
-msgstr ""
-
-#: freemius/includes/i18n.php:291
-msgid "Activate"
-msgstr ""
-
-#: freemius/includes/i18n.php:293
-msgid "Deactivate"
-msgstr ""
-
-#: freemius/includes/i18n.php:295
-msgid "Skip & Deactivate"
-msgstr ""
-
-#: freemius/includes/i18n.php:297
-msgid "No - just deactivate"
-msgstr ""
-
-#: freemius/includes/i18n.php:299
-msgid "Yes - do your thing"
-msgstr ""
-
-#: freemius/includes/i18n.php:301
-msgctxt "active mode"
-msgid "Active"
-msgstr ""
-
-#: freemius/includes/i18n.php:303
-msgctxt "is active mode?"
-msgid "Is Active"
-msgstr ""
-
-#: freemius/includes/i18n.php:305
-msgid "Install Now"
-msgstr ""
-
-#: freemius/includes/i18n.php:307
-msgid "Install Update Now"
-msgstr ""
-
-#: freemius/includes/i18n.php:309
-msgid "More information about %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:311
-msgid "Localhost"
-msgstr ""
-
-#: freemius/includes/i18n.php:313
-msgctxt "as activate Professional plan"
-msgid "Activate %s Plan"
-msgstr ""
-
-#: freemius/includes/i18n.php:315
-msgctxt "as 5 licenses left"
-msgid "%s left"
-msgstr ""
-
-#: freemius/includes/i18n.php:317
-msgid "Last license"
-msgstr ""
-
-#: freemius/includes/i18n.php:319
-msgid "What is your %s?"
-msgstr ""
-
-#: freemius/includes/i18n.php:321
-msgid "Activate this add-on"
-msgstr ""
-
-#: freemius/includes/i18n.php:323
-msgid "Deactivating your license will block all premium features, but will enable you to activate the license on another site. Are you sure you want to proceed?"
-msgstr ""
-
-#: freemius/includes/i18n.php:327
-msgid "Deleting the account will automatically deactivate your %s plan license so you can use it on other sites. If you want to terminate the recurring payments as well, click the \"Cancel\" button, and first \"Downgrade\" your account. Are you sure you would like to continue with the deletion?"
-msgstr ""
-
-#: freemius/includes/i18n.php:331
-msgid "Deletion is not temporary. Only delete if you no longer want to use this plugin anymore. Are you sure you would like to continue with the deletion?"
-msgstr ""
-
-#: freemius/includes/i18n.php:335
-msgid "Downgrading your plan will immediately stop all future recurring payments and your %s plan license will expire in %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:339
-msgid "Cancelling the trial will immediately block access to all premium features. Are you sure?"
-msgstr ""
-
-#: freemius/includes/i18n.php:343
-msgid "You can still enjoy all %s features but you will not have access to plugin updates and support."
-msgstr ""
-
-#: freemius/includes/i18n.php:347
-msgid "Once your license expire you can still use the Free version but you will NOT have access to the %s features."
-msgstr ""
-
-#: freemius/includes/i18n.php:351
-msgid "Are you sure you want to proceed?"
-msgstr ""
-
-#: freemius/includes/i18n.php:357
-msgid "Add Ons for %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:359
-msgid "We could'nt load the add-ons list. It's probably an issue on our side, please try to come back in few minutes."
-msgstr ""
-
-#: freemius/includes/i18n.php:365
-msgid "Anonymous feedback"
-msgstr ""
-
-#: freemius/includes/i18n.php:367
-msgid "Quick feedback"
-msgstr ""
-
-#: freemius/includes/i18n.php:369
-msgid "If you have a moment, please let us know why you are deactivating"
-msgstr ""
-
-#: freemius/includes/i18n.php:373
-msgid "Yes - Deactivate"
-msgstr ""
-
-#: freemius/includes/i18n.php:375
-msgid "Submit & Deactivate"
-msgstr ""
-
-#: freemius/includes/i18n.php:377
-msgid "Cancel"
-msgstr ""
-
-#: freemius/includes/i18n.php:379
-msgid "I no longer need the plugin"
-msgstr ""
-
-#: freemius/includes/i18n.php:381
-msgid "I found a better plugin"
-msgstr ""
-
-#: freemius/includes/i18n.php:383
-msgid "I only needed the plugin for a short period"
-msgstr ""
-
-#: freemius/includes/i18n.php:385
-msgid "The plugin broke my site"
-msgstr ""
-
-#: freemius/includes/i18n.php:387
-msgid "The plugin suddenly stopped working"
-msgstr ""
-
-#: freemius/includes/i18n.php:389
-msgid "I can't pay for it anymore"
-msgstr ""
-
-#: freemius/includes/i18n.php:391
-msgid "It's a temporary deactivation. I'm just debugging an issue."
-msgstr ""
-
-#: freemius/includes/i18n.php:395
-msgctxt "the text of the \"other\" reason for deactivating the plugin that is shown in the modal box."
-msgid "Other"
-msgstr ""
-
-#: freemius/includes/i18n.php:399
-msgid "Kindly tell us the reason so we can improve."
-msgstr ""
-
-#: freemius/includes/i18n.php:401
-msgid "What's the plugin's name?"
-msgstr ""
-
-#: freemius/includes/i18n.php:403
-msgid "What price would you feel comfortable paying?"
-msgstr ""
-
-#: freemius/includes/i18n.php:405
-msgid "I couldn't understand how to make it work"
-msgstr ""
-
-#: freemius/includes/i18n.php:407
-msgid "The plugin is great, but I need specific feature that you don't support"
-msgstr ""
-
-#: freemius/includes/i18n.php:411
-msgid "The plugin is not working"
-msgstr ""
-
-#: freemius/includes/i18n.php:413
-msgid "It's not what I was looking for"
-msgstr ""
-
-#: freemius/includes/i18n.php:415
-msgid "The plugin didn't work as expected"
-msgstr ""
-
-#: freemius/includes/i18n.php:417
-msgid "What feature?"
-msgstr ""
-
-#: freemius/includes/i18n.php:419
-msgid "Kindly share what didn't work so we can fix it for future users..."
-msgstr ""
-
-#: freemius/includes/i18n.php:423
-msgid "What you've been looking for?"
-msgstr ""
-
-#: freemius/includes/i18n.php:425
-msgid "What did you expect?"
-msgstr ""
-
-#: freemius/includes/i18n.php:427
-msgid "The plugin didn't work"
-msgstr ""
-
-#: freemius/includes/i18n.php:429
-msgid "I don't like to share my information with you"
-msgstr ""
-
-#: freemius/includes/i18n.php:431
-msgid "You might have missed it, but you don't have to share any data and can just %s the opt-in."
-msgstr ""
-
-#: freemius/includes/i18n.php:441
-msgctxt "greeting"
-msgid "Hey %s,"
-msgstr ""
-
-#: freemius/includes/i18n.php:443
-msgctxt "a greeting. E.g. Thanks John!"
-msgid "Thanks %s!"
-msgstr ""
-
-#: freemius/includes/i18n.php:445
-msgid "Never miss an important update - opt-in to our security and feature updates notifications, and non-sensitive diagnostic tracking with %4$s."
-msgstr ""
-
-#: freemius/includes/i18n.php:449
-msgid "Please help us improve %1$s! If you opt-in, some data about your usage of %1$s will be sent to %4$s. If you skip this, that's okay! %1$s will still work just fine."
-msgstr ""
-
-#: freemius/includes/i18n.php:453
-msgid "You should receive an activation email for %s to your mailbox at %s. Please make sure you click the activation button in that email to %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:455
-msgid "complete the install"
-msgstr ""
-
-#: freemius/includes/i18n.php:457
-msgid "start the trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:459
-msgid "Thanks for purchasing %s! To get started, please enter your license key:"
-msgstr ""
-
-#: freemius/includes/i18n.php:463
-msgid "The plugin will be periodically sending data to %s to check for plugin updates and verify the validity of your license."
-msgstr ""
-
-#: freemius/includes/i18n.php:467
-msgid "What permissions are being granted?"
-msgstr ""
-
-#: freemius/includes/i18n.php:469
-msgid "Your Profile Overview"
-msgstr ""
-
-#: freemius/includes/i18n.php:471
-msgid "Name and email address"
-msgstr ""
-
-#: freemius/includes/i18n.php:473
-msgid "Your Site Overview"
-msgstr ""
-
-#: freemius/includes/i18n.php:475
-msgid "Site URL, WP version, PHP info, plugins & themes"
-msgstr ""
-
-#: freemius/includes/i18n.php:479
-msgid "Current Plugin Events"
-msgstr ""
-
-#: freemius/includes/i18n.php:481
-msgid "Activation, deactivation and uninstall"
-msgstr ""
-
-#: freemius/includes/i18n.php:483
-msgid "Plugins & Themes"
-msgstr ""
-
-#: freemius/includes/i18n.php:485
-msgid "Titles, versions and state."
-msgstr ""
-
-#: freemius/includes/i18n.php:487
-msgid "Admin Notices"
-msgstr ""
-
-#: freemius/includes/i18n.php:489
-msgid "Newsletter"
-msgstr ""
-
-#: freemius/includes/i18n.php:491
-msgid "Updates, announcements, marketing, no spam"
-msgstr ""
-
-#: freemius/includes/i18n.php:493
-msgid "Privacy Policy"
-msgstr ""
-
-#: freemius/includes/i18n.php:495
-msgid "Terms of Service"
-msgstr ""
-
-#: freemius/includes/i18n.php:497
-msgctxt "as activating plugin"
-msgid "Activating"
-msgstr ""
-
-#: freemius/includes/i18n.php:499
-msgctxt "as in the process of sending an email"
-msgid "Sending email"
-msgstr ""
-
-#: freemius/includes/i18n.php:503
-msgctxt "button label"
-msgid "Allow & Continue"
-msgstr ""
-
-#: freemius/includes/i18n.php:505
-msgctxt "button label"
-msgid "Agree & Activate License"
-msgstr ""
-
-#: freemius/includes/i18n.php:507
-msgctxt "verb"
-msgid "Skip"
-msgstr ""
-
-#: freemius/includes/i18n.php:509
-msgid "Click here to use the plugin anonymously"
-msgstr ""
-
-#: freemius/includes/i18n.php:511
-msgid "Re-send activation email"
-msgstr ""
-
-#: freemius/includes/i18n.php:513
-msgid "License key"
-msgstr ""
-
-#: freemius/includes/i18n.php:515
-msgid "Send License Key"
-msgstr ""
-
-#: freemius/includes/i18n.php:517
-msgid "Sending license key"
-msgstr ""
-
-#: freemius/includes/i18n.php:519
-msgid "Have a license key?"
-msgstr ""
-
-#: freemius/includes/i18n.php:521
-msgid "Don't have a license key?"
-msgstr ""
-
-#: freemius/includes/i18n.php:523
-msgid "Can't find your license key?"
-msgstr ""
-
-#: freemius/includes/i18n.php:525
-msgid "We couldn't find your email address in the system, are you sure it's the right address?"
-msgstr ""
-
-#: freemius/includes/i18n.php:529
-msgid "We can't see any active licenses associated with that email address, are you sure it's the right address?"
-msgstr ""
-
-#: freemius/includes/i18n.php:533
-msgid "Opt In"
-msgstr ""
-
-#: freemius/includes/i18n.php:535
-msgid "Opt Out"
-msgstr ""
-
-#: freemius/includes/i18n.php:537
-msgid "On second thought - I want to continue helping"
-msgstr ""
-
-#: freemius/includes/i18n.php:541
-msgid "Opting out..."
-msgstr ""
-
-#: freemius/includes/i18n.php:543
-msgid "Opting in..."
-msgstr ""
-
-#: freemius/includes/i18n.php:545
-msgid "We appreciate your help in making the %s better by letting us track some usage data."
-msgstr ""
-
-#: freemius/includes/i18n.php:549
-msgid "Usage tracking is done in the name of making %s better. Making a better user experience, prioritizing new features, and more good things. We'd really appreciate if you'll reconsider letting us continue with the tracking."
-msgstr ""
-
-#: freemius/includes/i18n.php:553
-msgid "By clicking \"Opt Out\", we will no longer be sending any data from %s to %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:563
-msgid "Screenshots"
-msgstr ""
-
-#: freemius/includes/i18n.php:565
-msgid "Click to view full-size screenshot %d"
-msgstr ""
-
-#: freemius/includes/i18n.php:573
-msgid "Freemius Debug"
-msgstr ""
-
-#: freemius/includes/i18n.php:575
-msgctxt "as turned on"
-msgid "On"
-msgstr ""
-
-#: freemius/includes/i18n.php:577
-msgctxt "as turned off"
-msgid "Off"
-msgstr ""
-
-#: freemius/includes/i18n.php:579
-msgctxt "as code debugging"
-msgid "Debugging"
-msgstr ""
-
-#: freemius/includes/i18n.php:581
-msgid "Freemius State"
-msgstr ""
-
-#: freemius/includes/i18n.php:583
-msgctxt "as connection was successful"
-msgid "Connected"
-msgstr ""
-
-#: freemius/includes/i18n.php:585
-msgctxt "as connection blocked"
-msgid "Blocked"
-msgstr ""
-
-#: freemius/includes/i18n.php:587
-msgctxt "as application program interface"
-msgid "API"
-msgstr ""
-
-#: freemius/includes/i18n.php:589
-msgctxt "as software development kit versions"
-msgid "SDK"
-msgstr ""
-
-#: freemius/includes/i18n.php:591
-msgctxt "as software development kit versions"
-msgid "SDK Versions"
-msgstr ""
-
-#: freemius/includes/i18n.php:595
-msgctxt "as plugin folder path"
-msgid "Plugin Path"
-msgstr ""
-
-#: freemius/includes/i18n.php:597
-msgctxt "as sdk path"
-msgid "SDK Path"
-msgstr ""
-
-#: freemius/includes/i18n.php:599
-msgid "Add Ons of Plugin %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:601
-msgid "Are you sure you want to delete all Freemius data?"
-msgstr ""
-
-#: freemius/includes/i18n.php:605
-msgid "Actions"
-msgstr ""
-
-#: freemius/includes/i18n.php:607
-msgid "Delete All Accounts"
-msgstr ""
-
-#: freemius/includes/i18n.php:609
-msgid "Start Fresh"
-msgstr ""
-
-#: freemius/includes/i18n.php:611
-msgid "Clear API Cache"
-msgstr ""
-
-#: freemius/includes/i18n.php:613
-msgid "Sync Data From Server"
-msgstr ""
-
-#: freemius/includes/i18n.php:615
-msgid "Scheduled Crons"
-msgstr ""
-
-#: freemius/includes/i18n.php:617
-msgid "Plugins & Themes Sync"
-msgstr ""
-
-#: freemius/includes/i18n.php:625
-msgctxt "as congratulations"
-msgid "Congrats"
-msgstr ""
-
-#: freemius/includes/i18n.php:627
-msgctxt "exclamation"
-msgid "Oops"
-msgstr ""
-
-#: freemius/includes/i18n.php:629
-msgctxt "interjection expressing joy or exuberance"
-msgid "Yee-haw"
-msgstr ""
-
-#: freemius/includes/i18n.php:633
-msgctxt "(especially in electronic communication) used to express elation, enthusiasm, or triumph."
-msgid "W00t"
-msgstr ""
-
-#: freemius/includes/i18n.php:637
-msgctxt "a positive response"
-msgid "Right on"
-msgstr ""
-
-#: freemius/includes/i18n.php:639
-msgctxt "something somebody says when they are thinking about what you have just said. "
-msgid "Hmm"
-msgstr ""
-
-#: freemius/includes/i18n.php:643
-msgid "O.K"
-msgstr ""
-
-#: freemius/includes/i18n.php:645
-msgctxt "exclamation"
-msgid "Hey"
-msgstr ""
-
-#: freemius/includes/i18n.php:647
-msgctxt "advance notice of something that will need attention."
-msgid "Heads up"
-msgstr ""
-
-#: freemius/includes/i18n.php:657
-msgid "Seems like you got the latest release."
-msgstr ""
-
-#: freemius/includes/i18n.php:659
-msgid "You are all good!"
-msgstr ""
-
-#: freemius/includes/i18n.php:661
-msgid "Sorry, we could not complete the email update. Another user with the same email is already registered."
-msgstr ""
-
-#: freemius/includes/i18n.php:665
-msgid "If you would like to give up the ownership of the plugin's account to %s click the Change Ownership button."
-msgstr ""
-
-#: freemius/includes/i18n.php:669
-msgid "Your email was successfully updated. You should receive an email with confirmation instructions in few moments."
-msgstr ""
-
-#: freemius/includes/i18n.php:673
-msgid "Your name was successfully updated."
-msgstr ""
-
-#: freemius/includes/i18n.php:675
-msgid "You have successfully updated your %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:677
-msgid "Please provide your full name."
-msgstr ""
-
-#: freemius/includes/i18n.php:679
-msgid "Verification mail was just sent to %s. If you can't find it after 5 min, please check your spam box."
-msgstr ""
-
-#: freemius/includes/i18n.php:683
-msgid "Just letting you know that the add-ons information of %s is being pulled from an external server."
-msgstr ""
-
-#: freemius/includes/i18n.php:687
-msgid "No credit card required"
-msgstr ""
-
-#: freemius/includes/i18n.php:689
-msgid "Premium plugin version was successfully activated."
-msgstr ""
-
-#: freemius/includes/i18n.php:693
-msgid "The upgrade of %s was successfully completed."
-msgstr ""
-
-#: freemius/includes/i18n.php:695
-msgid "Your account was successfully activated with the %s plan."
-msgstr ""
-
-#: freemius/includes/i18n.php:699
-msgid "Download the latest %s version now"
-msgstr ""
-
-#: freemius/includes/i18n.php:701
-msgid "Please follow these steps to complete the upgrade"
-msgstr ""
-
-#: freemius/includes/i18n.php:705
-msgid "Download the latest %s version"
-msgstr ""
-
-#: freemius/includes/i18n.php:707
-msgid "Download the latest version"
-msgstr ""
-
-#: freemius/includes/i18n.php:709
-msgid "Deactivate the free version"
-msgstr ""
-
-#: freemius/includes/i18n.php:711
-msgid "Upload and activate the downloaded version"
-msgstr ""
-
-#: freemius/includes/i18n.php:713
-msgid "How to upload and activate?"
-msgstr ""
-
-#: freemius/includes/i18n.php:715
-msgctxt "%s - product name, e.g. Facebook add-on was successfully..."
-msgid "%s Add-on was successfully purchased."
-msgstr ""
-
-#: freemius/includes/i18n.php:719
-msgid "Your %s Add-on plan was successfully upgraded."
-msgstr ""
-
-#: freemius/includes/i18n.php:723
-msgid "Your email has been successfully verified - you are AWESOME!"
-msgstr ""
-
-#: freemius/includes/i18n.php:727
-msgid "Your plan was successfully upgraded."
-msgstr ""
-
-#: freemius/includes/i18n.php:729
-msgid "Your plan was successfully changed to %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:731
-msgid "Your license has expired. You can still continue using the free plugin forever."
-msgstr ""
-
-#: freemius/includes/i18n.php:735
-msgid "Your license has been cancelled. If you think it's a mistake, please contact support."
-msgstr ""
-
-#: freemius/includes/i18n.php:739
-msgid "Your trial has been successfully started."
-msgstr ""
-
-#: freemius/includes/i18n.php:741
-msgid "Your license was successfully activated."
-msgstr ""
-
-#: freemius/includes/i18n.php:743
-msgid "It looks like your site currently doesn't have an active license."
-msgstr ""
-
-#: freemius/includes/i18n.php:747
-msgid "Your license was successfully deactivated, you are back to the %s plan."
-msgstr ""
-
-#: freemius/includes/i18n.php:751
-msgid "It looks like the license deactivation failed."
-msgstr ""
-
-#: freemius/includes/i18n.php:755
-msgid "It looks like the license could not be activated."
-msgstr ""
-
-#: freemius/includes/i18n.php:759
-msgid "Error received from the server:"
-msgstr ""
-
-#: freemius/includes/i18n.php:761
-msgid "Your trial has expired. You can still continue using all our free features."
-msgstr ""
-
-#: freemius/includes/i18n.php:765
-msgid "Your plan was successfully downgraded. Your %s plan license will expire in %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:769
-msgid "Seems like we are having some temporary issue with your plan downgrade. Please try again in few minutes."
-msgstr ""
-
-#: freemius/includes/i18n.php:773
-msgid "It looks like you are not in trial mode anymore so there's nothing to cancel :)"
-msgstr ""
-
-#: freemius/includes/i18n.php:777
-msgid "Your %s free trial was successfully cancelled."
-msgstr ""
-
-#: freemius/includes/i18n.php:781
-msgctxt "%s - numeric version number"
-msgid "Version %s was released."
-msgstr ""
-
-#: freemius/includes/i18n.php:785
-msgid "Please download %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:787
-msgctxt "%s - plan name, as the latest professional version here"
-msgid "the latest %s version here"
-msgstr ""
-
-#: freemius/includes/i18n.php:791
-msgid "How do you like %s so far? Test all our %s premium features with a %d-day free trial."
-msgstr ""
-
-#: freemius/includes/i18n.php:795
-msgctxt "call to action"
-msgid "Start free trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:797
-msgid "Starting trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:799
-msgid "Please wait"
-msgstr ""
-
-#: freemius/includes/i18n.php:801
-msgid "Seems like we are having some temporary issue with your trial cancellation. Please try again in few minutes."
-msgstr ""
-
-#: freemius/includes/i18n.php:805
-msgid "You already utilized a trial before."
-msgstr ""
-
-#: freemius/includes/i18n.php:807
-msgid "You are already running the plugin in a trial mode."
-msgstr ""
-
-#: freemius/includes/i18n.php:811
-msgid "Plan %s do not exist, therefore, can't start a trial."
-msgstr ""
-
-#: freemius/includes/i18n.php:815
-msgid "Plan %s does not support a trial period."
-msgstr ""
-
-#: freemius/includes/i18n.php:817
-msgid "None of the plugin's plans supports a trial period."
-msgstr ""
-
-#: freemius/includes/i18n.php:821
-msgid "Unexpected API error. Please contact the plugin's author with the following error."
-msgstr ""
-
-#: freemius/includes/i18n.php:825
-msgid "No commitment for %s days - cancel anytime!"
-msgstr ""
-
-#: freemius/includes/i18n.php:827
-msgid "Your license has expired. You can still continue using all the %s features, but you'll need to renew your license to continue getting updates and support."
-msgstr ""
-
-#: freemius/includes/i18n.php:831
-msgid "Couldn't activate %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:833
-msgid "Please contact us with the following message:"
-msgstr ""
-
-#: freemius/includes/i18n.php:835
-msgid "It looks like you are still on the %s plan. If you did upgrade or change your plan, it's probably an issue on our side - sorry."
-msgstr ""
-
-#: freemius/includes/i18n.php:839
-msgid "Please contact us here"
-msgstr ""
-
-#: freemius/includes/i18n.php:841
-msgid "I have upgraded my account but when I try to Sync the License, the plan remains %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:849
-msgid "From unknown reason, the API connectivity test failed."
-msgstr ""
-
-#: freemius/includes/i18n.php:853
-msgid "It's probably a temporary issue on our end. Just to be sure, with your permission, would it be o.k to run another connectivity test?"
-msgstr ""
-
-#: freemius/includes/i18n.php:857
-msgid "We use PHP cURL library for the API calls, which is a very common library and usually installed out of the box. Unfortunately, cURL is not installed on your server."
-msgstr ""
-
-#: freemius/includes/i18n.php:861
-msgid "From unknown reason, CloudFlare, the firewall we use, blocks the connection."
-msgstr ""
-
-#: freemius/includes/i18n.php:865
-msgctxt "as pluginX requires an access to our API"
-msgid "%s requires an access to our API."
-msgstr ""
-
-#: freemius/includes/i18n.php:869
-msgid "It looks like your server is using Squid ACL (access control lists), which blocks the connection."
-msgstr ""
-
-#: freemius/includes/i18n.php:873
-msgid "I don't know what is Squid or ACL, help me!"
-msgstr ""
-
-#: freemius/includes/i18n.php:875, freemius/includes/i18n.php:889
-msgid "We'll make sure to contact your hosting company and resolve the issue. You will get a follow-up email to %s once we have an update."
-msgstr ""
-
-#: freemius/includes/i18n.php:879
-msgid "I'm a system administrator"
-msgstr ""
-
-#: freemius/includes/i18n.php:881
-msgid "Great, please whitelist the following domains: %s. Once you done, deactivate the plugin and activate it again."
-msgstr ""
-
-#: freemius/includes/i18n.php:885
-msgid "I don't know what is cURL or how to install it, help me!"
-msgstr ""
-
-#: freemius/includes/i18n.php:893
-msgid "Great, please install cURL and enable it in your php.ini file. To make sure it was successfully activated, use 'phpinfo()'. Once activated, deactivate the plugin and reactivate it back again."
-msgstr ""
-
-#: freemius/includes/i18n.php:897
-msgid "We are sure it's an issue on our side and more than happy to resolve it for you ASAP if you give us a chance."
-msgstr ""
-
-#: freemius/includes/i18n.php:901
-msgid "Sorry for the inconvenience and we are here to help if you give us a chance."
-msgstr ""
-
-#: freemius/includes/i18n.php:905
-msgid "Yes - I'm giving you a chance to fix it"
-msgstr ""
-
-#: freemius/includes/i18n.php:907
-msgid "We will do our best to whitelist your server and resolve this issue ASAP. You will get a follow-up email to %s once we have an update."
-msgstr ""
-
-#: freemius/includes/i18n.php:911
-msgid "Let's try your previous version"
-msgstr ""
-
-#: freemius/includes/i18n.php:913
-msgid "Uninstall this version and install the previous one."
-msgstr ""
-
-#: freemius/includes/i18n.php:917
-msgid "That's exhausting, please deactivate"
-msgstr ""
-
-#: freemius/includes/i18n.php:919
-msgid "We feel your frustration and sincerely apologize for the inconvenience. Hope to see you again in the future."
-msgstr ""
-
-#: freemius/includes/i18n.php:923
-msgid "Thank for giving us the chance to fix it! A message was just sent to our technical staff. We will get back to you as soon as we have an update to %s. Appreciate your patience."
-msgstr ""
-
-#: freemius/includes/i18n.php:927
-msgctxt "%1s - plugin title, %2s - API domain"
-msgid "Your server is blocking the access to Freemius' API, which is crucial for %1s synchronization. Please contact your host to whitelist %2s"
-msgstr ""
-
-#: freemius/includes/i18n.php:931
-msgid "It seems like one of the authentication parameters is wrong. Update your Public Key, Secret Key & User ID, and try again."
-msgstr ""
-
-#: freemius/includes/i18n.php:939
-msgid "Please check your mailbox, you should receive an email via %s to confirm the ownership change. From security reasons, you must confirm the change within the next 15 min. If you cannot find the email, please check your spam folder."
-msgstr ""
-
-#: freemius/includes/i18n.php:943
-msgid "Thanks for confirming the ownership change. An email was just sent to %s for final approval."
-msgstr ""
-
-#: freemius/includes/i18n.php:947
-msgid "%s is the new owner of the account."
-msgstr ""
-
-#: freemius/includes/i18n.php:951
-msgctxt "addonX cannot run without pluginY"
-msgid "%s cannot run without %s."
-msgstr ""
-
-#: freemius/includes/i18n.php:955
-msgctxt "addonX cannot run..."
-msgid "%s cannot run without the plugin."
-msgstr ""
-
-#: freemius/includes/i18n.php:959
-msgctxt "pluginX activation was successfully..."
-msgid "%s activation was successfully completed."
-msgstr ""
-
-#: freemius/includes/i18n.php:963
-msgctxt "Plugin installer section title"
-msgid "Features & Pricing"
-msgstr ""
-
-#: freemius/includes/i18n.php:967
-msgid "Add-on must be deployed to WordPress.org or Freemius."
-msgstr ""
-
-#: freemius/includes/i18n.php:971
-msgid "Paid add-on must be deployed to Freemius."
-msgstr ""
-
-#: freemius/includes/i18n.php:979
-msgid "%s is a premium only add-on. You have to purchase a license first before activating the plugin."
-msgstr ""
-
-#: freemius/includes/i18n.php:983
-msgid "%s free trial was successfully cancelled. Since the add-on is premium only it was automatically deactivated. If you like to use it in the future, you'll have to purchase a license."
-msgstr ""
-
-#: freemius/includes/i18n.php:995
-msgctxt "as every month"
-msgid "Monthly"
-msgstr ""
-
-#: freemius/includes/i18n.php:997
-msgctxt "as monthly period"
-msgid "mo"
-msgstr ""
-
-#: freemius/includes/i18n.php:999
-msgctxt "as once a year"
-msgid "Annual"
-msgstr ""
-
-#: freemius/includes/i18n.php:1001
-msgctxt "as once a year"
-msgid "Annually"
-msgstr ""
-
-#: freemius/includes/i18n.php:1003
-msgctxt "as once a year"
-msgid "Once"
-msgstr ""
-
-#: freemius/includes/i18n.php:1005
-msgctxt "as annual period"
-msgid "year"
-msgstr ""
-
-#: freemius/includes/i18n.php:1007
-msgid "Lifetime"
-msgstr ""
-
-#: freemius/includes/i18n.php:1009
-msgctxt "e.g. the best product"
-msgid "Best"
-msgstr ""
-
-#: freemius/includes/i18n.php:1011
-msgctxt "e.g. billed monthly"
-msgid "Billed %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:1013
-msgctxt "as a discount of $5 or 10%"
-msgid "Save %s"
-msgstr ""
-
-#: freemius/includes/i18n.php:1017
-msgid "View details"
-msgstr ""
-
-#: freemius/includes/i18n.php:1025
-msgctxt "button label"
-msgid "Approve & Start Trial"
-msgstr ""
-
-#: freemius/includes/i18n.php:1029
-msgid "You are 1-click away from starting your %1$s-day free trial of the %2$s plan."
-msgstr ""
-
-#: freemius/includes/i18n.php:1033
-msgid "For compliance with the WordPress.org guidelines, before we start the trial we ask that you opt-in with your user and non-sensitive site information, allowing the plugin to periodically send data to %s to check for version updates and to validate your trial."
-msgstr ""
-
-#: freemius/includes/i18n.php:1045
-msgid "Business name"
-msgstr ""
-
-#: freemius/includes/i18n.php:1047
-msgid "Tax / VAT ID"
-msgstr ""
-
-#: freemius/includes/i18n.php:1049
-msgid "Address Line %d"
-msgstr ""
-
-#: freemius/includes/i18n.php:1051
-msgid "Country"
-msgstr ""
-
-#: freemius/includes/i18n.php:1053
-msgid "Select Country"
-msgstr ""
-
-#: freemius/includes/i18n.php:1055
-msgid "City"
-msgstr ""
-
-#: freemius/includes/i18n.php:1057
-msgid "Town"
-msgstr ""
-
-#: freemius/includes/i18n.php:1059
-msgid "State"
-msgstr ""
-
-#: freemius/includes/i18n.php:1061
-msgid "Province"
-msgstr ""
-
-#: freemius/includes/i18n.php:1063
-msgid "ZIP / Postal Code"
-msgstr ""
-
-#: plugin.php:129
+#: press-elements-plugin.php:135
 msgid "Site Elements"
 msgstr ""
 
-#: plugin.php:145
+#: press-elements-plugin.php:151
 msgid "Post Elements"
 msgstr ""
 
-#: widgets/post-author.php:38, widgets/post-author.php:61, widgets/post-author.php:146
+#: press-elements.php:66
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: press-elements.php:68, press-elements.php:89
+msgid "Elementor"
+msgstr ""
+
+#: press-elements.php:87
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: widgets/post-author.php:38, widgets/post-author.php:61, widgets/post-author.php:169
 msgid "%s Author"
 msgstr ""
 
@@ -1718,115 +242,155 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: widgets/post-author.php:80, widgets/post-custom-field.php:89, widgets/post-date.php:78, widgets/post-excerpt.php:78, widgets/post-title.php:78, widgets/site-description.php:64, widgets/site-title.php:64
+#: widgets/post-author.php:80, widgets/post-custom-field.php:89, widgets/post-date.php:78, widgets/post-excerpt.php:78, widgets/post-terms.php:81, widgets/post-title.php:78, widgets/site-description.php:64, widgets/site-title.php:64
 msgid "HTML Tag"
 msgstr ""
 
-#: widgets/post-author.php:83, widgets/post-custom-field.php:92, widgets/post-date.php:81, widgets/post-excerpt.php:81, widgets/post-title.php:81, widgets/site-description.php:67, widgets/site-title.php:67
+#: widgets/post-author.php:83, widgets/post-custom-field.php:92, widgets/post-date.php:81, widgets/post-excerpt.php:81, widgets/post-terms.php:84, widgets/post-title.php:81, widgets/site-description.php:67, widgets/site-title.php:67
 msgid "H1"
 msgstr ""
 
-#: widgets/post-author.php:84, widgets/post-custom-field.php:93, widgets/post-date.php:82, widgets/post-excerpt.php:82, widgets/post-title.php:82, widgets/site-description.php:68, widgets/site-title.php:68
+#: widgets/post-author.php:84, widgets/post-custom-field.php:93, widgets/post-date.php:82, widgets/post-excerpt.php:82, widgets/post-terms.php:85, widgets/post-title.php:82, widgets/site-description.php:68, widgets/site-title.php:68
 msgid "H2"
 msgstr ""
 
-#: widgets/post-author.php:85, widgets/post-custom-field.php:94, widgets/post-date.php:83, widgets/post-excerpt.php:83, widgets/post-title.php:83, widgets/site-description.php:69, widgets/site-title.php:69
+#: widgets/post-author.php:85, widgets/post-custom-field.php:94, widgets/post-date.php:83, widgets/post-excerpt.php:83, widgets/post-terms.php:86, widgets/post-title.php:83, widgets/site-description.php:69, widgets/site-title.php:69
 msgid "H3"
 msgstr ""
 
-#: widgets/post-author.php:86, widgets/post-custom-field.php:95, widgets/post-date.php:84, widgets/post-excerpt.php:84, widgets/post-title.php:84, widgets/site-description.php:70, widgets/site-title.php:70
+#: widgets/post-author.php:86, widgets/post-custom-field.php:95, widgets/post-date.php:84, widgets/post-excerpt.php:84, widgets/post-terms.php:87, widgets/post-title.php:84, widgets/site-description.php:70, widgets/site-title.php:70
 msgid "H4"
 msgstr ""
 
-#: widgets/post-author.php:87, widgets/post-custom-field.php:96, widgets/post-date.php:85, widgets/post-excerpt.php:85, widgets/post-title.php:85, widgets/site-description.php:71, widgets/site-title.php:71
+#: widgets/post-author.php:87, widgets/post-custom-field.php:96, widgets/post-date.php:85, widgets/post-excerpt.php:85, widgets/post-terms.php:88, widgets/post-title.php:85, widgets/site-description.php:71, widgets/site-title.php:71
 msgid "H5"
 msgstr ""
 
-#: widgets/post-author.php:88, widgets/post-custom-field.php:97, widgets/post-date.php:86, widgets/post-excerpt.php:86, widgets/post-title.php:86, widgets/site-description.php:72, widgets/site-title.php:72
+#: widgets/post-author.php:88, widgets/post-custom-field.php:97, widgets/post-date.php:86, widgets/post-excerpt.php:86, widgets/post-terms.php:89, widgets/post-title.php:86, widgets/site-description.php:72, widgets/site-title.php:72
 msgid "H6"
 msgstr ""
 
-#: widgets/post-author.php:89, widgets/post-custom-field.php:98, widgets/post-date.php:87, widgets/post-excerpt.php:87, widgets/post-title.php:87, widgets/site-description.php:73, widgets/site-title.php:73
+#: widgets/post-author.php:89, widgets/post-custom-field.php:98, widgets/post-date.php:87, widgets/post-excerpt.php:87, widgets/post-terms.php:90, widgets/post-title.php:87, widgets/site-description.php:73, widgets/site-title.php:73
 msgid "p"
 msgstr ""
 
-#: widgets/post-author.php:90, widgets/post-custom-field.php:99, widgets/post-date.php:88, widgets/post-excerpt.php:88, widgets/post-title.php:88, widgets/site-description.php:74, widgets/site-title.php:74
+#: widgets/post-author.php:90, widgets/post-custom-field.php:99, widgets/post-date.php:88, widgets/post-excerpt.php:88, widgets/post-terms.php:91, widgets/post-title.php:88, widgets/site-description.php:74, widgets/site-title.php:74
 msgid "div"
 msgstr ""
 
-#: widgets/post-author.php:91, widgets/post-custom-field.php:100, widgets/post-date.php:89, widgets/post-excerpt.php:89, widgets/post-title.php:89, widgets/site-description.php:75, widgets/site-title.php:75
+#: widgets/post-author.php:91, widgets/post-custom-field.php:100, widgets/post-date.php:89, widgets/post-excerpt.php:89, widgets/post-terms.php:92, widgets/post-title.php:89, widgets/site-description.php:75, widgets/site-title.php:75
 msgid "span"
 msgstr ""
 
-#: widgets/post-author.php:100, widgets/post-custom-field.php:109, widgets/post-date.php:98, widgets/post-excerpt.php:98, widgets/post-featured-image.php:90, widgets/post-title.php:98, widgets/site-description.php:84, widgets/site-title.php:84
+#: widgets/post-author.php:100, widgets/post-custom-field.php:109, widgets/post-date.php:98, widgets/post-excerpt.php:98, widgets/post-featured-image.php:90, widgets/post-terms.php:101, widgets/post-title.php:98, widgets/site-description.php:84, widgets/site-title.php:84
 msgid "Alignment"
 msgstr ""
 
-#: widgets/post-author.php:104, widgets/post-custom-field.php:113, widgets/post-date.php:102, widgets/post-excerpt.php:102, widgets/post-featured-image.php:94, widgets/post-title.php:102, widgets/site-description.php:88, widgets/site-title.php:88
+#: widgets/post-author.php:104, widgets/post-custom-field.php:113, widgets/post-date.php:102, widgets/post-excerpt.php:102, widgets/post-featured-image.php:94, widgets/post-terms.php:105, widgets/post-title.php:102, widgets/site-description.php:88, widgets/site-title.php:88
 msgid "Left"
 msgstr ""
 
-#: widgets/post-author.php:108, widgets/post-custom-field.php:117, widgets/post-date.php:106, widgets/post-excerpt.php:106, widgets/post-featured-image.php:98, widgets/post-title.php:106, widgets/site-description.php:92, widgets/site-title.php:92
+#: widgets/post-author.php:108, widgets/post-custom-field.php:117, widgets/post-date.php:106, widgets/post-excerpt.php:106, widgets/post-featured-image.php:98, widgets/post-terms.php:109, widgets/post-title.php:106, widgets/site-description.php:92, widgets/site-title.php:92
 msgid "Center"
 msgstr ""
 
-#: widgets/post-author.php:112, widgets/post-custom-field.php:121, widgets/post-date.php:110, widgets/post-excerpt.php:110, widgets/post-featured-image.php:102, widgets/post-title.php:110, widgets/site-description.php:96, widgets/site-title.php:96
+#: widgets/post-author.php:112, widgets/post-custom-field.php:121, widgets/post-date.php:110, widgets/post-excerpt.php:110, widgets/post-featured-image.php:102, widgets/post-terms.php:113, widgets/post-title.php:110, widgets/site-description.php:96, widgets/site-title.php:96
 msgid "Right"
 msgstr ""
 
-#: widgets/post-author.php:116, widgets/post-custom-field.php:125, widgets/post-date.php:114, widgets/post-excerpt.php:114, widgets/post-featured-image.php:106, widgets/post-title.php:114, widgets/site-description.php:100, widgets/site-title.php:100
+#: widgets/post-author.php:116, widgets/post-custom-field.php:125, widgets/post-date.php:114, widgets/post-excerpt.php:114, widgets/post-featured-image.php:106, widgets/post-terms.php:117, widgets/post-title.php:114, widgets/site-description.php:100, widgets/site-title.php:100
 msgid "Justified"
 msgstr ""
 
-#: widgets/post-author.php:130, widgets/post-custom-field.php:139, widgets/post-date.php:128, widgets/post-excerpt.php:128, widgets/post-title.php:128, widgets/site-description.php:114, widgets/site-title.php:114
+#: widgets/post-author.php:130, widgets/post-custom-field.php:139, widgets/post-date.php:128, widgets/post-excerpt.php:128, widgets/post-featured-image.php:120, widgets/post-featured-image.php:139, widgets/post-terms.php:131, widgets/post-title.php:128, widgets/site-description.php:114, widgets/site-title.php:114
+msgid "Link to"
+msgstr ""
+
+#: widgets/post-author.php:134, widgets/post-custom-field.php:143, widgets/post-date.php:132, widgets/post-excerpt.php:132, widgets/post-featured-image.php:124, widgets/post-terms.php:135, widgets/post-title.php:132, widgets/site-description.php:118, widgets/site-title.php:118
+msgid "None"
+msgstr ""
+
+#: widgets/post-author.php:137, widgets/post-custom-field.php:146, widgets/post-date.php:135, widgets/post-excerpt.php:135, widgets/post-featured-image.php:127, widgets/post-title.php:135
+msgid "%s URL"
+msgstr ""
+
+#: widgets/post-author.php:140
+msgid "Author URL"
+msgstr ""
+
+#: widgets/post-author.php:141, widgets/post-custom-field.php:149, widgets/post-date.php:138, widgets/post-excerpt.php:138, widgets/post-featured-image.php:131, widgets/post-title.php:138, widgets/site-description.php:120, widgets/site-title.php:120
+msgid "Custom URL"
+msgstr ""
+
+#: widgets/post-author.php:149, widgets/post-custom-field.php:157, widgets/post-date.php:146, widgets/post-excerpt.php:146, widgets/post-title.php:146, widgets/site-description.php:128, widgets/site-title.php:128
 msgid "Link"
 msgstr ""
 
-#: widgets/post-author.php:156, widgets/post-custom-field.php:191, widgets/post-date.php:154, widgets/post-excerpt.php:154, widgets/post-title.php:154, widgets/site-description.php:136, widgets/site-title.php:136
+#: widgets/post-author.php:151, widgets/post-custom-field.php:159, widgets/post-date.php:148, widgets/post-excerpt.php:148, widgets/post-featured-image.php:141, widgets/post-title.php:148, widgets/site-description.php:130, widgets/site-title.php:130
+msgid "http://your-link.com"
+msgstr ""
+
+#: widgets/post-author.php:179, widgets/post-custom-field.php:213, widgets/post-date.php:176, widgets/post-excerpt.php:176, widgets/post-terms.php:158, widgets/post-title.php:176, widgets/site-description.php:154, widgets/site-title.php:154
 msgid "Text Color"
 msgstr ""
 
-#: widgets/post-author.php:235
+#: widgets/post-author.php:292
 msgid "First Name"
 msgstr ""
 
-#: widgets/post-author.php:236
+#: widgets/post-author.php:293
 msgid "Last Name"
 msgstr ""
 
-#: widgets/post-author.php:237
+#: widgets/post-author.php:294
 msgid "First Name + Last Name"
 msgstr ""
 
-#: widgets/post-author.php:238
+#: widgets/post-author.php:295
 msgid "Last Name + First Name"
 msgstr ""
 
-#: widgets/post-author.php:239
+#: widgets/post-author.php:296
 msgid "Nick Name"
 msgstr ""
 
-#: widgets/post-author.php:240
+#: widgets/post-author.php:297
 msgid "Display Name"
 msgstr ""
 
-#: widgets/post-author.php:241
+#: widgets/post-author.php:298
 msgid "User Name"
 msgstr ""
 
-#: widgets/post-author.php:242
+#: widgets/post-author.php:299
 msgid "User Bio"
 msgstr ""
 
-#: widgets/post-author.php:243
+#: widgets/post-author.php:300
 msgid "User Image"
+msgstr ""
+
+#: widgets/post-comments.php:35, widgets/post-comments.php:58
+msgid "%s Comments"
+msgstr ""
+
+#: widgets/post-comments.php:67
+msgid "Separate Comments"
+msgstr ""
+
+#: widgets/post-comments.php:70
+msgid "True"
+msgstr ""
+
+#: widgets/post-comments.php:71
+msgid "False"
 msgstr ""
 
 #: widgets/post-custom-field.php:38
 msgid "%s Custom Fields"
 msgstr ""
 
-#: widgets/post-custom-field.php:61, widgets/post-custom-field.php:179
+#: widgets/post-custom-field.php:61, widgets/post-custom-field.php:201
 msgid "%s Custom Field"
 msgstr ""
 
@@ -1834,23 +398,23 @@ msgstr ""
 msgid "Custom Field"
 msgstr ""
 
-#: widgets/post-custom-field.php:157, widgets/post-custom-field.php:221, widgets/post-featured-image.php:158, widgets/post-featured-image.php:278
+#: widgets/post-custom-field.php:179, widgets/post-custom-field.php:244, widgets/post-featured-image.php:158, widgets/post-featured-image.php:278
 msgid "Premium Feature"
 msgstr ""
 
-#: widgets/post-custom-field.php:160, widgets/post-custom-field.php:224, widgets/post-featured-image.php:161, widgets/post-featured-image.php:281
+#: widgets/post-custom-field.php:182, widgets/post-custom-field.php:247, widgets/post-featured-image.php:161, widgets/post-featured-image.php:281
 msgid "This feature is available only for Press Elements Pro."
 msgstr ""
 
-#: widgets/post-custom-field.php:163, widgets/post-custom-field.php:227, widgets/post-featured-image.php:164, widgets/post-featured-image.php:284
+#: widgets/post-custom-field.php:185, widgets/post-custom-field.php:250, widgets/post-featured-image.php:164, widgets/post-featured-image.php:284
 msgid "Upgrade Now!"
 msgstr ""
 
-#: widgets/post-date.php:38, widgets/post-date.php:61, widgets/post-date.php:144
+#: widgets/post-date.php:38, widgets/post-date.php:61, widgets/post-date.php:166
 msgid "%s Date"
 msgstr ""
 
-#: widgets/post-excerpt.php:38, widgets/post-excerpt.php:61, widgets/post-excerpt.php:144
+#: widgets/post-excerpt.php:38, widgets/post-excerpt.php:61, widgets/post-excerpt.php:166
 msgid "%s Excerpt"
 msgstr ""
 
@@ -1862,28 +426,8 @@ msgstr ""
 msgid "Image Size"
 msgstr ""
 
-#: widgets/post-featured-image.php:120, widgets/post-featured-image.php:139
-msgid "Link to"
-msgstr ""
-
-#: widgets/post-featured-image.php:124
-msgid "None"
-msgstr ""
-
-#: widgets/post-featured-image.php:127
-msgid "%s URL"
-msgstr ""
-
 #: widgets/post-featured-image.php:130
 msgid "Media File URL"
-msgstr ""
-
-#: widgets/post-featured-image.php:131
-msgid "Custom URL"
-msgstr ""
-
-#: widgets/post-featured-image.php:141
-msgid "http://your-link.com"
 msgstr ""
 
 #: widgets/post-featured-image.php:192
@@ -1906,6 +450,22 @@ msgstr ""
 msgid "Border Radius"
 msgstr ""
 
-#: widgets/post-title.php:38, widgets/post-title.php:61, widgets/post-title.php:144
+#: widgets/post-terms.php:38, widgets/post-terms.php:61, widgets/post-terms.php:148
+msgid "%s Terms"
+msgstr ""
+
+#: widgets/post-terms.php:70
+msgid "Taxonomy"
+msgstr ""
+
+#: widgets/post-terms.php:136
+msgid "Term"
+msgstr ""
+
+#: widgets/post-title.php:38, widgets/post-title.php:61, widgets/post-title.php:166
 msgid "%s Title"
+msgstr ""
+
+#: widgets/site-description.php:119, widgets/site-title.php:119
+msgid "Home URL"
 msgstr ""

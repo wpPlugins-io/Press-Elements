@@ -1,0 +1,265 @@
+<?php
+namespace PressElements\Widgets;
+
+use Elementor\Widget_Base;
+use Elementor\Controls_Manager;
+use Elementor\Scheme_Color;
+use Elementor\Scheme_Typography;
+use Elementor\Group_Control_Typography;
+
+
+
+// Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+
+
+/**
+ * Press Elements Post Terms
+ *
+ * Single post/page terms element for elementor.
+ *
+ * @since 1.1.0
+ */
+class Press_Elements_Post_Terms extends Widget_Base {
+
+	public function get_name() {
+		return 'post-terms';
+	}
+
+	public function get_title() {
+		$queried_object = get_queried_object();
+		$post_type_object = get_post_type_object( get_post_type( $queried_object ) );
+
+		return sprintf(
+			/* translators: %s: Post type singular name */
+			__( '%s Terms', 'press-elements' ),
+			$post_type_object->labels->singular_name
+		);
+	}
+
+	public function get_icon() {
+		return 'fa fa-sitemap';
+	}
+
+	public function get_categories() {
+		return [ 'press-elements-post-elements' ];
+	}
+
+	protected function _register_controls() {
+
+		$queried_object = get_queried_object();
+		$post_type_object = get_post_type_object( get_post_type( $queried_object ) );
+
+		$this->start_controls_section(
+			'section_content',
+			[
+				'label' => sprintf(
+					/* translators: %s: Post type singular name */
+					__( '%s Terms', 'press-elements' ),
+					$post_type_object->labels->singular_name
+				),
+			]
+		);
+
+		$this->add_control(
+			'taxonomy',
+			[
+				'label' => __( 'Taxonomy', 'press-elements' ),
+				'type' => Controls_Manager::SELECT,
+				//'options' => get_post_taxonomies( $post->ID ),
+				'options' => get_taxonomies( array( 'public' => true ) ),
+				'default' => 'category',
+			]
+		);
+
+		$this->add_control(
+			'html_tag',
+			[
+				'label' => __( 'HTML Tag', 'press-elements' ),
+				'type' => Controls_Manager::SELECT,
+				'options' => [
+					'h1' => __( 'H1', 'press-elements' ),
+					'h2' => __( 'H2', 'press-elements' ),
+					'h3' => __( 'H3', 'press-elements' ),
+					'h4' => __( 'H4', 'press-elements' ),
+					'h5' => __( 'H5', 'press-elements' ),
+					'h6' => __( 'H6', 'press-elements' ),
+					'p'  => __( 'p', 'press-elements' ),
+					'div' => __( 'div', 'press-elements' ),
+					'span' => __( 'span', 'press-elements' ),
+				],
+				'default' => 'p',
+			]
+		);
+
+		$this->add_responsive_control(
+			'align',
+			[
+				'label' => __( 'Alignment', 'press-elements' ),
+				'type' => Controls_Manager::CHOOSE,
+				'options' => [
+					'left' => [
+						'title' => __( 'Left', 'press-elements' ),
+						'icon' => 'fa fa-align-left',
+					],
+					'center' => [
+						'title' => __( 'Center', 'press-elements' ),
+						'icon' => 'fa fa-align-center',
+					],
+					'right' => [
+						'title' => __( 'Right', 'press-elements' ),
+						'icon' => 'fa fa-align-right',
+					],
+					'justify' => [
+						'title' => __( 'Justified', 'press-elements' ),
+						'icon' => 'fa fa-align-justify',
+					],
+				],
+				'default' => '',
+				'selectors' => [
+					'{{WRAPPER}}' => 'text-align: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'link_to',
+			[
+				'label' => __( 'Link to', 'press-elements' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => 'none',
+				'options' => [
+					'none' => __( 'None', 'press-elements' ),
+					'term' => __( 'Term', 'press-elements' ),
+				],
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'section_style',
+			[
+				'label' => sprintf(
+					/* translators: %s: Post type singular name */
+					__( '%s Terms', 'press-elements' ),
+					$post_type_object->labels->singular_name
+				),
+				'tab' => Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'color',
+			[
+				'label' => __( 'Text Color', 'press-elements' ),
+				'type' => Controls_Manager::COLOR,
+				'scheme' => [
+					'type' => Scheme_Color::get_type(),
+					'value' => Scheme_Color::COLOR_1,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-terms' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .press-elements-terms a' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'typography',
+				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+				'selector' => '{{WRAPPER}} .press-elements-terms',
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+	protected function render() {
+		$settings = $this->get_settings();
+
+		$taxonomy = $settings['taxonomy'];
+		if ( empty( $taxonomy ) )
+			return;
+
+		$term_list = get_terms( $taxonomy );
+		if ( empty( $term_list ) || is_wp_error( $term_list ) )
+			return;
+
+		$html = sprintf( '<%s class="press-elements-terms">', $settings['html_tag'] );
+		switch ( $settings['link_to'] ) {
+			case 'term' :
+				foreach ( $term_list as $term ) {
+					$html .= '<a href="' . esc_url( get_term_link( $term ) ) . '">' . $term->name . '</a>, ';
+				}
+				break;
+
+			case 'none' :
+			default:
+				foreach ( $term_list as $term ) {
+					$html .= $term->name . ', ';
+				}
+				break;
+		}
+		$html = substr( $html, 0, -2);
+		$html .= sprintf( '</%s>', $settings['html_tag'] );
+
+		echo $html;
+	}
+
+	protected function _content_template() {
+		?>
+		<#
+			var taxonomy = settings.taxonomy;
+
+			var all_terms = [];
+			<?php
+			$taxonomies = get_taxonomies( array( 'public' => true ) );
+			foreach ( $taxonomies as $taxonomy ) {
+				printf( 'all_terms["%1$s"] = [];', $taxonomy );
+				$terms = get_terms( $taxonomy );
+				$i = 0;
+				foreach ( $terms as $term ) {
+					printf( 'all_terms["%1$s"][%2$s] = [];', $taxonomy, $i );
+					printf( 'all_terms["%1$s"][%2$s] = { slug: "%3$s", name: "%4$s", url: "%5$s" };', $taxonomy, $i, $term->slug, $term->name, esc_url( get_term_link( $term ) ) );
+					$i++;
+				}
+			}
+			?>
+			var post_terms = all_terms[ settings.taxonomy ];
+
+			var terms = '';
+			var i = 0;
+
+			switch( settings.link_to ) {
+				case 'term':
+					while ( all_terms[ settings.taxonomy ][i] ) {
+						terms += "<a href='" + all_terms[ settings.taxonomy ][i].url + "'>" + all_terms[ settings.taxonomy ][i].name + "</a>, ";
+						i++;
+					}
+					break;
+				case 'none':
+				default:
+					while ( all_terms[ settings.taxonomy ][i] ) {
+						terms += all_terms[ settings.taxonomy ][i].name + ", ";
+						i++;
+					}
+					break;
+			}
+			terms = terms.slice(0, terms.length-2);
+
+			var html = '<' + settings.html_tag + ' class="press-elements-terms">';
+			html += terms;
+			html += '</' + settings.html_tag + '>';
+
+			print( html );
+		#>
+		<?php
+	}
+}

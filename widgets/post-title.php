@@ -73,7 +73,7 @@ class Press_Elements_Post_Title extends Widget_Base {
 		);
 
 		$this->add_control(
-			'header_size',
+			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
 				'type' => Controls_Manager::SELECT,
@@ -123,14 +123,36 @@ class Press_Elements_Post_Title extends Widget_Base {
 		);
 
 		$this->add_control(
+			'link_to',
+			[
+				'label' => __( 'Link to', 'press-elements' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => 'none',
+				'options' => [
+					'none' => __( 'None', 'press-elements' ),
+					'post' => sprintf(
+						/* translators: %s: Post type singular name */
+						__( '%s URL', 'press-elements' ),
+						$post_type_object->labels->singular_name
+					),
+					'custom' => __( 'Custom URL', 'press-elements' ),
+				],
+			]
+		);
+
+		$this->add_control(
 			'link',
 			[
 				'label' => __( 'Link', 'press-elements' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => 'http://your-link.com',
+				'placeholder' => __( 'http://your-link.com', 'press-elements' ),
+				'condition' => [
+					'link_to' => 'custom',
+				],
 				'default' => [
 					'url' => '',
 				],
+				'show_label' => false,
 			]
 		);
 
@@ -159,6 +181,7 @@ class Press_Elements_Post_Title extends Widget_Base {
 				],
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-title' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .press-elements-title a' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -184,19 +207,33 @@ class Press_Elements_Post_Title extends Widget_Base {
 
 		$settings = $this->get_settings();
 
-		$this->add_render_attribute( 'heading', 'class', 'press-elements-title' );
+		switch ( $settings['link_to'] ) {
+			case 'custom' :
+				if ( ! empty( $settings['link']['url'] ) ) {
+					$link = $settings['link']['url'];
+				} else {
+					$link = false;
+				}
+				break;
 
-		if ( ! empty( $settings['link']['url'] ) ) {
-			$this->add_render_attribute( 'url', 'href', $settings['link']['url'] );
+			case 'post' :
+				$link = get_the_permalink();
+				break;
 
-			if ( $settings['link']['is_external'] ) {
-				$this->add_render_attribute( 'url', 'target', '_blank' );
-			}
-
-			$title = sprintf( '<a %1$s>%2$s</a>', $this->get_render_attribute_string( 'url' ), $title );
+			case 'none' :
+			default:
+				$link = false;
+				break;
 		}
+		$target = $settings['link']['is_external'] ? 'target="_blank"' : '';
 
-		$html = sprintf( '<%1$s %2$s>%3$s</%1$s>', $settings['header_size'], $this->get_render_attribute_string( 'heading' ), $title );
+		$html = sprintf( '<%s class="press-elements-title">', $settings['html_tag'] );
+		if ( $link ) {
+			$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $title );
+		} else {
+			$html .= $title;
+		}
+		$html .= sprintf( '</%s>', $settings['html_tag'] );
 
 		echo $html;
 	}
@@ -206,11 +243,27 @@ class Press_Elements_Post_Title extends Widget_Base {
 		<#
 			var title = settings.title;
 
-			if ( '' !== settings.link.url ) {
-				title = '<a href="' + settings.link.url + '">' + title + '</a>';
+			var link_url;
+			switch( settings.link_to ) {
+				case 'custom':
+					link_url = settings.link.url;
+					break;
+				case 'post':
+					link_url = '<?php echo get_the_permalink(); ?>';
+					break;
+				case 'none':
+				default:
+					link_url = false;
 			}
+			var target = settings.link.is_external ? 'target="_blank"' : '';
 
-			var html = '<' + settings.header_size + ' class="press-elements-title">' + title + '</' + settings.header_size + '>';
+			var html = '<' + settings.html_tag + ' class="press-elements-title">';
+			if ( link_url ) {
+				html += '<a href="' + link_url + '" ' + target + '>' + title + '</a>';
+			} else {
+				html += title;
+			}
+			html += '</' + settings.html_tag + '>';
 
 			print( html );
 		#>

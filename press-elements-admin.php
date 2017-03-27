@@ -161,8 +161,10 @@ class Press_Elements_Admin {
 						<li><?php esc_html_e( 'Post Excerpt', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Date', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Author', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Post Terms', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Featured Image (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Custom Fields (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Post Comments', 'press-elements' ); ?></li>
 					</ol>
 
 					<h3><?php esc_html_e( 'Dynamic Content', 'press-elements' ); ?></h3>
@@ -178,8 +180,8 @@ class Press_Elements_Admin {
 				<div class="col">
 
 					<figure>
-						<a href="<?php echo plugins_url( 'screenshot-1.png', __FILE__ ); ?>" target="_blank">
-							<img src="<?php echo plugins_url( 'screenshot-1.png', __FILE__ ); ?>" alt="<?php esc_attr_e( 'WordPress Post Elemets', 'press-elements' ); ?>">
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-1.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-1.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'WordPress Post Elemets', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'WordPress Post Elemets', 'press-elements' ); ?></figcaption>
 					</figure>
@@ -187,8 +189,8 @@ class Press_Elements_Admin {
 					<br>
 
 					<figure>
-						<a href="<?php echo plugins_url( 'screenshot-2.png', __FILE__ ); ?>" target="_blank">
-							<img src="<?php echo plugins_url( 'screenshot-2.png', __FILE__ ); ?>" alt="<?php esc_attr_e( 'Elementor widgets for each post element.', 'press-elements' ); ?>">
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-2.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-2.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Elementor widgets for each post element.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Elementor widgets for each post element.', 'press-elements' ); ?></figcaption>
 					</figure>
@@ -196,8 +198,8 @@ class Press_Elements_Admin {
 					<br>
 
 					<figure>
-						<a href="<?php echo plugins_url( 'screenshot-3.png', __FILE__ ); ?>" target="_blank">
-							<img src="<?php echo plugins_url( 'screenshot-3.png', __FILE__ ); ?>" alt="<?php esc_attr_e( 'Styling post title with a dedicated elementor widget.', 'press-elements' ); ?>">
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-3.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-3.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Styling post title with a dedicated elementor widget.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Styling post title with a dedicated elementor widget.', 'press-elements' ); ?></figcaption>
 					</figure>
@@ -205,10 +207,19 @@ class Press_Elements_Admin {
 					<br>
 
 					<figure>
-						<a href="<?php echo plugins_url( 'screenshot-4.png', __FILE__ ); ?>" target="_blank">
-							<img src="<?php echo plugins_url( 'screenshot-4.png', __FILE__ ); ?>" alt="<?php esc_attr_e( 'Display post custom fields.', 'press-elements' ); ?>">
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-4.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-4.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Display post custom fields.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Display post custom fields.', 'press-elements' ); ?></figcaption>
+					</figure>
+
+					<br>
+
+					<figure>
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-5.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-5.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Create your own author bio section.', 'press-elements' ); ?>">
+						</a>
+						<figcaption><?php esc_html_e( 'Create your own author bio section.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 				</div>

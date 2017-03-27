@@ -59,7 +59,7 @@ class Press_Elements_Site_Description extends Widget_Base {
 		);
 
 		$this->add_control(
-			'header_size',
+			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
 				'type' => Controls_Manager::SELECT,
@@ -74,7 +74,7 @@ class Press_Elements_Site_Description extends Widget_Base {
 					'div' => __( 'div', 'press-elements' ),
 					'span' => __( 'span', 'press-elements' ),
 				],
-				'default' => 'h2',
+				'default' => 'p',
 			]
 		);
 
@@ -109,14 +109,32 @@ class Press_Elements_Site_Description extends Widget_Base {
 		);
 
 		$this->add_control(
+			'link_to',
+			[
+				'label' => __( 'Link to', 'press-elements' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => 'none',
+				'options' => [
+					'none' => __( 'None', 'press-elements' ),
+					'home' => __( 'Home URL', 'press-elements' ),
+					'custom' => __( 'Custom URL', 'press-elements' ),
+				],
+			]
+		);
+
+		$this->add_control(
 			'link',
 			[
 				'label' => __( 'Link', 'press-elements' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => 'http://your-link.com',
+				'placeholder' => __( 'http://your-link.com', 'press-elements' ),
+				'condition' => [
+					'link_to' => 'custom',
+				],
 				'default' => [
 					'url' => '',
 				],
+				'show_label' => false,
 			]
 		);
 
@@ -141,6 +159,7 @@ class Press_Elements_Site_Description extends Widget_Base {
 				],
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-site-description' => 'color: {{VALUE}};',
+					'{{WRAPPER}} .press-elements-site-description a' => 'color: {{VALUE}};',
 				],
 			]
 		);
@@ -166,19 +185,33 @@ class Press_Elements_Site_Description extends Widget_Base {
 
 		$settings = $this->get_settings();
 
-		$this->add_render_attribute( 'heading', 'class', 'press-elements-site-description' );
+		switch ( $settings['link_to'] ) {
+			case 'custom' :
+				if ( ! empty( $settings['link']['url'] ) ) {
+					$link = $settings['link']['url'];
+				} else {
+					$link = false;
+				}
+				break;
 
-		if ( ! empty( $settings['link']['url'] ) ) {
-			$this->add_render_attribute( 'url', 'href', $settings['link']['url'] );
+			case 'home' :
+				$link = get_home_url();
+				break;
 
-			if ( $settings['link']['is_external'] ) {
-				$this->add_render_attribute( 'url', 'target', '_blank' );
-			}
-
-			$description = sprintf( '<a %1$s>%2$s</a>', $this->get_render_attribute_string( 'url' ), $description );
+			case 'none' :
+			default:
+				$link = false;
+				break;
 		}
+		$target = $settings['link']['is_external'] ? 'target="_blank"' : '';
 
-		$html = sprintf( '<%1$s %2$s>%3$s</%1$s>', $settings['header_size'], $this->get_render_attribute_string( 'heading' ), $description );
+		$html = sprintf( '<%s class="press-elements-site-description">', $settings['html_tag'] );
+		if ( $link ) {
+			$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $description );
+		} else {
+			$html .= $description;
+		}
+		$html .= sprintf( '</%s>', $settings['html_tag'] );
 
 		echo $html;
 	}
@@ -188,11 +221,27 @@ class Press_Elements_Site_Description extends Widget_Base {
 		<#
 			var description = settings.description;
 
-			if ( '' !== settings.link.url ) {
-				description = '<a href="' + settings.link.url + '">' + description + '</a>';
+			var link_url;
+			switch( settings.link_to ) {
+				case 'custom':
+					link_url = settings.link.url;
+					break;
+				case 'home':
+					link_url = '<?php echo get_home_url(); ?>';
+					break;
+				case 'none':
+				default:
+					link_url = false;
 			}
+			var target = settings.link.is_external ? 'target="_blank"' : '';
 
-			var html = '<' + settings.header_size + ' class="press-elements-site-description">' + description + '</' + settings.header_size + '>';
+			var html = '<' + settings.html_tag + ' class="press-elements-site-description">';
+			if ( link_url ) {
+				html += '<a href="' + link_url + '" ' + target + '>' + description + '</a>';
+			} else {
+				html += description;
+			}
+			html += '</' + settings.html_tag + '>';
 
 			print( html );
 		#>
