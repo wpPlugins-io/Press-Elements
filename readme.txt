@@ -79,6 +79,12 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 
 == Changelog ==
 
+= 1.2.1 =
+
+**General**
+* Add an admin menu linking to the plugin support forum.
+* Bug fix - display plugin admin even if Elementor is not active.
+
 = 1.2.0 =
 
 **General**

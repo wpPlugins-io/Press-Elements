@@ -3,7 +3,7 @@
  * Plugin Name: Press Elements for Elementor
  * Description: An easy-to-use Elementor widgets that helps you design single page templates to display your content.
  * Plugin URI:  https://wordpress.org/plugins/press-elements/
- * Version:     1.2.0
+ * Version:     1.2.1
  * Author:      Rami Yushuvaev
  * Author URI:  https://wpPlugins.io/
  * Text Domain: press-elements
