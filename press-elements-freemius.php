@@ -28,7 +28,6 @@ function press_elements_freemius() {
 			'menu'           => array(
 				'slug'        => 'press-elements',
 				'contact'     => false,
-				'support'     => false,
 				'parent'      => array(
 					'slug'     => 'themes.php',
 				),
