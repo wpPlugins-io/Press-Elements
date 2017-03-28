@@ -40,6 +40,9 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 		// Load localization file
 		load_plugin_textdomain( 'press-elements' );
 
+		// Require admin files - displays even if Elementor is not active
+		require( __DIR__ . '/press-elements-admin.php' );
+
 		// Notice if the Elementor is not active
 		if ( ! did_action( 'elementor/loaded' ) ) {
 			add_action( 'admin_notices', 'press_elements_admin_notice_missing_main_plugin' );
@@ -53,8 +56,7 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 			return;
 		}
 
-		// Require plugin files
-		require( __DIR__ . '/press-elements-admin.php' );
+		// Require plugin files - displays only if Elementor is active
 		require( __DIR__ . '/press-elements-plugin.php' );
 
 	}
