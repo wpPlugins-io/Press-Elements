@@ -19,7 +19,7 @@ msgstr ""
 msgid "Press Elements for Elementor"
 msgstr ""
 
-#: press-elements-admin.php:121, press-elements.php:77, press-elements.php:99
+#: press-elements-admin.php:121, press-elements.php:157, press-elements.php:201
 msgid "Press Elements"
 msgstr ""
 
@@ -235,15 +235,15 @@ msgstr ""
 msgid "Post Elements"
 msgstr ""
 
-#: press-elements.php:76
+#: press-elements.php:155
 msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
 msgstr ""
 
-#: press-elements.php:78, press-elements.php:100
+#: press-elements.php:159, press-elements.php:203
 msgid "Elementor"
 msgstr ""
 
-#: press-elements.php:98
+#: press-elements.php:199
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
@@ -255,75 +255,75 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: widgets/post-author.php:80, widgets/post-custom-field.php:89, widgets/post-date.php:83, widgets/post-excerpt.php:70, widgets/post-terms.php:81, widgets/post-title.php:70, widgets/site-counters.php:110, widgets/site-description.php:64, widgets/site-logo.php:64, widgets/site-title.php:64
+#: widgets/post-author.php:80, widgets/post-custom-field.php:89, widgets/post-date.php:83, widgets/post-excerpt.php:155, widgets/post-terms.php:81, widgets/post-title.php:70, widgets/site-counters.php:110, widgets/site-description.php:64, widgets/site-logo.php:64, widgets/site-title.php:64
 msgid "HTML Tag"
 msgstr ""
 
-#: widgets/post-author.php:83, widgets/post-custom-field.php:92, widgets/post-date.php:86, widgets/post-excerpt.php:73, widgets/post-terms.php:84, widgets/post-title.php:73, widgets/site-counters.php:113, widgets/site-description.php:67, widgets/site-logo.php:67, widgets/site-title.php:67
+#: widgets/post-author.php:83, widgets/post-custom-field.php:92, widgets/post-date.php:86, widgets/post-excerpt.php:161, widgets/post-terms.php:84, widgets/post-title.php:73, widgets/site-counters.php:113, widgets/site-description.php:67, widgets/site-logo.php:67, widgets/site-title.php:67
 msgid "H1"
 msgstr ""
 
-#: widgets/post-author.php:84, widgets/post-custom-field.php:93, widgets/post-date.php:87, widgets/post-excerpt.php:74, widgets/post-terms.php:85, widgets/post-title.php:74, widgets/site-counters.php:114, widgets/site-description.php:68, widgets/site-logo.php:68, widgets/site-title.php:68
+#: widgets/post-author.php:84, widgets/post-custom-field.php:93, widgets/post-date.php:87, widgets/post-excerpt.php:163, widgets/post-terms.php:85, widgets/post-title.php:74, widgets/site-counters.php:114, widgets/site-description.php:68, widgets/site-logo.php:68, widgets/site-title.php:68
 msgid "H2"
 msgstr ""
 
-#: widgets/post-author.php:85, widgets/post-custom-field.php:94, widgets/post-date.php:88, widgets/post-excerpt.php:75, widgets/post-terms.php:86, widgets/post-title.php:75, widgets/site-counters.php:115, widgets/site-description.php:69, widgets/site-logo.php:69, widgets/site-title.php:69
+#: widgets/post-author.php:85, widgets/post-custom-field.php:94, widgets/post-date.php:88, widgets/post-excerpt.php:165, widgets/post-terms.php:86, widgets/post-title.php:75, widgets/site-counters.php:115, widgets/site-description.php:69, widgets/site-logo.php:69, widgets/site-title.php:69
 msgid "H3"
 msgstr ""
 
-#: widgets/post-author.php:86, widgets/post-custom-field.php:95, widgets/post-date.php:89, widgets/post-excerpt.php:76, widgets/post-terms.php:87, widgets/post-title.php:76, widgets/site-counters.php:116, widgets/site-description.php:70, widgets/site-logo.php:70, widgets/site-title.php:70
+#: widgets/post-author.php:86, widgets/post-custom-field.php:95, widgets/post-date.php:89, widgets/post-excerpt.php:167, widgets/post-terms.php:87, widgets/post-title.php:76, widgets/site-counters.php:116, widgets/site-description.php:70, widgets/site-logo.php:70, widgets/site-title.php:70
 msgid "H4"
 msgstr ""
 
-#: widgets/post-author.php:87, widgets/post-custom-field.php:96, widgets/post-date.php:90, widgets/post-excerpt.php:77, widgets/post-terms.php:88, widgets/post-title.php:77, widgets/site-counters.php:117, widgets/site-description.php:71, widgets/site-logo.php:71, widgets/site-title.php:71
+#: widgets/post-author.php:87, widgets/post-custom-field.php:96, widgets/post-date.php:90, widgets/post-excerpt.php:169, widgets/post-terms.php:88, widgets/post-title.php:77, widgets/site-counters.php:117, widgets/site-description.php:71, widgets/site-logo.php:71, widgets/site-title.php:71
 msgid "H5"
 msgstr ""
 
-#: widgets/post-author.php:88, widgets/post-custom-field.php:97, widgets/post-date.php:91, widgets/post-excerpt.php:78, widgets/post-terms.php:89, widgets/post-title.php:78, widgets/site-counters.php:118, widgets/site-description.php:72, widgets/site-logo.php:72, widgets/site-title.php:72
+#: widgets/post-author.php:88, widgets/post-custom-field.php:97, widgets/post-date.php:91, widgets/post-excerpt.php:171, widgets/post-terms.php:89, widgets/post-title.php:78, widgets/site-counters.php:118, widgets/site-description.php:72, widgets/site-logo.php:72, widgets/site-title.php:72
 msgid "H6"
 msgstr ""
 
-#: widgets/post-author.php:89, widgets/post-custom-field.php:98, widgets/post-date.php:92, widgets/post-excerpt.php:79, widgets/post-terms.php:90, widgets/post-title.php:79, widgets/site-counters.php:119, widgets/site-description.php:73, widgets/site-logo.php:73, widgets/site-title.php:73
+#: widgets/post-author.php:89, widgets/post-custom-field.php:98, widgets/post-date.php:92, widgets/post-excerpt.php:173, widgets/post-terms.php:90, widgets/post-title.php:79, widgets/site-counters.php:119, widgets/site-description.php:73, widgets/site-logo.php:73, widgets/site-title.php:73
 msgid "p"
 msgstr ""
 
-#: widgets/post-author.php:90, widgets/post-custom-field.php:99, widgets/post-date.php:93, widgets/post-excerpt.php:80, widgets/post-terms.php:91, widgets/post-title.php:80, widgets/site-counters.php:120, widgets/site-description.php:74, widgets/site-logo.php:74, widgets/site-title.php:74
+#: widgets/post-author.php:90, widgets/post-custom-field.php:99, widgets/post-date.php:93, widgets/post-excerpt.php:175, widgets/post-terms.php:91, widgets/post-title.php:80, widgets/site-counters.php:120, widgets/site-description.php:74, widgets/site-logo.php:74, widgets/site-title.php:74
 msgid "div"
 msgstr ""
 
-#: widgets/post-author.php:91, widgets/post-custom-field.php:100, widgets/post-date.php:94, widgets/post-excerpt.php:81, widgets/post-terms.php:92, widgets/post-title.php:81, widgets/site-counters.php:121, widgets/site-description.php:75, widgets/site-logo.php:75, widgets/site-title.php:75
+#: widgets/post-author.php:91, widgets/post-custom-field.php:100, widgets/post-date.php:94, widgets/post-excerpt.php:177, widgets/post-terms.php:92, widgets/post-title.php:81, widgets/site-counters.php:121, widgets/site-description.php:75, widgets/site-logo.php:75, widgets/site-title.php:75
 msgid "span"
 msgstr ""
 
-#: widgets/post-author.php:100, widgets/post-custom-field.php:109, widgets/post-date.php:103, widgets/post-excerpt.php:90, widgets/post-featured-image.php:90, widgets/post-terms.php:101, widgets/post-title.php:90, widgets/site-counters.php:130, widgets/site-description.php:84, widgets/site-logo.php:84, widgets/site-title.php:84
+#: widgets/post-author.php:100, widgets/post-custom-field.php:109, widgets/post-date.php:103, widgets/post-excerpt.php:195, widgets/post-featured-image.php:90, widgets/post-terms.php:101, widgets/post-title.php:90, widgets/site-counters.php:130, widgets/site-description.php:84, widgets/site-logo.php:84, widgets/site-title.php:84
 msgid "Alignment"
 msgstr ""
 
-#: widgets/post-author.php:104, widgets/post-custom-field.php:113, widgets/post-date.php:107, widgets/post-excerpt.php:94, widgets/post-featured-image.php:94, widgets/post-terms.php:105, widgets/post-title.php:94, widgets/site-counters.php:134, widgets/site-description.php:88, widgets/site-logo.php:88, widgets/site-title.php:88
+#: widgets/post-author.php:104, widgets/post-custom-field.php:113, widgets/post-date.php:107, widgets/post-excerpt.php:203, widgets/post-featured-image.php:94, widgets/post-terms.php:105, widgets/post-title.php:94, widgets/site-counters.php:134, widgets/site-description.php:88, widgets/site-logo.php:88, widgets/site-title.php:88
 msgid "Left"
 msgstr ""
 
-#: widgets/post-author.php:108, widgets/post-custom-field.php:117, widgets/post-date.php:111, widgets/post-excerpt.php:98, widgets/post-featured-image.php:98, widgets/post-terms.php:109, widgets/post-title.php:98, widgets/site-counters.php:138, widgets/site-description.php:92, widgets/site-logo.php:92, widgets/site-title.php:92
+#: widgets/post-author.php:108, widgets/post-custom-field.php:117, widgets/post-date.php:111, widgets/post-excerpt.php:211, widgets/post-featured-image.php:98, widgets/post-terms.php:109, widgets/post-title.php:98, widgets/site-counters.php:138, widgets/site-description.php:92, widgets/site-logo.php:92, widgets/site-title.php:92
 msgid "Center"
 msgstr ""
 
-#: widgets/post-author.php:112, widgets/post-custom-field.php:121, widgets/post-date.php:115, widgets/post-excerpt.php:102, widgets/post-featured-image.php:102, widgets/post-terms.php:113, widgets/post-title.php:102, widgets/site-counters.php:142, widgets/site-description.php:96, widgets/site-logo.php:96, widgets/site-title.php:96
+#: widgets/post-author.php:112, widgets/post-custom-field.php:121, widgets/post-date.php:115, widgets/post-excerpt.php:219, widgets/post-featured-image.php:102, widgets/post-terms.php:113, widgets/post-title.php:102, widgets/site-counters.php:142, widgets/site-description.php:96, widgets/site-logo.php:96, widgets/site-title.php:96
 msgid "Right"
 msgstr ""
 
-#: widgets/post-author.php:116, widgets/post-custom-field.php:125, widgets/post-date.php:119, widgets/post-excerpt.php:106, widgets/post-featured-image.php:106, widgets/post-terms.php:117, widgets/post-title.php:106, widgets/site-counters.php:146, widgets/site-description.php:100, widgets/site-logo.php:100, widgets/site-title.php:100
+#: widgets/post-author.php:116, widgets/post-custom-field.php:125, widgets/post-date.php:119, widgets/post-excerpt.php:227, widgets/post-featured-image.php:106, widgets/post-terms.php:117, widgets/post-title.php:106, widgets/site-counters.php:146, widgets/site-description.php:100, widgets/site-logo.php:100, widgets/site-title.php:100
 msgid "Justified"
 msgstr ""
 
-#: widgets/post-author.php:130, widgets/post-custom-field.php:139, widgets/post-date.php:133, widgets/post-excerpt.php:120, widgets/post-featured-image.php:120, widgets/post-featured-image.php:139, widgets/post-terms.php:131, widgets/post-title.php:120, widgets/site-description.php:114, widgets/site-logo.php:114, widgets/site-title.php:114
+#: widgets/post-author.php:130, widgets/post-custom-field.php:139, widgets/post-date.php:133, widgets/post-excerpt.php:255, widgets/post-featured-image.php:120, widgets/post-featured-image.php:139, widgets/post-terms.php:131, widgets/post-title.php:120, widgets/site-description.php:114, widgets/site-logo.php:114, widgets/site-title.php:114
 msgid "Link to"
 msgstr ""
 
-#: widgets/post-author.php:134, widgets/post-custom-field.php:143, widgets/post-date.php:137, widgets/post-excerpt.php:124, widgets/post-featured-image.php:124, widgets/post-terms.php:135, widgets/post-title.php:124, widgets/site-description.php:118, widgets/site-logo.php:118, widgets/site-title.php:118
+#: widgets/post-author.php:134, widgets/post-custom-field.php:143, widgets/post-date.php:137, widgets/post-excerpt.php:263, widgets/post-featured-image.php:124, widgets/post-terms.php:135, widgets/post-title.php:124, widgets/site-description.php:118, widgets/site-logo.php:118, widgets/site-title.php:118
 msgid "None"
 msgstr ""
 
-#: widgets/post-author.php:137, widgets/post-custom-field.php:146, widgets/post-date.php:140, widgets/post-excerpt.php:127, widgets/post-featured-image.php:127, widgets/post-title.php:127
+#: widgets/post-author.php:137, widgets/post-custom-field.php:146, widgets/post-date.php:140, widgets/post-excerpt.php:269, widgets/post-featured-image.php:127, widgets/post-title.php:127
 msgid "%s URL"
 msgstr ""
 
@@ -331,23 +331,23 @@ msgstr ""
 msgid "Author URL"
 msgstr ""
 
-#: widgets/post-author.php:141, widgets/post-custom-field.php:149, widgets/post-date.php:143, widgets/post-excerpt.php:130, widgets/post-featured-image.php:131, widgets/post-title.php:130, widgets/site-description.php:120, widgets/site-logo.php:120, widgets/site-title.php:120
+#: widgets/post-author.php:141, widgets/post-custom-field.php:149, widgets/post-date.php:143, widgets/post-excerpt.php:275, widgets/post-featured-image.php:131, widgets/post-title.php:130, widgets/site-description.php:120, widgets/site-logo.php:120, widgets/site-title.php:120
 msgid "Custom URL"
 msgstr ""
 
-#: widgets/post-author.php:149, widgets/post-custom-field.php:157, widgets/post-date.php:151, widgets/post-excerpt.php:138, widgets/post-title.php:138, widgets/site-description.php:128, widgets/site-logo.php:128, widgets/site-title.php:128
+#: widgets/post-author.php:149, widgets/post-custom-field.php:157, widgets/post-date.php:151, widgets/post-excerpt.php:291, widgets/post-title.php:138, widgets/site-description.php:128, widgets/site-logo.php:128, widgets/site-title.php:128
 msgid "Link"
 msgstr ""
 
-#: widgets/post-author.php:151, widgets/post-custom-field.php:159, widgets/post-date.php:153, widgets/post-excerpt.php:140, widgets/post-featured-image.php:141, widgets/post-title.php:140, widgets/site-description.php:130, widgets/site-logo.php:130, widgets/site-title.php:130
+#: widgets/post-author.php:151, widgets/post-custom-field.php:159, widgets/post-date.php:153, widgets/post-excerpt.php:295, widgets/post-featured-image.php:141, widgets/post-title.php:140, widgets/site-description.php:130, widgets/site-logo.php:130, widgets/site-title.php:130
 msgid "http://your-link.com"
 msgstr ""
 
-#: widgets/post-author.php:179, widgets/post-custom-field.php:213, widgets/post-date.php:181, widgets/post-excerpt.php:168, widgets/post-terms.php:158, widgets/post-title.php:168, widgets/site-counters.php:170, widgets/site-counters.php:212, widgets/site-description.php:154, widgets/site-title.php:154
+#: widgets/post-author.php:179, widgets/post-custom-field.php:213, widgets/post-date.php:181, widgets/post-excerpt.php:351, widgets/post-terms.php:158, widgets/post-title.php:168, widgets/site-counters.php:170, widgets/site-counters.php:212, widgets/site-description.php:154, widgets/site-title.php:154
 msgid "Text Color"
 msgstr ""
 
-#: widgets/post-author.php:204, widgets/post-custom-field.php:238, widgets/post-date.php:206, widgets/post-excerpt.php:193, widgets/post-featured-image.php:235, widgets/post-terms.php:183, widgets/post-title.php:193, widgets/site-counters.php:194, widgets/site-counters.php:236, widgets/site-description.php:179, widgets/site-logo.php:197, widgets/site-title.php:179
+#: widgets/post-author.php:204, widgets/post-custom-field.php:238, widgets/post-date.php:206, widgets/post-excerpt.php:401, widgets/post-featured-image.php:235, widgets/post-terms.php:183, widgets/post-title.php:193, widgets/site-counters.php:194, widgets/site-counters.php:236, widgets/site-description.php:179, widgets/site-logo.php:197, widgets/site-title.php:179
 msgid "Hover Animation"
 msgstr ""
 
@@ -387,15 +387,15 @@ msgstr ""
 msgid "User Image"
 msgstr ""
 
-#: widgets/post-comments.php:38, widgets/post-comments.php:61
+#: widgets/post-comments.php:35, widgets/post-comments.php:58
 msgid "%s Comments"
 msgstr ""
 
-#: widgets/post-comments.php:71
+#: widgets/post-comments.php:68
 msgid "This widget displays the default Comments Template included in the current Theme."
 msgstr ""
 
-#: widgets/post-comments.php:73
+#: widgets/post-comments.php:70
 msgid "No custom styling can be applied as each theme uses it's own CSS classes and IDs."
 msgstr ""
 
@@ -435,7 +435,7 @@ msgstr ""
 msgid "Last Modified Date"
 msgstr ""
 
-#: widgets/post-excerpt.php:38, widgets/post-excerpt.php:61, widgets/post-excerpt.php:158
+#: widgets/post-excerpt.php:75, widgets/post-excerpt.php:121, widgets/post-excerpt.php:331
 msgid "%s Excerpt"
 msgstr ""
 
