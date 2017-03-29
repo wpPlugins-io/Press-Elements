@@ -227,9 +227,9 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 		}
 		$target = $settings['link']['is_external'] ? 'target="_blank"' : '';
 
-		$animation_class = ! empty( $settings['hover_animation'] ) ? ' elementor-animation-' . $settings['hover_animation'] : '';
+		$animation_class = ! empty( $settings['hover_animation'] ) ? 'elementor-animation-' . $settings['hover_animation'] : '';
 
-		$html = sprintf( '<%1$s class="press-elements-excerpt%2$s">', $settings['html_tag'], $animation_class );
+		$html = sprintf( '<%1$s class="press-elements-excerpt %2$s">', $settings['html_tag'], $animation_class );
 		if ( $link ) {
 			$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $excerpt );
 		} else {
@@ -259,12 +259,12 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			}
 			var target = settings.link.is_external ? 'target="_blank"' : '';
 
-			var animation_class;
+			var animation_class = '';
 			if ( '' !== settings.hover_animation ) {
-				animation_class = ' elementor-animation-' + settings.hover_animation;
+				animation_class = 'elementor-animation-' + settings.hover_animation;
 			}
 
-			var html = '<' + settings.html_tag + ' class="press-elements-excerpt' + animation_class + '">';
+			var html = '<' + settings.html_tag + ' class="press-elements-excerpt ' + animation_class + '">';
 			if ( link_url ) {
 				html += '<a href="' + link_url + '" ' + target + '>' + excerpt + '</a>';
 			} else {

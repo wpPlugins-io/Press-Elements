@@ -331,9 +331,9 @@ if ( press_elements_freemius()->is__premium_only() ) {
 			}
 			$target = $settings['link']['is_external'] ? 'target="_blank"' : '';
 
-			$animation_class = ! empty( $settings['hover_animation'] ) ? ' elementor-animation-' . $settings['hover_animation'] : '';
+			$animation_class = ! empty( $settings['hover_animation'] ) ? 'elementor-animation-' . $settings['hover_animation'] : '';
 
-			$html = '<div class="press-elements-featured-image' . $animation_class . '">';
+			$html = '<div class="press-elements-featured-image ' . $animation_class . '">';
 			if ( $link ) {
 				$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $featured_image );
 			} else {
@@ -380,12 +380,12 @@ if ( press_elements_freemius()->is__premium_only() ) {
 						link_url = false;
 				}
 
-				var animation_class;
+				var animation_class = '';
 				if ( '' !== settings.hover_animation ) {
-					animation_class = ' elementor-animation-' + settings.hover_animation;
+					animation_class = 'elementor-animation-' + settings.hover_animation;
 				}
 
-				var html = '<div class="press-elements-featured-image' + animation_class + '">';
+				var html = '<div class="press-elements-featured-image ' + animation_class + '">';
 				if ( link_url ) {
 					html += '<a href="' + link_url + '">' + featured_image + '</a>';
 				} else {

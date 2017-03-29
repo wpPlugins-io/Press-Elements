@@ -200,9 +200,9 @@ class Press_Elements_Post_Terms extends Widget_Base {
 		if ( empty( $term_list ) || is_wp_error( $term_list ) )
 			return;
 
-		$animation_class = ! empty( $settings['hover_animation'] ) ? ' elementor-animation-' . $settings['hover_animation'] : '';
+		$animation_class = ! empty( $settings['hover_animation'] ) ? 'elementor-animation-' . $settings['hover_animation'] : '';
 
-		$html = sprintf( '<%1$s class="press-elements-terms%2$s">', $settings['html_tag'], $animation_class );
+		$html = sprintf( '<%1$s class="press-elements-terms %2$s">', $settings['html_tag'], $animation_class );
 		switch ( $settings['link_to'] ) {
 			case 'term' :
 				foreach ( $term_list as $term ) {
@@ -264,12 +264,12 @@ class Press_Elements_Post_Terms extends Widget_Base {
 			}
 			terms = terms.slice(0, terms.length-2);
 
-			var animation_class;
+			var animation_class = '';
 			if ( '' !== settings.hover_animation ) {
-				animation_class = ' elementor-animation-' + settings.hover_animation;
+				animation_class = 'elementor-animation-' + settings.hover_animation;
 			}
 
-			var html = '<' + settings.html_tag + ' class="press-elements-terms' + animation_class + '">';
+			var html = '<' + settings.html_tag + ' class="press-elements-terms ' + animation_class + '">';
 			html += terms;
 			html += '</' + settings.html_tag + '>';
 

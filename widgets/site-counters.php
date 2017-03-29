@@ -277,12 +277,12 @@ class Press_Elements_Site_Counters extends Widget_Base {
 				break;
 		}
 
-		$number_hover_animation = ! empty( $settings['number_hover_animation'] ) ? ' elementor-animation-' . $settings['number_hover_animation'] : '';
-		$label_hover_animation = ! empty( $settings['label_hover_animation'] ) ? ' elementor-animation-' . $settings['label_hover_animation'] : '';
+		$number_hover_animation = ! empty( $settings['number_hover_animation'] ) ? 'elementor-animation-' . $settings['number_hover_animation'] : '';
+		$label_hover_animation = ! empty( $settings['label_hover_animation'] ) ? 'elementor-animation-' . $settings['label_hover_animation'] : '';
 
 		$html = '<div class="press-elements-site-counters">';
-		$html .= sprintf( '<%1$s class="press-elements-total%2$s">%3$s</%1$s>', $settings['html_tag'], $number_hover_animation, $total );
-		$html .= sprintf( '<%1$s class="press-elements-label%2$s">%3$s</%1$s>', $settings['html_tag'], $label_hover_animation, $label );
+		$html .= sprintf( '<%1$s class="press-elements-total %2$s">%3$s</%1$s>', $settings['html_tag'], $number_hover_animation, $total );
+		$html .= sprintf( '<%1$s class="press-elements-label %2$s">%3$s</%1$s>', $settings['html_tag'], $label_hover_animation, $label );
 		$html .= '</div>';
 
 		echo $html;
@@ -338,18 +338,18 @@ class Press_Elements_Site_Counters extends Widget_Base {
 				break;
 		}
 
-		var number_animation_class;
+		var number_animation_class = '';
 		if ( '' !== settings.number_hover_animation ) {
-			number_animation_class = ' elementor-animation-' + settings.number_hover_animation;
+			number_animation_class = 'elementor-animation-' + settings.number_hover_animation;
 		}
-		var label_animation_class;
+		var label_animation_class = '';
 		if ( '' !== settings.label_hover_animation ) {
-			label_animation_class = ' elementor-animation-' + settings.label_hover_animation;
+			label_animation_class = 'elementor-animation-' + settings.label_hover_animation;
 		}
 
 		var html = '<div class="press-elements-site-counters">';
-		html += '<' + settings.html_tag + ' class="press-elements-total' + number_animation_class + '">' + total + '</' + settings.html_tag + '>';
-		html += '<' + settings.html_tag + ' class="press-elements-label' + label_animation_class + '">' + label + '</' + settings.html_tag + '>';
+		html += '<' + settings.html_tag + ' class="press-elements-total ' + number_animation_class + '">' + total + '</' + settings.html_tag + '>';
+		html += '<' + settings.html_tag + ' class="press-elements-label ' + label_animation_class + '">' + label + '</' + settings.html_tag + '>';
 		html += '</div>';
 
 		print( html );

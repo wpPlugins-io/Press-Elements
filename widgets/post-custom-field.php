@@ -304,9 +304,9 @@ if ( press_elements_freemius()->is__premium_only() ) {
 			}
 			$target = $settings['link']['is_external'] ? 'target="_blank"' : '';
 
-			$animation_class = ! empty( $settings['hover_animation'] ) ? ' elementor-animation-' . $settings['hover_animation'] : '';
+			$animation_class = ! empty( $settings['hover_animation'] ) ? 'elementor-animation-' . $settings['hover_animation'] : '';
 
-			$html = sprintf( '<%1$s class="press-elements-custom-field%2$s">', $settings['html_tag'], $animation_class );
+			$html = sprintf( '<%1$s class="press-elements-custom-field %2$s">', $settings['html_tag'], $animation_class );
 			if ( $link ) {
 				$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $custom_field_value[0] );
 			} else {
@@ -349,12 +349,12 @@ if ( press_elements_freemius()->is__premium_only() ) {
 				}
 				var target = settings.link.is_external ? 'target="_blank"' : '';
 
-				var animation_class;
+				var animation_class = '';
 				if ( '' !== settings.hover_animation ) {
-					animation_class = ' elementor-animation-' + settings.hover_animation;
+					animation_class = 'elementor-animation-' + settings.hover_animation;
 				}
 
-				var html = '<' + settings.html_tag + ' class="press-elements-custom-field' + animation_class + '">';
+				var html = '<' + settings.html_tag + ' class="press-elements-custom-field ' + animation_class + '">';
 				if ( link_url ) {
 					html += '<a href="' + link_url + '" ' + target + '>' + custom_field + '</a>';
 				} else {
