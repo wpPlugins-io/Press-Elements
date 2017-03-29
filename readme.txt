@@ -3,7 +3,7 @@ Contributors: ramiy
 Tags: elementor, press elements, elements, widgets
 Requires at least: 4.7
 Tested up to: 4.7
-Stable tag: 1.2.0
+Stable tag: 1.2.2
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -79,9 +79,14 @@ When you change titles, exerpts, feature-images, custom-fields and other element
 
 == Changelog ==
 
+= 1.2.2 =
+
+* Bug fix - When adding new widgets the design is not applied because of undefined hover animation.
+
 = 1.2.1 =
 
 **General**
+
 * Add an admin menu linking to the plugin support forum.
 * Bug fix - display plugin admin even if Elementor is not active.
 

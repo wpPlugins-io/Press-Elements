@@ -3,7 +3,7 @@
  * Plugin Name: Press Elements for Elementor
  * Description: An easy-to-use Elementor widgets that helps you design single page templates to display your content.
  * Plugin URI:  https://wordpress.org/plugins/press-elements/
- * Version:     1.2.1
+ * Version:     1.2.2
  * Author:      Rami Yushuvaev
  * Author URI:  https://wpPlugins.io/
  * Text Domain: press-elements
@@ -80,7 +80,7 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 			'<strong>' . esc_html__( 'Elementor', 'press-elements' ) . '</strong>'
 		);
 
-		printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), $message ); 
+		printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), $message );
 	}
 
 
@@ -103,7 +103,7 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 			$elementor_version_required
 		);
 
-		printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), $message ); 
+		printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), $message );
 	}
 
 
