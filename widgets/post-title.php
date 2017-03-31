@@ -30,8 +30,7 @@ class Press_Elements_Post_Title extends Widget_Base {
 	}
 
 	public function get_title() {
-		$queried_object = get_queried_object();
-		$post_type_object = get_post_type_object( get_post_type( $queried_object ) );
+		$post_type_object = get_post_type_object( get_post_type() );
 
 		return sprintf(
 			/* translators: %s: Post type singular name (e.g. Post or Page) */
@@ -50,8 +49,7 @@ class Press_Elements_Post_Title extends Widget_Base {
 
 	protected function _register_controls() {
 
-		$queried_object = get_queried_object();
-		$post_type_object = get_post_type_object( get_post_type( $queried_object ) );
+		$post_type_object = get_post_type_object( get_post_type() );
 
 		$this->start_controls_section(
 			'section_content',
