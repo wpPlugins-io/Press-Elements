@@ -51,14 +51,6 @@ class Press_Elements_Site_Description extends Widget_Base {
 		);
 
 		$this->add_control(
-			'description',
-			[
-				'type' => Controls_Manager::HIDDEN,
-				'default' => get_bloginfo( 'description' ),
-			]
-		);
-
-		$this->add_control(
 			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
@@ -229,7 +221,7 @@ class Press_Elements_Site_Description extends Widget_Base {
 	protected function _content_template() {
 		?>
 		<#
-			var description = settings.description;
+			var description = '<?php echo get_bloginfo( 'description' ); ?>';
 
 			var link_url;
 			switch( settings.link_to ) {

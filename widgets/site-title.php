@@ -51,14 +51,6 @@ class Press_Elements_Site_Title extends Widget_Base {
 		);
 
 		$this->add_control(
-			'title',
-			[
-				'type' => Controls_Manager::HIDDEN,
-				'default' => get_bloginfo( 'name' ),
-			]
-		);
-
-		$this->add_control(
 			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
@@ -229,7 +221,7 @@ class Press_Elements_Site_Title extends Widget_Base {
 	protected function _content_template() {
 		?>
 		<#
-			var title = settings.title;
+			var title = '<?php echo get_bloginfo( 'name' ); ?>';
 
 			var link_url;
 			switch( settings.link_to ) {
