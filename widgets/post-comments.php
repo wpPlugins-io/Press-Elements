@@ -60,7 +60,7 @@ class Press_Elements_Post_Comments extends Widget_Base {
 		);
 
 		$this->add_control(
-			'logo',
+			'info',
 			[
 				'type' => Controls_Manager::RAW_HTML,
 				'raw' => __( 'This widget displays the default Comments Template included in the current Theme.', 'press-elements' ) .
