@@ -50,7 +50,7 @@ class Press_Elements_Site_logo extends Widget_Base {
 		);
 
 		$this->add_control(
-			'logo',
+			'preview',
 			[
 				'type' => Controls_Manager::RAW_HTML,
 				'raw' => get_custom_logo(),

@@ -65,7 +65,7 @@ class Press_Elements_Post_Featured_Image extends Widget_Base {
 if ( press_elements_freemius()->is__premium_only() ) {
 
 		$this->add_control(
-			'featured_image',
+			'preview',
 			[
 				'type' => Controls_Manager::RAW_HTML,
 				'raw' => get_the_post_thumbnail(),
