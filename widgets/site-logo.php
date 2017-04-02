@@ -53,8 +53,7 @@ class Press_Elements_Site_logo extends Widget_Base {
 			'preview',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => get_custom_logo(),
-				'separator' => 'none',
+				'raw' => '<center>' . get_custom_logo() . '</center>',
 			]
 		);
 
