@@ -57,7 +57,7 @@ class Press_Elements_Admin {
 
 		// About
 		add_theme_page(
-			esc_html__( 'Press Elements for Elementor', 'press-elements' ),
+			esc_html__( 'Press Elements - Widgets for Elementor', 'press-elements' ),
 			esc_html__( 'Press Elements', 'press-elements' ),
 			$capability,
 			'press-elements',
@@ -126,38 +126,56 @@ class Press_Elements_Admin {
 		?>
 		<div class="wrap about-wrap">
 
-			<h1><?php esc_html_e( 'Press Elements for Elementor', 'press-elements' ); ?></h1>
+			<h1><?php esc_html_e( 'Press Elements - Widgets for Elementor', 'press-elements' ); ?></h1>
 
-			<p class="about-text"><?php esc_html_e( 'An easy-to-use Elementor widgets that helps you design single page templates to display your content.', 'press-elements' );?></p>
+			<p class="about-text"><?php esc_html_e( 'An easy-to-use widgets that help you display and design your content using Elementor page builder.', 'press-elements' );?></p>
 
 			<?php $this->tabs(); ?>
 
-			<p class="about-text"><?php esc_html_e( 'Press Elements lets you style a single page with all the site and post elements, and display them within your favorite page builder!', 'press-elements' ); ?></p>
+			<p class="about-text"><?php esc_html_e( 'Press Elements allows you to style a single pages using the built-in WordPress post components.', 'press-elements' ); ?></p>
 
 			<div class="feature-section two-col">
 
 				<div class="col">
 
+					<h3><?php esc_html_e( 'WordPress Elements', 'press-elements' ); ?></h3>
+
+					<p class="about-text"><?php esc_html_e( 'When you create a new post (or a page) on WordPress, you choose a title, write an excerpt, select a publish date, add an author, choose featured image, select several taxonomies and maybe you define some custom fields.', 'press-elements' ); ?></p>
+
+					<p class="about-text"><?php esc_html_e( 'In the Elementor page builder you can\'t display and style those components. You need to repeat the process and manually add a title, write the excerpt and add images.', 'press-elements' ); ?></p>
+
+					<p class="about-text"><?php esc_html_e( 'That\'s where Press Elements comes in handy. The plugin adds smart widgets that let you display those post components. Now you can drag a "Post Title" widget and style it your way. The widget will automatically insert the title used as the post title. Same applies for all the other post components.', 'press-elements' ); ?></p>
+
+					<h3><?php esc_html_e( 'Dynamic Content', 'press-elements' ); ?></h3>
+
+					<p class="about-text"><?php esc_html_e( 'Regular Elementor widgets save the data as hard-coded content in the database. To change something you need to open the page builder and manually change the element inside the builder. Updating post titles, excerpts, authors and other WordPress Element won\'t affect the builder.', 'press-elements' ); ?></p>
+
+					<p class="about-text"><?php esc_html_e( 'Press Elements uses dynamic content architecture. It doesn\'t save the title and other element as hard-coded content. It generates them on-the-fly. Just like the WordPress theme system.', 'press-elements' ); ?></p>
+
+					<p class="about-text"><?php esc_html_e( 'When you change post titles and other post elements from your WordPress dashboard (outside of Elementor), they will be automatically updated in the content area and in the page builder.', 'press-elements' ); ?></p>
+
+					<p class="about-text"><?php esc_html_e( 'For example, you can bulk edit several posts from your sites dashboard to change the author, post that use "Post Author" widget will be automatically updates with the new data.', 'press-elements' ); ?></p>
+
 					<h3><?php esc_html_e( 'Template Design', 'press-elements' ); ?></h3>
 
-					<p class="about-text"><?php esc_html_e( 'When using page builders, you need to create all the page element for each page over and over again. Currently you can\'t design single page templates and use the built in post data like the post title, excerpts, date and others.', 'press-elements' ); ?></p>
+					<p class="about-text"><?php esc_html_e( 'When using page builders, you need to create all the page element for each page over and over again. Currently you can\'t design single page templates and apply the design on the post. When you use the template system you need to manually change titles and images for each post/page.', 'press-elements' ); ?></p>
 
-					<p class="about-text"><?php esc_html_e( 'Press Elements allows you to design different templates in minutes! You don\'t need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface!', 'press-elements' ); ?></p>
+					<p class="about-text"><?php esc_html_e( 'With Press Elements you can create custom designs with post elements and save them as template. When you apply the template on other posts, it will inherite the data from the new post. No more manual updates!', 'press-elements' ); ?></p>
 
-					<p class="about-text"><?php esc_html_e( 'Design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library.', 'press-elements' ); ?></p>
+					<p class="about-text"><?php esc_html_e( 'You don\'t need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface! Now you can design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library.', 'press-elements' ); ?></p>
 
 					<p class="about-text"><?php esc_html_e( 'Developers use theme-functions to generate themes. With Press Elements you can use Elementor widgets to display and design your post elements! How cool is that?!', 'press-elements' ); ?></p>
 
 					<h3><?php esc_html_e( 'Included Widgets', 'press-elements' ); ?></h3>
 
-					<p><?php esc_html_e( 'Site Elements:', 'press-elements' ); ?></p>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Site Elements:', 'press-elements' ); ?></p>
 					<ol>
 						<li><?php esc_html_e( 'Site Title', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Site Description', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Site Logo', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Site Counters', 'press-elements' ); ?></li>
 					</ol>
-					<p><?php esc_html_e( 'Post Elements:', 'press-elements' ); ?></p>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Post Elements:', 'press-elements' ); ?></p>
 					<ol>
 						<li><?php esc_html_e( 'Post Title', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Excerpt', 'press-elements' ); ?></li>
@@ -169,13 +187,23 @@ class Press_Elements_Admin {
 						<li><?php esc_html_e( 'Post Comments', 'press-elements' ); ?></li>
 					</ol>
 
-					<h3><?php esc_html_e( 'Dynamic Content', 'press-elements' ); ?></h3>
+					<h3><?php esc_html_e( 'Coming Soon', 'press-elements' ); ?></h3>
 
-					<p class="about-text"><?php esc_html_e( 'Regular Elementor widgets save the data as hard-coded content (text, images and other element). To change something you need to open the page builder and manualy change it inside the builder. Updating titles, expects, authors and other WordPress Element won\'t affect the builder.', 'press-elements' ); ?></p>
-
-					<p class="about-text"><?php esc_html_e( 'Press Elements uses dynamic content architecture. It doesn\'t save the title and other element as hard-coded content it generates them on-the-fly, just like the WordPress theme system.', 'press-elements' ); ?></p>
-
-					<p class="about-text"><?php esc_html_e( 'When you change titles, exerpts, feature-images, custom-fields and other elements from your WourdPress dashboard (outside of Elementor), they will be automatically updated in the content area and in the page builder.', 'press-elements' ); ?></p>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Site Elements:', 'press-elements' ); ?></p>
+					<ol>
+						<li><?php esc_html_e( 'Login Form', 'press-elements' ); ?></li>
+					</ol>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Comments Elements:', 'press-elements' ); ?></p>
+					<ol>
+						<li><?php esc_html_e( 'Comments Form', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Comments List', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Comments Pagination', 'press-elements' ); ?></li>
+					</ol>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'WooCommerce Elements:', 'press-elements' ); ?></p>
+					<ol>
+						<li><?php esc_html_e( 'Product Price (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Product Gallery (Pro)', 'press-elements' ); ?></li>
+					</ol>
 
 				</div>
 
@@ -201,9 +229,9 @@ class Press_Elements_Admin {
 
 					<figure>
 						<a href="<?php echo esc_url( plugins_url( 'screenshot-3.png', __FILE__ ) ); ?>" target="_blank">
-							<img src="<?php echo esc_url( plugins_url( 'screenshot-3.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Styling post title with a dedicated elementor widget.', 'press-elements' ); ?>">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-3.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Styling post title with a dedicated Elementor widget.', 'press-elements' ); ?>">
 						</a>
-						<figcaption><?php esc_html_e( 'Styling post title with a dedicated elementor widget.', 'press-elements' ); ?></figcaption>
+						<figcaption><?php esc_html_e( 'Styling post title with a dedicated Elementor widget.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 					<br>
@@ -231,6 +259,24 @@ class Press_Elements_Admin {
 							<img src="<?php echo esc_url( plugins_url( 'screenshot-6.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Widgets for your site logo, site name and site description.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Widgets for your site logo, site name and site description.', 'press-elements' ); ?></figcaption>
+					</figure>
+
+					<br>
+
+					<figure>
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-7.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-7.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Site counters for Post Types, Taxonomies, Comments and Users.', 'press-elements' ); ?>">
+						</a>
+						<figcaption><?php esc_html_e( 'Site counters for Post Types, Taxonomies, Comments and Users.', 'press-elements' ); ?></figcaption>
+					</figure>
+
+					<br>
+
+					<figure>
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-8.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-8.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Custom fields as text fields and images, and linking to other custom fields.', 'press-elements' ); ?>">
+						</a>
+						<figcaption><?php esc_html_e( 'Custom fields as text fields and images, and linking to other custom fields.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 				</div>
@@ -268,7 +314,7 @@ class Press_Elements_Admin {
 
 					<h3><?php esc_html_e( 'STEP 1: Create a new post', 'press-elements' ); ?></h3>
 
-					<p class="about-text"><?php esc_html_e( 'Navigate to "Posts > Add New" to create a new post. Enter a post title, write an excerpt, select a featured image, set an author, select a publish date and publish the post.', 'press-elements' ); ?></p>
+					<p class="about-text"><?php esc_html_e( 'Navigate to "Posts" > "Add New" to create a new post. Enter a post title, write an excerpt, select a featured image, set an author, select a publish date and publish the post.', 'press-elements' ); ?></p>
 
 				</div>
 
