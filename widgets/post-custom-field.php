@@ -6,6 +6,8 @@ use Elementor\Controls_Manager;
 use Elementor\Scheme_Color;
 use Elementor\Scheme_Typography;
 use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Box_Shadow;
 
 
 
@@ -82,6 +84,19 @@ if ( press_elements_freemius()->is__premium_only() ) {
 		);
 
 		$this->add_control(
+			'display',
+			[
+				'label' => __( 'Display As', 'press-elements' ),
+				'type' => Controls_Manager::SELECT,
+				'options' => [
+					'text' => __( 'Text', 'press-elements' ),
+					'image' => __( 'Image', 'press-elements' ),
+				],
+				'default' => 'text',
+			]
+		);
+
+		$this->add_control(
 			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
@@ -144,6 +159,7 @@ if ( press_elements_freemius()->is__premium_only() ) {
 						__( '%s URL', 'press-elements' ),
 						$post_type_object->labels->singular_name
 					),
+					'custom_field' => __( 'Other Custom Field', 'press-elements' ),
 					'custom' => __( 'Custom URL', 'press-elements' ),
 				],
 			]
@@ -162,6 +178,18 @@ if ( press_elements_freemius()->is__premium_only() ) {
 					'url' => '',
 				],
 				'show_label' => false,
+			]
+		);
+
+		$this->add_control(
+			'custom_field_link',
+			[
+				'label' => __( 'Custom Field Link', 'press-elements' ),
+				'type' => Controls_Manager::SELECT,
+				'options' => $fields,
+				'condition' => [
+					'link_to' => 'custom_field',
+				]
 			]
 		);
 
@@ -218,6 +246,9 @@ if ( press_elements_freemius()->is__premium_only() ) {
 					'{{WRAPPER}} .press-elements-custom-field' => 'color: {{VALUE}};',
 					'{{WRAPPER}} .press-elements-custom-field a' => 'color: {{VALUE}};',
 				],
+				'condition' => [
+					'display' => 'text',
+				],
 			]
 		);
 
@@ -227,6 +258,58 @@ if ( press_elements_freemius()->is__premium_only() ) {
 				'name' => 'typography',
 				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .press-elements-custom-field',
+				'condition' => [
+					'display' => 'text',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'space',
+			[
+				'label' => __( 'Size (%)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 100,
+					'unit' => '%',
+				],
+				'size_units' => [ '%' ],
+				'range' => [
+					'%' => [
+						'min' => 1,
+						'max' => 100,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-custom-field img' => 'max-width: {{SIZE}}{{UNIT}};',
+				],
+				'condition' => [
+					'display' => 'image',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'opacity',
+			[
+				'label' => __( 'Opacity (%)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 1,
+				],
+				'range' => [
+					'px' => [
+						'max' => 1,
+						'min' => 0.10,
+						'step' => 0.01,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-custom-field img' => 'opacity: {{SIZE}};',
+				],
+				'condition' => [
+					'display' => 'image',
+				],
 			]
 		);
 
@@ -235,6 +318,44 @@ if ( press_elements_freemius()->is__premium_only() ) {
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Border::get_type(),
+			[
+				'name' => 'image_border',
+				'label' => __( 'Image Border', 'press-elements' ),
+				'selector' => '{{WRAPPER}} .press-elements-custom-field img',
+				'condition' => [
+					'display' => 'image',
+				],
+			]
+		);
+
+		$this->add_control(
+			'image_border_radius',
+			[
+				'label' => __( 'Border Radius', 'press-elements' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-custom-field img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+				'condition' => [
+					'display' => 'image',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Box_Shadow::get_type(),
+			[
+				'name' => 'image_box_shadow',
+				'selector' => '{{WRAPPER}} .press-elements-custom-field img',
+				'condition' => [
+					'display' => 'image',
+				],
 			]
 		);
 
@@ -271,16 +392,27 @@ if ( press_elements_freemius()->is__premium_only() ) {
 		if ( press_elements_freemius()->is__premium_only() ) {
 			$settings = $this->get_settings();
 
-			$custom_field = get_post_custom();
+			$post_custom_fields = get_post_custom();
 			$custom_field_key = $settings['custom_field'];
 
-			if ( array_key_exists( $custom_field_key, $custom_field ) )
-				$custom_field_value = $custom_field[ $custom_field_key ];
+			if ( array_key_exists( $custom_field_key, $post_custom_fields ) )
+				$custom_field_value = $post_custom_fields[ $custom_field_key ];
 			else
 				return;
 
 			if ( empty( $custom_field_value[0] ) )
 				return;
+
+			switch ( $settings['display'] ) {
+				case 'image' :
+					$custom_field = '<img src="' . $custom_field_value[0] . '" />';
+					break;
+
+				case 'text' :
+				default:
+					$custom_field = $custom_field_value[0];
+					break;
+			}
 
 			switch ( $settings['link_to'] ) {
 				case 'custom' :
@@ -295,6 +427,11 @@ if ( press_elements_freemius()->is__premium_only() ) {
 					$link = get_the_permalink();
 					break;
 
+				case 'custom_field' :
+					$custom_field_value = $post_custom_fields[ $settings['custom_field_link'] ];
+					$link = $custom_field_value[0];
+					break;
+
 				case 'none' :
 				default:
 					$link = false;
@@ -306,9 +443,9 @@ if ( press_elements_freemius()->is__premium_only() ) {
 
 			$html = sprintf( '<%1$s class="press-elements-custom-field %2$s">', $settings['html_tag'], $animation_class );
 			if ( $link ) {
-				$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $custom_field_value[0] );
+				$html .= sprintf( '<a href="%1$s" %2$s>%3$s</a>', $link, $target, $custom_field );
 			} else {
-				$html .= $custom_field_value[0];
+				$html .= $custom_field;
 			}
 			$html .= sprintf( '</%s>', $settings['html_tag'] );
 
@@ -320,18 +457,27 @@ if ( press_elements_freemius()->is__premium_only() ) {
 	protected function _content_template() {
 
 		if ( press_elements_freemius()->is__premium_only() ) {
-			$custom_field = get_post_custom();
+			$post_custom_fields = get_post_custom();
 			?>
 			<#
 				var custom_fields = [];
 				<?php
-				foreach ( $custom_field as $key => $value ) {
+				foreach ( $post_custom_fields as $key => $value ) {
 					if ( ! is_protected_meta( $key ) ) {
 						printf( 'custom_fields[ "%1$s" ] = "%2$s";', $key, sanitize_text_field( $value[0] ) );
 					}
 				}
 				?>
-				var custom_field = custom_fields[ settings.custom_field ];
+
+				var custom_field = '';
+				switch( settings.display ) {
+					case 'image':
+						custom_field = '<img src="' + custom_fields[ settings.custom_field ] + '" />';
+						break;
+					case 'text':
+					default:
+						custom_field = custom_fields[ settings.custom_field ];
+				}
 
 				var link_url;
 				switch( settings.link_to ) {
@@ -340,6 +486,9 @@ if ( press_elements_freemius()->is__premium_only() ) {
 						break;
 					case 'post':
 						link_url = '<?php echo get_the_permalink(); ?>';
+						break;
+					case 'custom_field':
+						link_url = custom_fields[ settings.custom_field_link ];
 						break;
 					case 'none':
 					default:
