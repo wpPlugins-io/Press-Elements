@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: press-elements-admin.php:119, press-elements-admin.php:257
-msgid "Press Elements for Elementor"
+msgid "Press Elements - Widgets for Elementor"
 msgstr ""
 
 #: press-elements-admin.php:121, press-elements.php:157, press-elements.php:201
@@ -27,11 +27,11 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: press-elements-admin.php:165, press-elements-admin.php:513
+#: press-elements-admin.php:165, press-elements-admin.php:605
 msgid "Getting Started"
 msgstr ""
 
-#: press-elements-admin.php:167, press-elements-admin.php:667
+#: press-elements-admin.php:167, press-elements-admin.php:759
 msgid "Changelog"
 msgstr ""
 
@@ -40,190 +40,254 @@ msgid "Pro Version"
 msgstr ""
 
 #: press-elements-admin.php:261
-msgid "An easy-to-use Elementor widgets that helps you design single page templates to display your content."
+msgid "An easy-to-use widgets that help you display and design your content using Elementor page builder."
 msgstr ""
 
 #: press-elements-admin.php:269
-msgid "Press Elements lets you style a single page with all the site and post elements, and display them within your favorite page builder!"
+msgid "Press Elements allows you to style a single pages using the built-in WordPress post components."
 msgstr ""
 
 #: press-elements-admin.php:281
-msgid "Template Design"
+msgid "WordPress Elements"
 msgstr ""
 
 #: press-elements-admin.php:285
-msgid "When using page builders, you need to create all the page element for each page over and over again. Currently you can't design single page templates and use the built in post data like the post title, excerpts, date and others."
+msgid "When you create a new post (or a page) on WordPress, you choose a title, write an excerpt, select a publish date, add an author, choose featured image, select several taxonomies and maybe you define some custom fields."
 msgstr ""
 
 #: press-elements-admin.php:289
-msgid "Press Elements allows you to design different templates in minutes! You don't need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface!"
+msgid "In the Elementor page builder you can't display and style those components. You need to repeat the process and manually add a title, write the excerpt and add images."
 msgstr ""
 
 #: press-elements-admin.php:293
-msgid "Design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library."
+msgid "That's where Press Elements comes in handy. The plugin adds smart widgets that let you display those post components. Now you can drag a \"Post Title\" widget and style it your way. The widget will automatically insert the title used as the post title. Same applies for all the other post components."
 msgstr ""
 
 #: press-elements-admin.php:297
-msgid "Developers use theme-functions to generate themes. With Press Elements you can use Elementor widgets to display and design your post elements! How cool is that?!"
-msgstr ""
-
-#: press-elements-admin.php:301
-msgid "Included Widgets"
-msgstr ""
-
-#: press-elements-admin.php:305
-msgid "Site Elements:"
-msgstr ""
-
-#: press-elements-admin.php:309, widgets/site-title.php:33, widgets/site-title.php:49, widgets/site-title.php:146
-msgid "Site Title"
-msgstr ""
-
-#: press-elements-admin.php:311, widgets/site-description.php:33, widgets/site-description.php:49, widgets/site-description.php:146
-msgid "Site Description"
-msgstr ""
-
-#: press-elements-admin.php:313, widgets/site-logo.php:32, widgets/site-logo.php:48, widgets/site-logo.php:146
-msgid "Site Logo"
-msgstr ""
-
-#: press-elements-admin.php:315, widgets/site-counters.php:33, widgets/site-counters.php:62
-msgid "Site Counters"
-msgstr ""
-
-#: press-elements-admin.php:319
-msgid "Post Elements:"
-msgstr ""
-
-#: press-elements-admin.php:323
-msgid "Post Title"
-msgstr ""
-
-#: press-elements-admin.php:325
-msgid "Post Excerpt"
-msgstr ""
-
-#: press-elements-admin.php:327
-msgid "Post Date"
-msgstr ""
-
-#: press-elements-admin.php:329
-msgid "Post Author"
-msgstr ""
-
-#: press-elements-admin.php:331
-msgid "Post Terms"
-msgstr ""
-
-#: press-elements-admin.php:333
-msgid "Post Featured Image (Pro)"
-msgstr ""
-
-#: press-elements-admin.php:335
-msgid "Post Custom Fields (Pro)"
-msgstr ""
-
-#: press-elements-admin.php:337
-msgid "Post Comments"
-msgstr ""
-
-#: press-elements-admin.php:343
 msgid "Dynamic Content"
 msgstr ""
 
-#: press-elements-admin.php:347
-msgid "Regular Elementor widgets save the data as hard-coded content (text, images and other element). To change something you need to open the page builder and manualy change it inside the builder. Updating titles, expects, authors and other WordPress Element won't affect the builder."
+#: press-elements-admin.php:301
+msgid "Regular Elementor widgets save the data as hard-coded content in the database. To change something you need to open the page builder and manually change the element inside the builder. Updating post titles, excerpts, authors and other WordPress Element won't affect the builder."
 msgstr ""
 
-#: press-elements-admin.php:351
-msgid "Press Elements uses dynamic content architecture. It doesn't save the title and other element as hard-coded content it generates them on-the-fly, just like the WordPress theme system."
+#: press-elements-admin.php:305
+msgid "Press Elements uses dynamic content architecture. It doesn't save the title and other element as hard-coded content. It generates them on-the-fly. Just like the WordPress theme system."
+msgstr ""
+
+#: press-elements-admin.php:309
+msgid "When you change post titles and other post elements from your WordPress dashboard (outside of Elementor), they will be automatically updated in the content area and in the page builder."
+msgstr ""
+
+#: press-elements-admin.php:313
+msgid "For example, you can bulk edit several posts from your sites dashboard to change the author, post that use \"Post Author\" widget will be automatically updates with the new data."
+msgstr ""
+
+#: press-elements-admin.php:317
+msgid "Template Design"
+msgstr ""
+
+#: press-elements-admin.php:321
+msgid "When using page builders, you need to create all the page element for each page over and over again. Currently you can't design single page templates and apply the design on the post. When you use the template system you need to manually change titles and images for each post/page."
+msgstr ""
+
+#: press-elements-admin.php:325
+msgid "With Press Elements you can create custom designs with post elements and save them as template. When you apply the template on other posts, it will inherite the data from the new post. No more manual updates!"
+msgstr ""
+
+#: press-elements-admin.php:329
+msgid "You don't need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface! Now you can design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library."
+msgstr ""
+
+#: press-elements-admin.php:333
+msgid "Developers use theme-functions to generate themes. With Press Elements you can use Elementor widgets to display and design your post elements! How cool is that?!"
+msgstr ""
+
+#: press-elements-admin.php:337
+msgid "Included Widgets"
+msgstr ""
+
+#: press-elements-admin.php:341, press-elements-admin.php:383
+msgid "Site Elements:"
+msgstr ""
+
+#: press-elements-admin.php:345, widgets/site-title.php:33, widgets/site-title.php:49, widgets/site-title.php:138
+msgid "Site Title"
+msgstr ""
+
+#: press-elements-admin.php:347, widgets/site-description.php:33, widgets/site-description.php:49, widgets/site-description.php:138
+msgid "Site Description"
+msgstr ""
+
+#: press-elements-admin.php:349, widgets/site-logo.php:32, widgets/site-logo.php:48, widgets/site-logo.php:145
+msgid "Site Logo"
+msgstr ""
+
+#: press-elements-admin.php:351, widgets/site-counters.php:33, widgets/site-counters.php:62
+msgid "Site Counters"
 msgstr ""
 
 #: press-elements-admin.php:355
-msgid "When you change titles, exerpts, feature-images, custom-fields and other elements from your WourdPress dashboard (outside of Elementor), they will be automatically updated in the content area and in the page builder."
+msgid "Post Elements:"
 msgstr ""
 
-#: press-elements-admin.php:371, press-elements-admin.php:375
+#: press-elements-admin.php:359
+msgid "Post Title"
+msgstr ""
+
+#: press-elements-admin.php:361
+msgid "Post Excerpt"
+msgstr ""
+
+#: press-elements-admin.php:363
+msgid "Post Date"
+msgstr ""
+
+#: press-elements-admin.php:365
+msgid "Post Author"
+msgstr ""
+
+#: press-elements-admin.php:367
+msgid "Post Terms"
+msgstr ""
+
+#: press-elements-admin.php:369
+msgid "Post Featured Image (Pro)"
+msgstr ""
+
+#: press-elements-admin.php:371
+msgid "Post Custom Fields (Pro)"
+msgstr ""
+
+#: press-elements-admin.php:373
+msgid "Post Comments"
+msgstr ""
+
+#: press-elements-admin.php:379
+msgid "Coming Soon"
+msgstr ""
+
+#: press-elements-admin.php:387
+msgid "Login Form"
+msgstr ""
+
+#: press-elements-admin.php:391
+msgid "Comments Elements:"
+msgstr ""
+
+#: press-elements-admin.php:395
+msgid "Comments Form"
+msgstr ""
+
+#: press-elements-admin.php:397
+msgid "Comments List"
+msgstr ""
+
+#: press-elements-admin.php:399
+msgid "Comments Pagination"
+msgstr ""
+
+#: press-elements-admin.php:403
+msgid "WooCommerce Elements:"
+msgstr ""
+
+#: press-elements-admin.php:407
+msgid "Product Price (Pro)"
+msgstr ""
+
+#: press-elements-admin.php:409
+msgid "Product Gallery (Pro)"
+msgstr ""
+
+#: press-elements-admin.php:427, press-elements-admin.php:431
 msgid "Post edit screen with WordPress elements."
 msgstr ""
 
-#: press-elements-admin.php:389, press-elements-admin.php:393
+#: press-elements-admin.php:445, press-elements-admin.php:449
 msgid "Elementor widgets for each site and post element."
 msgstr ""
 
-#: press-elements-admin.php:407, press-elements-admin.php:411
-msgid "Styling post title with a dedicated elementor widget."
+#: press-elements-admin.php:463, press-elements-admin.php:467
+msgid "Styling post title with a dedicated Elementor widget."
 msgstr ""
 
-#: press-elements-admin.php:425, press-elements-admin.php:429
+#: press-elements-admin.php:481, press-elements-admin.php:485
 msgid "Display post custom fields."
 msgstr ""
 
-#: press-elements-admin.php:443, press-elements-admin.php:447
+#: press-elements-admin.php:499, press-elements-admin.php:503
 msgid "Create your own author bio section."
 msgstr ""
 
-#: press-elements-admin.php:461, press-elements-admin.php:465
+#: press-elements-admin.php:517, press-elements-admin.php:521
 msgid "Widgets for your site logo, site name and site description."
 msgstr ""
 
-#: press-elements-admin.php:517
+#: press-elements-admin.php:535, press-elements-admin.php:539
+msgid "Site counters for Post Types, Taxonomies, Comments and Users."
+msgstr ""
+
+#: press-elements-admin.php:553, press-elements-admin.php:557
+msgid "Custom fields as text fields and images, and linking to other custom fields."
+msgstr ""
+
+#: press-elements-admin.php:609
 msgid "Welcome to Press Elements getting started guide."
 msgstr ""
 
-#: press-elements-admin.php:525
+#: press-elements-admin.php:617
 msgid "Getting started with Press Elements is easy! We put together this quick start guide to help first time users of the plugin. Our goal is to get you up and running in no time. Let's begin!"
 msgstr ""
 
-#: press-elements-admin.php:537
+#: press-elements-admin.php:629
 msgid "STEP 1: Create a new post"
 msgstr ""
 
-#: press-elements-admin.php:541
-msgid "Navigate to \"Posts > Add New\" to create a new post. Enter a post title, write an excerpt, select a featured image, set an author, select a publish date and publish the post."
+#: press-elements-admin.php:633
+msgid "Navigate to \"Posts\" > \"Add New\" to create a new post. Enter a post title, write an excerpt, select a featured image, set an author, select a publish date and publish the post."
 msgstr ""
 
-#: press-elements-admin.php:561
+#: press-elements-admin.php:653
 msgid "STEP 2: Design your own template"
 msgstr ""
 
-#: press-elements-admin.php:565
+#: press-elements-admin.php:657
 msgid "Click the \"Edit with Elementor\" button and start designing the page layout. Design a page header, footer, and the content area."
 msgstr ""
 
-#: press-elements-admin.php:569
+#: press-elements-admin.php:661
 msgid "Use \"Press Elements\" widgets to display the post title, post excerpt, post date and the other fields used by WordPress. Don't forget to style those elements!"
 msgstr ""
 
-#: press-elements-admin.php:589
+#: press-elements-admin.php:681
 msgid "STEP 3: Save the template"
 msgstr ""
 
-#: press-elements-admin.php:593
+#: press-elements-admin.php:685
 msgid "Click on the \"Add Template\" button located at the bottom, and save the design. You will see the newly created template at the \"My Templates\" tab."
 msgstr ""
 
-#: press-elements-admin.php:597
+#: press-elements-admin.php:689
 msgid "You can save several templates for blogs posts, pages, and other post types. Or even several templates for a particular post type."
 msgstr ""
 
-#: press-elements-admin.php:617
+#: press-elements-admin.php:709
 msgid "STEP 4: Apply the design to new posts"
 msgstr ""
 
-#: press-elements-admin.php:621
+#: press-elements-admin.php:713
 msgid "For each new post you create, load the desired template and apply it to the post. The post will enherite the design but the elements will be updated with the current post data."
 msgstr ""
 
-#: press-elements-admin.php:671
+#: press-elements-admin.php:763
 msgid "Press Elements changelog."
 msgstr ""
 
-#: press-elements-admin.php:679
+#: press-elements-admin.php:771
 msgid "The Press Elements plugin is developed continuasly, this is the full changelog."
 msgstr ""
 
-#: press-elements-admin.php:721
+#: press-elements-admin.php:813
 msgid "No valid changelog was found."
 msgstr ""
 
@@ -247,159 +311,159 @@ msgstr ""
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
-#: widgets/post-author.php:38, widgets/post-author.php:61, widgets/post-author.php:169
+#: widgets/post-author.php:37, widgets/post-author.php:59, widgets/post-author.php:167
 msgid "%s Author"
 msgstr ""
 
-#: widgets/post-author.php:70
+#: widgets/post-author.php:68
 msgid "Author"
 msgstr ""
 
-#: widgets/post-author.php:80, widgets/post-custom-field.php:89, widgets/post-date.php:83, widgets/post-excerpt.php:155, widgets/post-terms.php:81, widgets/post-title.php:70, widgets/site-counters.php:110, widgets/site-description.php:64, widgets/site-logo.php:64, widgets/site-title.php:64
+#: widgets/post-author.php:78, widgets/post-custom-field.php:102, widgets/post-date.php:81, widgets/post-excerpt.php:135, widgets/post-terms.php:79, widgets/post-title.php:68, widgets/site-counters.php:110, widgets/site-description.php:56, widgets/site-logo.php:63, widgets/site-title.php:56
 msgid "HTML Tag"
 msgstr ""
 
-#: widgets/post-author.php:83, widgets/post-custom-field.php:92, widgets/post-date.php:86, widgets/post-excerpt.php:161, widgets/post-terms.php:84, widgets/post-title.php:73, widgets/site-counters.php:113, widgets/site-description.php:67, widgets/site-logo.php:67, widgets/site-title.php:67
+#: widgets/post-author.php:81, widgets/post-custom-field.php:105, widgets/post-date.php:84, widgets/post-excerpt.php:141, widgets/post-terms.php:82, widgets/post-title.php:71, widgets/site-counters.php:113, widgets/site-description.php:59, widgets/site-logo.php:66, widgets/site-title.php:59
 msgid "H1"
 msgstr ""
 
-#: widgets/post-author.php:84, widgets/post-custom-field.php:93, widgets/post-date.php:87, widgets/post-excerpt.php:163, widgets/post-terms.php:85, widgets/post-title.php:74, widgets/site-counters.php:114, widgets/site-description.php:68, widgets/site-logo.php:68, widgets/site-title.php:68
+#: widgets/post-author.php:82, widgets/post-custom-field.php:106, widgets/post-date.php:85, widgets/post-excerpt.php:143, widgets/post-terms.php:83, widgets/post-title.php:72, widgets/site-counters.php:114, widgets/site-description.php:60, widgets/site-logo.php:67, widgets/site-title.php:60
 msgid "H2"
 msgstr ""
 
-#: widgets/post-author.php:85, widgets/post-custom-field.php:94, widgets/post-date.php:88, widgets/post-excerpt.php:165, widgets/post-terms.php:86, widgets/post-title.php:75, widgets/site-counters.php:115, widgets/site-description.php:69, widgets/site-logo.php:69, widgets/site-title.php:69
+#: widgets/post-author.php:83, widgets/post-custom-field.php:107, widgets/post-date.php:86, widgets/post-excerpt.php:145, widgets/post-terms.php:84, widgets/post-title.php:73, widgets/site-counters.php:115, widgets/site-description.php:61, widgets/site-logo.php:68, widgets/site-title.php:61
 msgid "H3"
 msgstr ""
 
-#: widgets/post-author.php:86, widgets/post-custom-field.php:95, widgets/post-date.php:89, widgets/post-excerpt.php:167, widgets/post-terms.php:87, widgets/post-title.php:76, widgets/site-counters.php:116, widgets/site-description.php:70, widgets/site-logo.php:70, widgets/site-title.php:70
+#: widgets/post-author.php:84, widgets/post-custom-field.php:108, widgets/post-date.php:87, widgets/post-excerpt.php:147, widgets/post-terms.php:85, widgets/post-title.php:74, widgets/site-counters.php:116, widgets/site-description.php:62, widgets/site-logo.php:69, widgets/site-title.php:62
 msgid "H4"
 msgstr ""
 
-#: widgets/post-author.php:87, widgets/post-custom-field.php:96, widgets/post-date.php:90, widgets/post-excerpt.php:169, widgets/post-terms.php:88, widgets/post-title.php:77, widgets/site-counters.php:117, widgets/site-description.php:71, widgets/site-logo.php:71, widgets/site-title.php:71
+#: widgets/post-author.php:85, widgets/post-custom-field.php:109, widgets/post-date.php:88, widgets/post-excerpt.php:149, widgets/post-terms.php:86, widgets/post-title.php:75, widgets/site-counters.php:117, widgets/site-description.php:63, widgets/site-logo.php:70, widgets/site-title.php:63
 msgid "H5"
 msgstr ""
 
-#: widgets/post-author.php:88, widgets/post-custom-field.php:97, widgets/post-date.php:91, widgets/post-excerpt.php:171, widgets/post-terms.php:89, widgets/post-title.php:78, widgets/site-counters.php:118, widgets/site-description.php:72, widgets/site-logo.php:72, widgets/site-title.php:72
+#: widgets/post-author.php:86, widgets/post-custom-field.php:110, widgets/post-date.php:89, widgets/post-excerpt.php:151, widgets/post-terms.php:87, widgets/post-title.php:76, widgets/site-counters.php:118, widgets/site-description.php:64, widgets/site-logo.php:71, widgets/site-title.php:64
 msgid "H6"
 msgstr ""
 
-#: widgets/post-author.php:89, widgets/post-custom-field.php:98, widgets/post-date.php:92, widgets/post-excerpt.php:173, widgets/post-terms.php:90, widgets/post-title.php:79, widgets/site-counters.php:119, widgets/site-description.php:73, widgets/site-logo.php:73, widgets/site-title.php:73
+#: widgets/post-author.php:87, widgets/post-custom-field.php:111, widgets/post-date.php:90, widgets/post-excerpt.php:153, widgets/post-terms.php:88, widgets/post-title.php:77, widgets/site-counters.php:119, widgets/site-description.php:65, widgets/site-logo.php:72, widgets/site-title.php:65
 msgid "p"
 msgstr ""
 
-#: widgets/post-author.php:90, widgets/post-custom-field.php:99, widgets/post-date.php:93, widgets/post-excerpt.php:175, widgets/post-terms.php:91, widgets/post-title.php:80, widgets/site-counters.php:120, widgets/site-description.php:74, widgets/site-logo.php:74, widgets/site-title.php:74
+#: widgets/post-author.php:88, widgets/post-custom-field.php:112, widgets/post-date.php:91, widgets/post-excerpt.php:155, widgets/post-terms.php:89, widgets/post-title.php:78, widgets/site-counters.php:120, widgets/site-description.php:66, widgets/site-logo.php:73, widgets/site-title.php:66
 msgid "div"
 msgstr ""
 
-#: widgets/post-author.php:91, widgets/post-custom-field.php:100, widgets/post-date.php:94, widgets/post-excerpt.php:177, widgets/post-terms.php:92, widgets/post-title.php:81, widgets/site-counters.php:121, widgets/site-description.php:75, widgets/site-logo.php:75, widgets/site-title.php:75
+#: widgets/post-author.php:89, widgets/post-custom-field.php:113, widgets/post-date.php:92, widgets/post-excerpt.php:157, widgets/post-terms.php:90, widgets/post-title.php:79, widgets/site-counters.php:121, widgets/site-description.php:67, widgets/site-logo.php:74, widgets/site-title.php:67
 msgid "span"
 msgstr ""
 
-#: widgets/post-author.php:100, widgets/post-custom-field.php:109, widgets/post-date.php:103, widgets/post-excerpt.php:195, widgets/post-featured-image.php:90, widgets/post-terms.php:101, widgets/post-title.php:90, widgets/site-counters.php:130, widgets/site-description.php:84, widgets/site-logo.php:84, widgets/site-title.php:84
+#: widgets/post-author.php:98, widgets/post-custom-field.php:122, widgets/post-date.php:101, widgets/post-excerpt.php:175, widgets/post-featured-image.php:88, widgets/post-terms.php:99, widgets/post-title.php:88, widgets/site-counters.php:130, widgets/site-description.php:76, widgets/site-logo.php:83, widgets/site-title.php:76
 msgid "Alignment"
 msgstr ""
 
-#: widgets/post-author.php:104, widgets/post-custom-field.php:113, widgets/post-date.php:107, widgets/post-excerpt.php:203, widgets/post-featured-image.php:94, widgets/post-terms.php:105, widgets/post-title.php:94, widgets/site-counters.php:134, widgets/site-description.php:88, widgets/site-logo.php:88, widgets/site-title.php:88
+#: widgets/post-author.php:102, widgets/post-custom-field.php:126, widgets/post-date.php:105, widgets/post-excerpt.php:183, widgets/post-featured-image.php:92, widgets/post-terms.php:103, widgets/post-title.php:92, widgets/site-counters.php:134, widgets/site-description.php:80, widgets/site-logo.php:87, widgets/site-title.php:80
 msgid "Left"
 msgstr ""
 
-#: widgets/post-author.php:108, widgets/post-custom-field.php:117, widgets/post-date.php:111, widgets/post-excerpt.php:211, widgets/post-featured-image.php:98, widgets/post-terms.php:109, widgets/post-title.php:98, widgets/site-counters.php:138, widgets/site-description.php:92, widgets/site-logo.php:92, widgets/site-title.php:92
+#: widgets/post-author.php:106, widgets/post-custom-field.php:130, widgets/post-date.php:109, widgets/post-excerpt.php:191, widgets/post-featured-image.php:96, widgets/post-terms.php:107, widgets/post-title.php:96, widgets/site-counters.php:138, widgets/site-description.php:84, widgets/site-logo.php:91, widgets/site-title.php:84
 msgid "Center"
 msgstr ""
 
-#: widgets/post-author.php:112, widgets/post-custom-field.php:121, widgets/post-date.php:115, widgets/post-excerpt.php:219, widgets/post-featured-image.php:102, widgets/post-terms.php:113, widgets/post-title.php:102, widgets/site-counters.php:142, widgets/site-description.php:96, widgets/site-logo.php:96, widgets/site-title.php:96
+#: widgets/post-author.php:110, widgets/post-custom-field.php:134, widgets/post-date.php:113, widgets/post-excerpt.php:199, widgets/post-featured-image.php:100, widgets/post-terms.php:111, widgets/post-title.php:100, widgets/site-counters.php:142, widgets/site-description.php:88, widgets/site-logo.php:95, widgets/site-title.php:88
 msgid "Right"
 msgstr ""
 
-#: widgets/post-author.php:116, widgets/post-custom-field.php:125, widgets/post-date.php:119, widgets/post-excerpt.php:227, widgets/post-featured-image.php:106, widgets/post-terms.php:117, widgets/post-title.php:106, widgets/site-counters.php:146, widgets/site-description.php:100, widgets/site-logo.php:100, widgets/site-title.php:100
+#: widgets/post-author.php:114, widgets/post-custom-field.php:138, widgets/post-date.php:117, widgets/post-excerpt.php:207, widgets/post-featured-image.php:104, widgets/post-terms.php:115, widgets/post-title.php:104, widgets/site-counters.php:146, widgets/site-description.php:92, widgets/site-logo.php:99, widgets/site-title.php:92
 msgid "Justified"
 msgstr ""
 
-#: widgets/post-author.php:130, widgets/post-custom-field.php:139, widgets/post-date.php:133, widgets/post-excerpt.php:255, widgets/post-featured-image.php:120, widgets/post-featured-image.php:139, widgets/post-terms.php:131, widgets/post-title.php:120, widgets/site-description.php:114, widgets/site-logo.php:114, widgets/site-title.php:114
+#: widgets/post-author.php:128, widgets/post-custom-field.php:152, widgets/post-date.php:131, widgets/post-excerpt.php:235, widgets/post-featured-image.php:118, widgets/post-featured-image.php:137, widgets/post-terms.php:129, widgets/post-title.php:118, widgets/site-description.php:106, widgets/site-logo.php:113, widgets/site-title.php:106
 msgid "Link to"
 msgstr ""
 
-#: widgets/post-author.php:134, widgets/post-custom-field.php:143, widgets/post-date.php:137, widgets/post-excerpt.php:263, widgets/post-featured-image.php:124, widgets/post-terms.php:135, widgets/post-title.php:124, widgets/site-description.php:118, widgets/site-logo.php:118, widgets/site-title.php:118
+#: widgets/post-author.php:132, widgets/post-custom-field.php:156, widgets/post-date.php:135, widgets/post-excerpt.php:243, widgets/post-featured-image.php:122, widgets/post-terms.php:133, widgets/post-title.php:122, widgets/site-description.php:110, widgets/site-logo.php:117, widgets/site-title.php:110
 msgid "None"
 msgstr ""
 
-#: widgets/post-author.php:137, widgets/post-custom-field.php:146, widgets/post-date.php:140, widgets/post-excerpt.php:269, widgets/post-featured-image.php:127, widgets/post-title.php:127
+#: widgets/post-author.php:135, widgets/post-custom-field.php:159, widgets/post-date.php:138, widgets/post-excerpt.php:249, widgets/post-featured-image.php:125, widgets/post-title.php:125
 msgid "%s URL"
 msgstr ""
 
-#: widgets/post-author.php:140
+#: widgets/post-author.php:138
 msgid "Author URL"
 msgstr ""
 
-#: widgets/post-author.php:141, widgets/post-custom-field.php:149, widgets/post-date.php:143, widgets/post-excerpt.php:275, widgets/post-featured-image.php:131, widgets/post-title.php:130, widgets/site-description.php:120, widgets/site-logo.php:120, widgets/site-title.php:120
+#: widgets/post-author.php:139, widgets/post-custom-field.php:163, widgets/post-date.php:141, widgets/post-excerpt.php:255, widgets/post-featured-image.php:129, widgets/post-title.php:128, widgets/site-description.php:112, widgets/site-logo.php:119, widgets/site-title.php:112
 msgid "Custom URL"
 msgstr ""
 
-#: widgets/post-author.php:149, widgets/post-custom-field.php:157, widgets/post-date.php:151, widgets/post-excerpt.php:291, widgets/post-title.php:138, widgets/site-description.php:128, widgets/site-logo.php:128, widgets/site-title.php:128
+#: widgets/post-author.php:147, widgets/post-custom-field.php:171, widgets/post-date.php:149, widgets/post-excerpt.php:271, widgets/post-title.php:136, widgets/site-description.php:120, widgets/site-logo.php:127, widgets/site-title.php:120
 msgid "Link"
 msgstr ""
 
-#: widgets/post-author.php:151, widgets/post-custom-field.php:159, widgets/post-date.php:153, widgets/post-excerpt.php:295, widgets/post-featured-image.php:141, widgets/post-title.php:140, widgets/site-description.php:130, widgets/site-logo.php:130, widgets/site-title.php:130
+#: widgets/post-author.php:149, widgets/post-custom-field.php:173, widgets/post-date.php:151, widgets/post-excerpt.php:275, widgets/post-featured-image.php:139, widgets/post-title.php:138, widgets/site-description.php:122, widgets/site-logo.php:129, widgets/site-title.php:122
 msgid "http://your-link.com"
 msgstr ""
 
-#: widgets/post-author.php:179, widgets/post-custom-field.php:213, widgets/post-date.php:181, widgets/post-excerpt.php:351, widgets/post-terms.php:158, widgets/post-title.php:168, widgets/site-counters.php:170, widgets/site-counters.php:212, widgets/site-description.php:154, widgets/site-title.php:154
+#: widgets/post-author.php:177, widgets/post-custom-field.php:239, widgets/post-date.php:179, widgets/post-excerpt.php:331, widgets/post-terms.php:156, widgets/post-title.php:166, widgets/site-counters.php:170, widgets/site-counters.php:212, widgets/site-description.php:146, widgets/site-title.php:146
 msgid "Text Color"
 msgstr ""
 
-#: widgets/post-author.php:204, widgets/post-custom-field.php:238, widgets/post-date.php:206, widgets/post-excerpt.php:401, widgets/post-featured-image.php:235, widgets/post-terms.php:183, widgets/post-title.php:193, widgets/site-counters.php:194, widgets/site-counters.php:236, widgets/site-description.php:179, widgets/site-logo.php:197, widgets/site-title.php:179
+#: widgets/post-author.php:202, widgets/post-custom-field.php:344, widgets/post-date.php:204, widgets/post-excerpt.php:381, widgets/post-featured-image.php:258, widgets/post-terms.php:181, widgets/post-title.php:191, widgets/site-counters.php:194, widgets/site-counters.php:236, widgets/site-description.php:171, widgets/site-logo.php:221, widgets/site-title.php:171
 msgid "Hover Animation"
 msgstr ""
 
-#: widgets/post-author.php:307
+#: widgets/post-author.php:305
 msgid "First Name"
 msgstr ""
 
-#: widgets/post-author.php:308
+#: widgets/post-author.php:306
 msgid "Last Name"
 msgstr ""
 
-#: widgets/post-author.php:309
+#: widgets/post-author.php:307
 msgid "First Name + Last Name"
 msgstr ""
 
-#: widgets/post-author.php:310
+#: widgets/post-author.php:308
 msgid "Last Name + First Name"
 msgstr ""
 
-#: widgets/post-author.php:311
+#: widgets/post-author.php:309
 msgid "Nick Name"
 msgstr ""
 
-#: widgets/post-author.php:312
+#: widgets/post-author.php:310
 msgid "Display Name"
 msgstr ""
 
-#: widgets/post-author.php:313
+#: widgets/post-author.php:311
 msgid "User Name"
 msgstr ""
 
-#: widgets/post-author.php:314
+#: widgets/post-author.php:312
 msgid "User Bio"
 msgstr ""
 
-#: widgets/post-author.php:315
+#: widgets/post-author.php:313
 msgid "User Image"
 msgstr ""
 
-#: widgets/post-comments.php:35, widgets/post-comments.php:58
+#: widgets/post-comments.php:34, widgets/post-comments.php:56
 msgid "%s Comments"
 msgstr ""
 
-#: widgets/post-comments.php:68
+#: widgets/post-comments.php:66
 msgid "This widget displays the default Comments Template included in the current Theme."
 msgstr ""
 
-#: widgets/post-comments.php:70
+#: widgets/post-comments.php:68
 msgid "No custom styling can be applied as each theme uses it's own CSS classes and IDs."
 msgstr ""
 
-#: widgets/post-custom-field.php:38, widgets/post-custom-field.php:61, widgets/post-custom-field.php:201
+#: widgets/post-custom-field.php:39, widgets/post-custom-field.php:61, widgets/post-custom-field.php:227
 msgid "%s Custom Field"
 msgstr ""
 
@@ -407,79 +471,103 @@ msgstr ""
 msgid "Custom Field"
 msgstr ""
 
-#: widgets/post-custom-field.php:179, widgets/post-custom-field.php:252, widgets/post-featured-image.php:158, widgets/post-featured-image.php:278
+#: widgets/post-custom-field.php:89
+msgid "Display As"
+msgstr ""
+
+#: widgets/post-custom-field.php:92
+msgid "Text"
+msgstr ""
+
+#: widgets/post-custom-field.php:93
+msgid "Image"
+msgstr ""
+
+#: widgets/post-custom-field.php:162
+msgid "Other Custom Field"
+msgstr ""
+
+#: widgets/post-custom-field.php:187
+msgid "Custom Field Link"
+msgstr ""
+
+#: widgets/post-custom-field.php:205, widgets/post-custom-field.php:396, widgets/post-featured-image.php:156, widgets/post-featured-image.php:301
 msgid "Premium Feature"
 msgstr ""
 
-#: widgets/post-custom-field.php:182, widgets/post-custom-field.php:255, widgets/post-featured-image.php:161, widgets/post-featured-image.php:281
+#: widgets/post-custom-field.php:208, widgets/post-custom-field.php:399, widgets/post-featured-image.php:159, widgets/post-featured-image.php:304
 msgid "This feature is available only for Press Elements Pro."
 msgstr ""
 
-#: widgets/post-custom-field.php:185, widgets/post-custom-field.php:258, widgets/post-featured-image.php:164, widgets/post-featured-image.php:284
+#: widgets/post-custom-field.php:211, widgets/post-custom-field.php:402, widgets/post-featured-image.php:162, widgets/post-featured-image.php:307
 msgid "Upgrade Now!"
 msgstr ""
 
-#: widgets/post-date.php:38, widgets/post-date.php:61, widgets/post-date.php:171
-msgid "%s Date"
-msgstr ""
-
-#: widgets/post-date.php:70
-msgid "Date Type"
-msgstr ""
-
-#: widgets/post-date.php:73
-msgid "Publish Date"
-msgstr ""
-
-#: widgets/post-date.php:74
-msgid "Last Modified Date"
-msgstr ""
-
-#: widgets/post-excerpt.php:75, widgets/post-excerpt.php:121, widgets/post-excerpt.php:331
-msgid "%s Excerpt"
-msgstr ""
-
-#: widgets/post-featured-image.php:38, widgets/post-featured-image.php:61, widgets/post-featured-image.php:180
-msgid "%s Featured Image"
-msgstr ""
-
-#: widgets/post-featured-image.php:82
-msgid "Image Size"
-msgstr ""
-
-#: widgets/post-featured-image.php:130
-msgid "Media File URL"
-msgstr ""
-
-#: widgets/post-featured-image.php:192, widgets/site-logo.php:154
+#: widgets/post-custom-field.php:270, widgets/post-featured-image.php:190, widgets/site-logo.php:153
 msgid "Size (%)"
 msgstr ""
 
-#: widgets/post-featured-image.php:214, widgets/site-logo.php:176
+#: widgets/post-custom-field.php:295, widgets/post-featured-image.php:212, widgets/site-logo.php:175
 msgid "Opacity (%)"
 msgstr ""
 
-#: widgets/post-featured-image.php:244, widgets/site-logo.php:206
+#: widgets/post-custom-field.php:319, widgets/post-featured-image.php:233, widgets/site-logo.php:196
+msgid "Rotation (deg)"
+msgstr ""
+
+#: widgets/post-custom-field.php:353, widgets/post-featured-image.php:267, widgets/site-logo.php:230
 msgid "Image Border"
 msgstr ""
 
-#: widgets/post-featured-image.php:252, widgets/site-logo.php:214
+#: widgets/post-custom-field.php:364, widgets/post-featured-image.php:275, widgets/site-logo.php:238
 msgid "Border Radius"
 msgstr ""
 
-#: widgets/post-terms.php:38, widgets/post-terms.php:61, widgets/post-terms.php:148
+#: widgets/post-date.php:37, widgets/post-date.php:59, widgets/post-date.php:169
+msgid "%s Date"
+msgstr ""
+
+#: widgets/post-date.php:68
+msgid "Date Type"
+msgstr ""
+
+#: widgets/post-date.php:71
+msgid "Publish Date"
+msgstr ""
+
+#: widgets/post-date.php:72
+msgid "Last Modified Date"
+msgstr ""
+
+#: widgets/post-excerpt.php:73, widgets/post-excerpt.php:117, widgets/post-excerpt.php:311
+msgid "%s Excerpt"
+msgstr ""
+
+#: widgets/post-featured-image.php:37, widgets/post-featured-image.php:59, widgets/post-featured-image.php:178
+msgid "%s Featured Image"
+msgstr ""
+
+#: widgets/post-featured-image.php:80
+msgid "Image Size"
+msgstr ""
+
+#: widgets/post-featured-image.php:128
+msgid "Media File URL"
+msgstr ""
+
+#: widgets/post-terms.php:37, widgets/post-terms.php:59, widgets/post-terms.php:146
 msgid "%s Terms"
 msgstr ""
 
-#: widgets/post-terms.php:70, widgets/site-counters.php:74, widgets/site-counters.php:97
+#: widgets/post-terms.php:68, widgets/site-counters.php:74, widgets/site-counters.php:97
 msgid "Taxonomy"
 msgstr ""
 
-#: widgets/post-terms.php:136
+#: widgets/post-terms.php:134
 msgid "Term"
 msgstr ""
 
-#: widgets/post-title.php:38, widgets/post-title.php:61, widgets/post-title.php:158
+#: widgets/post-title.php:37, widgets/post-title.php:59, widgets/post-title.php:156
 msgid "%s Title"
 msgstr ""
 
@@ -507,6 +595,6 @@ msgstr ""
 msgid "Label"
 msgstr ""
 
-#: widgets/site-description.php:119, widgets/site-logo.php:119, widgets/site-title.php:119
+#: widgets/site-description.php:111, widgets/site-logo.php:118, widgets/site-title.php:111
 msgid "Home URL"
 msgstr ""
