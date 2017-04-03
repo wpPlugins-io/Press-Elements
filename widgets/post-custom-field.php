@@ -314,6 +314,31 @@ if ( press_elements_freemius()->is__premium_only() ) {
 		);
 
 		$this->add_control(
+			'rotate',
+			[
+				'label' => __( 'Rotation (deg)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 0,
+				],
+				'range' => [
+					'deg' => [
+						'max' => 360,
+						'min' => -360,
+						'step' => 1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-custom-field img' => '-webkit-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-custom-field img' => '-moz-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-custom-field img' => '-ms-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-custom-field img' => '-o-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-custom-field img' => 'transform: rotate({{SIZE}}deg);',
+				],
+			]
+		);
+
+		$this->add_control(
 			'hover_animation',
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),

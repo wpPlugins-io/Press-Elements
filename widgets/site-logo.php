@@ -191,6 +191,31 @@ class Press_Elements_Site_logo extends Widget_Base {
 		);
 
 		$this->add_control(
+			'rotate',
+			[
+				'label' => __( 'Rotation (deg)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 0,
+				],
+				'range' => [
+					'deg' => [
+						'max' => 360,
+						'min' => -360,
+						'step' => 1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-site-logo img' => '-webkit-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-site-logo img' => '-moz-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-site-logo img' => '-ms-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-site-logo img' => '-o-transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-site-logo img' => 'transform: rotate({{SIZE}}deg);',
+				],
+			]
+		);
+
+		$this->add_control(
 			'hover_animation',
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),
