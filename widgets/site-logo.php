@@ -208,7 +208,7 @@ class Press_Elements_Site_logo extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .press-elements-featured-image img' => '-webkit-transform: rotate({{SIZE}}deg); -moz-transform: rotate({{SIZE}}deg); -ms-transform: rotate({{SIZE}}deg); -o-transform: rotate({{SIZE}}deg); transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-site-logo img' => '-webkit-transform: rotate({{SIZE}}deg); -moz-transform: rotate({{SIZE}}deg); -ms-transform: rotate({{SIZE}}deg); -o-transform: rotate({{SIZE}}deg); transform: rotate({{SIZE}}deg);',
 				],
 			]
 		);
