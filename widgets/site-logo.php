@@ -191,11 +191,13 @@ class Press_Elements_Site_logo extends Widget_Base {
 		);
 
 		$this->add_control(
-			'rotate',
+			'angle',
 			[
-				'label' => __( 'Rotation (deg)', 'press-elements' ),
+				'label' => __( 'Angle (deg)', 'press-elements' ),
 				'type' => Controls_Manager::SLIDER,
+				'size_units' => [ 'deg' ],
 				'default' => [
+					'unit' => 'deg',
 					'size' => 0,
 				],
 				'range' => [
@@ -206,11 +208,7 @@ class Press_Elements_Site_logo extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .press-elements-site-logo img' => '-webkit-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-site-logo img' => '-moz-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-site-logo img' => '-ms-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-site-logo img' => '-o-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-site-logo img' => 'transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-featured-image img' => '-webkit-transform: rotate({{SIZE}}deg); -moz-transform: rotate({{SIZE}}deg); -ms-transform: rotate({{SIZE}}deg); -o-transform: rotate({{SIZE}}deg); transform: rotate({{SIZE}}deg);',
 				],
 			]
 		);

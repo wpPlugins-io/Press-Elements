@@ -228,11 +228,13 @@ if ( press_elements_freemius()->is__premium_only() ) {
 		);
 
 		$this->add_control(
-			'rotate',
+			'angle',
 			[
-				'label' => __( 'Rotation (deg)', 'press-elements' ),
+				'label' => __( 'Angle (deg)', 'press-elements' ),
 				'type' => Controls_Manager::SLIDER,
+				'size_units' => [ 'deg' ],
 				'default' => [
+					'unit' => 'deg',
 					'size' => 0,
 				],
 				'range' => [
@@ -243,11 +245,7 @@ if ( press_elements_freemius()->is__premium_only() ) {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .press-elements-featured-image img' => '-webkit-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-featured-image img' => '-moz-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-featured-image img' => '-ms-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-featured-image img' => '-o-transform: rotate({{SIZE}}deg);',
-					'{{WRAPPER}} .press-elements-featured-image img' => 'transform: rotate({{SIZE}}deg);',
+					'{{WRAPPER}} .press-elements-featured-image img' => '-webkit-transform: rotate({{SIZE}}deg); -moz-transform: rotate({{SIZE}}deg); -ms-transform: rotate({{SIZE}}deg); -o-transform: rotate({{SIZE}}deg); transform: rotate({{SIZE}}deg);',
 				],
 			]
 		);
