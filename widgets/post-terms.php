@@ -188,13 +188,14 @@ class Press_Elements_Post_Terms extends Widget_Base {
 	}
 
 	protected function render() {
+		global $post;
 		$settings = $this->get_settings();
 
 		$taxonomy = $settings['taxonomy'];
 		if ( empty( $taxonomy ) )
 			return;
 
-		$term_list = get_terms( $taxonomy );
+		$term_list = get_the_terms( $post->ID, $taxonomy );
 		if ( empty( $term_list ) || is_wp_error( $term_list ) )
 			return;
 
@@ -222,6 +223,7 @@ class Press_Elements_Post_Terms extends Widget_Base {
 	}
 
 	protected function _content_template() {
+		global $post;
 		?>
 		<#
 			var taxonomy = settings.taxonomy;
@@ -231,7 +233,7 @@ class Press_Elements_Post_Terms extends Widget_Base {
 			$taxonomies = get_taxonomies( array( 'public' => true ) );
 			foreach ( $taxonomies as $taxonomy ) {
 				printf( 'all_terms["%1$s"] = [];', $taxonomy );
-				$terms = get_terms( $taxonomy );
+				$terms = get_the_terms( $post->ID, $taxonomy );
 				$i = 0;
 				foreach ( $terms as $term ) {
 					printf( 'all_terms["%1$s"][%2$s] = [];', $taxonomy, $i );
