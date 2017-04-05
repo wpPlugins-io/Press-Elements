@@ -3,7 +3,7 @@ Contributors: ramiy
 Tags: elementor, press elements, elements, widgets, page builder
 Requires at least: 4.7
 Tested up to: 4.7
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -80,24 +80,6 @@ WooCommerce Elements:
 * Product Price (Pro)
 * Product Gallery (Pro)
 
-== Installation ==
-
-= Installation =
-1. In your WordPress Dashboard go to "Plugins" -> "Add Plugin".
-2. Search for "Press Elements".
-3. Install the plugin by pressing the "Install" button.
-4. Activate the plugin by pressing the "Activate" button.
-
-= Minimum Requirements =
-* WordPress version 4.7 or greater.
-* PHP version 5.3 or greater.
-* MySQL version 5.0 or greater.
-
-= Recommended Requirements =
-* The latest WordPress version.
-* PHP version 7.0 or greater.
-* MySQL version 5.6 or greater.
-
 == Screenshots ==
 1. Post edit screen with WordPress elements.
 2. Elementor widgets for each site and post element.
@@ -140,15 +122,22 @@ Yes you can! Each element has an "HTML Tag" field, which is used as a container 
 
 == Changelog ==
 
+= 1.3.1 =
+
+**General**
+
+* Fix images rotation angle controller to allow 360deg image rotation.
+* Fix "Post Terms" to display only the post-terms not all the terms.
+
 = 1.3.0 =
 
 **General**
 
-* Remove redundant hidden control in Site Title and Site Description widgets.
-* Enhance "Post Custom Fields" widget with links to other custom post type fields.
-* Enhance "Post Custom Fields" widget with "Display as" as control to display as simple text or an image.
-* Enhance "Post Custom Fields" widget "Style" tab. Different fields for simple text values and images.
-* Enhance "Site Logo", "Post Featured Image" and "Post Custom fields" with an image rotation feature.
+* Remove redundant hidden control in "Site Title" and "Site Description" widgets.
+* Enhance "Post Custom Field" widget with links to other custom fields.
+* Enhance "Post Custom Field" widget with "Display as" as control to display as simple text or an image.
+* Enhance "Post Custom Field" widget "Style" tab. Different fields for simple text values and images.
+* Enhance "Site Logo", "Post Featured Image" and "Post Custom Field" with an image rotation feature.
 
 = 1.2.2 =
 
