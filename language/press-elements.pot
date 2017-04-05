@@ -411,7 +411,7 @@ msgstr ""
 msgid "Text Color"
 msgstr ""
 
-#: widgets/post-author.php:202, widgets/post-custom-field.php:344, widgets/post-date.php:204, widgets/post-excerpt.php:381, widgets/post-featured-image.php:258, widgets/post-terms.php:181, widgets/post-title.php:191, widgets/site-counters.php:194, widgets/site-counters.php:236, widgets/site-description.php:171, widgets/site-logo.php:221, widgets/site-title.php:171
+#: widgets/post-author.php:202, widgets/post-custom-field.php:342, widgets/post-date.php:204, widgets/post-excerpt.php:381, widgets/post-featured-image.php:256, widgets/post-terms.php:181, widgets/post-title.php:191, widgets/site-counters.php:194, widgets/site-counters.php:236, widgets/site-description.php:171, widgets/site-logo.php:219, widgets/site-title.php:171
 msgid "Hover Animation"
 msgstr ""
 
@@ -491,15 +491,15 @@ msgstr ""
 msgid "Custom Field Link"
 msgstr ""
 
-#: widgets/post-custom-field.php:205, widgets/post-custom-field.php:396, widgets/post-featured-image.php:156, widgets/post-featured-image.php:301
+#: widgets/post-custom-field.php:205, widgets/post-custom-field.php:394, widgets/post-featured-image.php:156, widgets/post-featured-image.php:299
 msgid "Premium Feature"
 msgstr ""
 
-#: widgets/post-custom-field.php:208, widgets/post-custom-field.php:399, widgets/post-featured-image.php:159, widgets/post-featured-image.php:304
+#: widgets/post-custom-field.php:208, widgets/post-custom-field.php:397, widgets/post-featured-image.php:159, widgets/post-featured-image.php:302
 msgid "This feature is available only for Press Elements Pro."
 msgstr ""
 
-#: widgets/post-custom-field.php:211, widgets/post-custom-field.php:402, widgets/post-featured-image.php:162, widgets/post-featured-image.php:307
+#: widgets/post-custom-field.php:211, widgets/post-custom-field.php:400, widgets/post-featured-image.php:162, widgets/post-featured-image.php:305
 msgid "Upgrade Now!"
 msgstr ""
 
@@ -512,14 +512,14 @@ msgid "Opacity (%)"
 msgstr ""
 
 #: widgets/post-custom-field.php:319, widgets/post-featured-image.php:233, widgets/site-logo.php:196
-msgid "Rotation (deg)"
+msgid "Angle (deg)"
 msgstr ""
 
-#: widgets/post-custom-field.php:353, widgets/post-featured-image.php:267, widgets/site-logo.php:230
+#: widgets/post-custom-field.php:351, widgets/post-featured-image.php:265, widgets/site-logo.php:228
 msgid "Image Border"
 msgstr ""
 
-#: widgets/post-custom-field.php:364, widgets/post-featured-image.php:275, widgets/site-logo.php:238
+#: widgets/post-custom-field.php:362, widgets/post-featured-image.php:273, widgets/site-logo.php:236
 msgid "Border Radius"
 msgstr ""
 
