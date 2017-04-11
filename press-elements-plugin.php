@@ -16,6 +16,7 @@ use PressElements\Widgets\Press_Elements_Post_Custom_Field;
 use PressElements\Widgets\Press_Elements_Post_Comments;
 
 use PressElements\Widgets\Press_Elements_Advanced_Custom_Fields;
+use PressElements\Widgets\Press_Elements_Gravatar;
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
@@ -126,6 +127,7 @@ class Press_Elements_Plugin {
 		require_once __DIR__ . '/widgets/post-comments.php';
 		// Integrations
 		require_once __DIR__ . '/widgets/advanced-custom-fields.php';
+		require_once __DIR__ . '/widgets/gravatar.php';
 	}
 
 	/**
@@ -152,6 +154,7 @@ class Press_Elements_Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Comments() );
 		// Integrations
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Advanced_Custom_Fields() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Gravatar() );
 	}
 
 }
