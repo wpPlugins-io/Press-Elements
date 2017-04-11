@@ -128,11 +128,11 @@ class Press_Elements_Admin {
 
 			<h1><?php esc_html_e( 'Press Elements - Widgets for Elementor', 'press-elements' ); ?></h1>
 
-			<p class="about-text"><?php esc_html_e( 'An easy-to-use widgets that help you display and design your content using Elementor page builder.', 'press-elements' );?></p>
+			<p class="about-text"><?php esc_html_e( 'Easy-to-use widgets that help you display and design your content using Elementor page builder.', 'press-elements' );?></p>
 
 			<?php $this->tabs(); ?>
 
-			<p class="about-text"><?php esc_html_e( 'Press Elements allows you to style a single pages using the built-in WordPress post components.', 'press-elements' ); ?></p>
+			<p class="about-text"><?php esc_html_e( 'Press Elements combines the simplicity of Elementor with the efficiency of the built-in WordPress theme components.', 'press-elements' ); ?></p>
 
 			<div class="feature-section two-col">
 
@@ -164,7 +164,7 @@ class Press_Elements_Admin {
 
 					<p class="about-text"><?php esc_html_e( 'You don\'t need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface! Now you can design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library.', 'press-elements' ); ?></p>
 
-					<p class="about-text"><?php esc_html_e( 'Developers use theme-functions to generate themes. With Press Elements you can use Elementor widgets to display and design your post elements! How cool is that?!', 'press-elements' ); ?></p>
+					<p class="about-text"><?php esc_html_e( 'With Press Elements you can use Elementor widgets to display and design your post elements! Just like developers use theme-functions to generate themes. How cool is that?!', 'press-elements' ); ?></p>
 
 					<h3><?php esc_html_e( 'Included Widgets', 'press-elements' ); ?></h3>
 
@@ -183,8 +183,13 @@ class Press_Elements_Admin {
 						<li><?php esc_html_e( 'Post Author', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Terms', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Featured Image (Pro)', 'press-elements' ); ?></li>
-						<li><?php esc_html_e( 'Post Custom Fields (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Post Custom Field (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Comments', 'press-elements' ); ?></li>
+					</ol>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Integrations:', 'press-elements' ); ?></p>
+					<ol>
+						<li><?php esc_html_e( 'Advanced Custom Fields (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Gravatar (Pro)', 'press-elements' ); ?></li>
 					</ol>
 
 					<h3><?php esc_html_e( 'Coming Soon', 'press-elements' ); ?></h3>
@@ -192,6 +197,7 @@ class Press_Elements_Admin {
 					<p style="text-decoration: underline;"><?php esc_html_e( 'Site Elements:', 'press-elements' ); ?></p>
 					<ol>
 						<li><?php esc_html_e( 'Login Form', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Search Form', 'press-elements' ); ?></li>
 					</ol>
 					<p style="text-decoration: underline;"><?php esc_html_e( 'Comments Elements:', 'press-elements' ); ?></p>
 					<ol>
@@ -199,10 +205,10 @@ class Press_Elements_Admin {
 						<li><?php esc_html_e( 'Comments List', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Comments Pagination', 'press-elements' ); ?></li>
 					</ol>
-					<p style="text-decoration: underline;"><?php esc_html_e( 'WooCommerce Elements:', 'press-elements' ); ?></p>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Integrations:', 'press-elements' ); ?></p>
 					<ol>
-						<li><?php esc_html_e( 'Product Price (Pro)', 'press-elements' ); ?></li>
-						<li><?php esc_html_e( 'Product Gallery (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Flickr (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Pinterest (Pro)', 'press-elements' ); ?></li>
 					</ol>
 
 				</div>
@@ -277,6 +283,15 @@ class Press_Elements_Admin {
 							<img src="<?php echo esc_url( plugins_url( 'screenshot-8.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Custom fields as text fields and images, and linking to other custom fields.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Custom fields as text fields and images, and linking to other custom fields.', 'press-elements' ); ?></figcaption>
+					</figure>
+
+					<br>
+
+					<figure>
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-9.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-9.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Display Gravatars based on an email address.', 'press-elements' ); ?>">
+						</a>
+						<figcaption><?php esc_html_e( 'Display Gravatars based on an email address.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 				</div>
