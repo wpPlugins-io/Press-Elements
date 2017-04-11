@@ -234,11 +234,13 @@ class Press_Elements_Post_Terms extends Widget_Base {
 			foreach ( $taxonomies as $taxonomy ) {
 				printf( 'all_terms["%1$s"] = [];', $taxonomy );
 				$terms = get_the_terms( $post->ID, $taxonomy );
-				$i = 0;
-				foreach ( $terms as $term ) {
-					printf( 'all_terms["%1$s"][%2$s] = [];', $taxonomy, $i );
-					printf( 'all_terms["%1$s"][%2$s] = { slug: "%3$s", name: "%4$s", url: "%5$s" };', $taxonomy, $i, $term->slug, $term->name, esc_url( get_term_link( $term ) ) );
-					$i++;
+				if ( $terms ) {
+					$i = 0;
+					foreach ( $terms as $term ) {
+						printf( 'all_terms["%1$s"][%2$s] = [];', $taxonomy, $i );
+						printf( 'all_terms["%1$s"][%2$s] = { slug: "%3$s", name: "%4$s", url: "%5$s" };', $taxonomy, $i, $term->slug, $term->name, esc_url( get_term_link( $term ) ) );
+						$i++;
+					}
 				}
 			}
 			?>
