@@ -333,6 +333,9 @@ if ( press_elements_freemius()->is__premium_only() ) {
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-custom-field img' => '-webkit-transform: rotate({{SIZE}}deg); -moz-transform: rotate({{SIZE}}deg); -ms-transform: rotate({{SIZE}}deg); -o-transform: rotate({{SIZE}}deg); transform: rotate({{SIZE}}deg);',
 				],
+				'condition' => [
+					'display' => 'image',
+				],
 			]
 		);
 
