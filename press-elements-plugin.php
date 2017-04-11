@@ -15,6 +15,7 @@ use PressElements\Widgets\Press_Elements_Post_Featured_Image;
 use PressElements\Widgets\Press_Elements_Post_Custom_Field;
 use PressElements\Widgets\Press_Elements_Post_Comments;
 
+
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -78,6 +79,14 @@ class Press_Elements_Plugin {
 			],
 			2
 		);
+		\Elementor\Plugin::instance()->elements_manager->add_category(
+			'press-elements-integrations',
+			[
+				'title' => __( 'Integrations', 'press-elements' ),
+				'icon'  => 'font'
+			],
+			3
+		);
 	}
 
 	/**
@@ -114,6 +123,7 @@ class Press_Elements_Plugin {
 		require_once __DIR__ . '/widgets/post-featured-image.php';
 		require_once __DIR__ . '/widgets/post-custom-field.php';
 		require_once __DIR__ . '/widgets/post-comments.php';
+		// Integrations
 	}
 
 	/**
@@ -138,6 +148,7 @@ class Press_Elements_Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Featured_Image() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Custom_Field() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Comments() );
+		// Integrations
 	}
 
 }
