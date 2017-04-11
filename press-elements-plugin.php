@@ -15,6 +15,7 @@ use PressElements\Widgets\Press_Elements_Post_Featured_Image;
 use PressElements\Widgets\Press_Elements_Post_Custom_Field;
 use PressElements\Widgets\Press_Elements_Post_Comments;
 
+use PressElements\Widgets\Press_Elements_Advanced_Custom_Fields;
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
@@ -124,6 +125,7 @@ class Press_Elements_Plugin {
 		require_once __DIR__ . '/widgets/post-custom-field.php';
 		require_once __DIR__ . '/widgets/post-comments.php';
 		// Integrations
+		require_once __DIR__ . '/widgets/advanced-custom-fields.php';
 	}
 
 	/**
@@ -149,6 +151,7 @@ class Press_Elements_Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Custom_Field() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Comments() );
 		// Integrations
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Advanced_Custom_Fields() );
 	}
 
 }
