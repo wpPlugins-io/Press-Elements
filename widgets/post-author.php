@@ -6,6 +6,8 @@ use Elementor\Controls_Manager;
 use Elementor\Scheme_Color;
 use Elementor\Scheme_Typography;
 use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Box_Shadow;
 
 
 
@@ -184,6 +186,9 @@ class Press_Elements_Post_Author extends Widget_Base {
 					'{{WRAPPER}} .press-elements-author' => 'color: {{VALUE}};',
 					'{{WRAPPER}} .press-elements-author a' => 'color: {{VALUE}};',
 				],
+				'condition' => [
+					'author!' => 'image',
+				],
 			]
 		);
 
@@ -193,6 +198,84 @@ class Press_Elements_Post_Author extends Widget_Base {
 				'name' => 'typography',
 				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .press-elements-author',
+				'condition' => [
+					'author!' => 'image',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'space',
+			[
+				'label' => __( 'Size (%)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 100,
+					'unit' => '%',
+				],
+				'size_units' => [ '%' ],
+				'range' => [
+					'%' => [
+						'min' => 1,
+						'max' => 100,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-author img' => 'max-width: {{SIZE}}{{UNIT}};',
+				],
+				'condition' => [
+					'author' => 'image',
+				],
+			]
+		);
+
+		$this->add_responsive_control(
+			'opacity',
+			[
+				'label' => __( 'Opacity (%)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'default' => [
+					'size' => 1,
+				],
+				'range' => [
+					'px' => [
+						'max' => 1,
+						'min' => 0.10,
+						'step' => 0.01,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-author img' => 'opacity: {{SIZE}};',
+				],
+				'condition' => [
+					'author' => 'image',
+				],
+			]
+		);
+
+		$this->add_control(
+			'angle',
+			[
+				'label' => __( 'Angle (deg)', 'press-elements' ),
+				'type' => Controls_Manager::SLIDER,
+				'size_units' => [ 'deg' ],
+				'default' => [
+					'unit' => 'deg',
+					'size' => 0,
+				],
+				'range' => [
+					'deg' => [
+						'max' => 360,
+						'min' => -360,
+						'step' => 1,
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-author img' => '-webkit-transform: rotate({{SIZE}}deg); -moz-transform: rotate({{SIZE}}deg); -ms-transform: rotate({{SIZE}}deg); -o-transform: rotate({{SIZE}}deg); transform: rotate({{SIZE}}deg);',
+				],
+				'condition' => [
+					'author' => 'image',
+				],
 			]
 		);
 
@@ -201,6 +284,44 @@ class Press_Elements_Post_Author extends Widget_Base {
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Border::get_type(),
+			[
+				'name' => 'image_border',
+				'label' => __( 'Image Border', 'press-elements' ),
+				'selector' => '{{WRAPPER}} .press-elements-author img',
+				'condition' => [
+					'author' => 'image',
+				],
+			]
+		);
+
+		$this->add_control(
+			'image_border_radius',
+			[
+				'label' => __( 'Border Radius', 'press-elements' ),
+				'type' => Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%' ],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-author img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+				'condition' => [
+					'author' => 'image',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Box_Shadow::get_type(),
+			[
+				'name' => 'image_box_shadow',
+				'selector' => '{{WRAPPER}} .press-elements-author img',
+				'condition' => [
+					'author' => 'image',
+				],
 			]
 		);
 
