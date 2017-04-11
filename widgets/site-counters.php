@@ -44,7 +44,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 	protected function _register_controls() {
 
 		$post_types = array();
-		$all_post_types = get_post_types( $args = array( 'public' => true, '_builtin' => true ), 'objects' );
+		$all_post_types = get_post_types( $args = array( 'public' => true ), 'objects' );
 		foreach ( $all_post_types as $post_type ) {
 			$post_types[ $post_type->name ] = $post_type->labels->name;
 		}
@@ -290,6 +290,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 	}
 
 	protected function _content_template() {
+		/*
 		?>
 		<#
 		var total = 0;
@@ -309,14 +310,16 @@ class Press_Elements_Site_Counters extends Widget_Base {
 				break;
 
 			case 'taxonomy':
+				var taxonomy_total = [];
 				var taxonomy_labels = [];
 				<?php
 				$taxonomies = get_taxonomies( array( 'public' => true ), 'objects' );
 				foreach ( $taxonomies as $taxonomy ) {
+					printf( 'taxonomy_total[ "%1$s" ] = \'%2$s\';', $taxonomy->name, wp_count_terms( $taxonomy->name ) );
 					printf( 'taxonomy_labels[ "%1$s" ] = \'%2$s\';', $taxonomy->name, $taxonomy->labels->name );
 				}
 				?>
-				total = 0;
+				total = taxonomy_total[ settings.taxonomy ];
 				label = taxonomy_labels[ settings.taxonomy ];
 				break;
 
@@ -325,7 +328,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 				var post_type_count = [];
 				var post_type_labels = [];
 				<?php
-				$post_types = get_post_types( $args = array( 'public' => true, '_builtin' => true ), 'objects' );
+				$post_types = get_post_types( $args = array( 'public' => true ), 'objects' );
 				foreach ( $post_types as $post_type ) {
 					$query = new \WP_Query( array( 'post_type' => $post_type ) );
 					printf( 'post_type_count[ "%1$s" ] = \'%2$s\';', $post_type->name, $query->found_posts );
@@ -355,5 +358,6 @@ class Press_Elements_Site_Counters extends Widget_Base {
 		print( html );
 		#>
 		<?php
+		*/
 	}
 }
