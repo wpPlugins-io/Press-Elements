@@ -241,7 +241,7 @@ class Press_Elements_Post_Title extends Widget_Base {
 	protected function _content_template() {
 		?>
 		<#
-			var title = '<?php echo get_the_title(); ?>';
+			var title = "<?php echo get_the_title(); ?>";
 
 			var link_url;
 			switch( settings.link_to ) {

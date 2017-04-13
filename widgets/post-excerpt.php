@@ -241,7 +241,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 	protected function _content_template() {
 		?>
 		<#
-			var excerpt = '<?php echo get_the_excerpt(); ?>';
+			var excerpt = "<?php echo htmlspecialchars( get_the_excerpt() ); ?>";
 
 			var link_url;
 			switch( settings.link_to ) {
