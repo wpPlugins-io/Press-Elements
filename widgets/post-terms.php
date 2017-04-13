@@ -205,7 +205,7 @@ class Press_Elements_Post_Terms extends Widget_Base {
 		switch ( $settings['link_to'] ) {
 			case 'term' :
 				foreach ( $term_list as $term ) {
-					$html .= '<a href="' . esc_url( get_term_link( $term ) ) . '">' . $term->name . '</a>, ';
+					$html .= sprintf( '<a href="%1$s">%2$s</a>, ', esc_url( get_term_link( $term ) ), $term->name );
 				}
 				break;
 

@@ -154,6 +154,7 @@ if ( press_elements_freemius()->is__premium_only() ) {
 				'default' => 'none',
 				'options' => [
 					'none' => __( 'None', 'press-elements' ),
+					'home' => __( 'Home URL', 'press-elements' ),
 					'post' => sprintf(
 						/* translators: %s: Post type singular name (e.g. Post or Page) */
 						__( '%s URL', 'press-elements' ),
@@ -443,19 +444,23 @@ if ( press_elements_freemius()->is__premium_only() ) {
 			switch ( $settings['link_to'] ) {
 				case 'custom' :
 					if ( ! empty( $settings['link']['url'] ) ) {
-						$link = $settings['link']['url'];
+						$link = esc_url( $settings['link']['url'] );
 					} else {
 						$link = false;
 					}
 					break;
 
-				case 'post' :
-					$link = get_the_permalink();
-					break;
-
 				case 'custom_field' :
 					$custom_field_value = $post_custom_fields[ $settings['custom_field_link'] ];
-					$link = $custom_field_value[0];
+					$link = esc_url( $custom_field_value[0] );
+					break;
+
+				case 'post' :
+					$link = esc_url( get_the_permalink() );
+					break;
+
+				case 'home' :
+					$link = esc_url( get_home_url() );
 					break;
 
 				case 'none' :
@@ -510,11 +515,14 @@ if ( press_elements_freemius()->is__premium_only() ) {
 					case 'custom':
 						link_url = settings.link.url;
 						break;
-					case 'post':
-						link_url = '<?php echo get_the_permalink(); ?>';
-						break;
 					case 'custom_field':
 						link_url = custom_fields[ settings.custom_field_link ];
+						break;
+					case 'post':
+						link_url = '<?php echo esc_url( get_the_permalink() ); ?>';
+						break;
+					case 'home':
+						link_url = '<?php echo esc_url( get_home_url() ); ?>';
 						break;
 					case 'none':
 					default:

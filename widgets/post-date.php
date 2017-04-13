@@ -133,6 +133,7 @@ class Press_Elements_Post_Date extends Widget_Base {
 				'default' => 'none',
 				'options' => [
 					'none' => __( 'None', 'press-elements' ),
+					'home' => __( 'Home URL', 'press-elements' ),
 					'post' => sprintf(
 						/* translators: %s: Post type singular name (e.g. Post or Page) */
 						__( '%s URL', 'press-elements' ),
@@ -237,14 +238,18 @@ class Press_Elements_Post_Date extends Widget_Base {
 		switch ( $settings['link_to'] ) {
 			case 'custom' :
 				if ( ! empty( $settings['link']['url'] ) ) {
-					$link = $settings['link']['url'];
+					$link = esc_url( $settings['link']['url'] );
 				} else {
 					$link = false;
 				}
 				break;
 
 			case 'post' :
-				$link = get_the_permalink();
+				$link = esc_url( get_the_permalink() );
+				break;
+
+			case 'home' :
+				$link = esc_url( get_home_url() );
 				break;
 
 			case 'none' :
@@ -290,7 +295,10 @@ class Press_Elements_Post_Date extends Widget_Base {
 					link_url = settings.link.url;
 					break;
 				case 'post':
-					link_url = '<?php echo get_the_permalink(); ?>';
+					link_url = '<?php echo esc_url( get_the_permalink() ); ?>';
+					break;
+				case 'home':
+					link_url = '<?php echo esc_url( get_home_url() ); ?>';
 					break;
 				case 'none':
 				default:

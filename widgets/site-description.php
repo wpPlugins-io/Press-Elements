@@ -188,14 +188,14 @@ class Press_Elements_Site_Description extends Widget_Base {
 		switch ( $settings['link_to'] ) {
 			case 'custom' :
 				if ( ! empty( $settings['link']['url'] ) ) {
-					$link = $settings['link']['url'];
+					$link = esc_url( $settings['link']['url'] );
 				} else {
 					$link = false;
 				}
 				break;
 
 			case 'home' :
-				$link = get_home_url();
+				$link = esc_url( get_home_url() );
 				break;
 
 			case 'none' :
@@ -229,7 +229,7 @@ class Press_Elements_Site_Description extends Widget_Base {
 					link_url = settings.link.url;
 					break;
 				case 'home':
-					link_url = '<?php echo get_home_url(); ?>';
+					link_url = '<?php echo esc_url( get_home_url() ); ?>';
 					break;
 				case 'none':
 				default:

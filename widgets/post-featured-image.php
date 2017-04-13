@@ -120,6 +120,7 @@ if ( press_elements_freemius()->is__premium_only() ) {
 				'default' => 'none',
 				'options' => [
 					'none' => __( 'None', 'press-elements' ),
+					'home' => __( 'Home URL', 'press-elements' ),
 					'post' => sprintf(
 						/* translators: %s: Post type singular name (e.g. Post or Page) */
 						__( '%s URL', 'press-elements' ),
@@ -330,7 +331,7 @@ if ( press_elements_freemius()->is__premium_only() ) {
 			switch ( $settings['link_to'] ) {
 				case 'custom' :
 					if ( ! empty( $settings['link']['url'] ) ) {
-						$link = $settings['link']['url'];
+						$link = esc_url( $settings['link']['url'] );
 					} else {
 						$link = false;
 					}
@@ -338,11 +339,15 @@ if ( press_elements_freemius()->is__premium_only() ) {
 
 				case 'file' :
 					$image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), $image_size );
-					$link = $image_url[0];
+					$link = esc_url( $image_url[0] );
 					break;
 
 				case 'post' :
-					$link = get_the_permalink();
+					$link = esc_url( get_the_permalink() );
+					break;
+
+				case 'home' :
+					$link = esc_url( get_home_url() );
 					break;
 
 				case 'none' :
@@ -391,10 +396,13 @@ if ( press_elements_freemius()->is__premium_only() ) {
 						link_url = settings.link.url;
 						break;
 					case 'file':
-						link_url = '<?php echo $image_url[0]; ?>';
+						link_url = '<?php echo esc_url( $image_url[0] ); ?>';
 						break;
 					case 'post':
-						link_url = '<?php echo get_the_permalink(); ?>';
+						link_url = '<?php echo esc_url( get_the_permalink() ); ?>';
+						break;
+					case 'home':
+						link_url = '<?php echo esc_url( get_home_url() ); ?>';
 						break;
 					case 'none':
 					default:

@@ -146,6 +146,7 @@ if ( press_elements_freemius()->is__premium_only() ) {
 				'default' => 'none',
 				'options' => [
 					'none' => __( 'None', 'press-elements' ),
+					'home' => __( 'Home URL', 'press-elements' ),
 					'post' => __( 'Post URL', 'press-elements' ),
 					'acf_link_field' => __( 'Other ACF Field', 'press-elements' ),
 					'custom' => __( 'Custom URL', 'press-elements' ),
@@ -420,18 +421,22 @@ if ( press_elements_freemius()->is__premium_only() ) {
 			switch ( $settings['link_to'] ) {
 				case 'custom' :
 					if ( ! empty( $settings['link']['url'] ) ) {
-						$link = $settings['link']['url'];
+						$link = esc_url( $settings['link']['url'] );
 					} else {
 						$link = false;
 					}
 					break;
 
-				case 'post' :
-					$link = get_the_permalink();
+				case 'acf_link_field' :
+					$link = esc_url( get_field( $settings['acf_link_field'] ) );
 					break;
 
-				case 'acf_link_field' :
-					$link = get_field( $settings['acf_link_field'] );
+				case 'post' :
+					$link = esc_url( get_the_permalink() );
+					break;
+
+				case 'home' :
+					$link = esc_url( get_home_url() );
 					break;
 
 				case 'none' :
