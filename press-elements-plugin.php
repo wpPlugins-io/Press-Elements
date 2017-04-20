@@ -86,7 +86,7 @@ class Press_Elements_Plugin {
 		\Elementor\Plugin::instance()->elements_manager->add_category(
 			'press-elements-integrations',
 			[
-				'title' => __( 'Integrations', 'press-elements' ),
+				'title' => __( 'Press Elements Integrations', 'press-elements' ),
 				'icon'  => 'font'
 			],
 			3
