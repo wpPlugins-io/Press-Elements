@@ -99,7 +99,7 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'links',
 				[
-					'label'     => __( 'Links', 'elementor-gravatar' ),
+					'label'     => __( 'Links', 'press-elements' ),
 					'type'      => Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
