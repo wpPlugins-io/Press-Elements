@@ -3,7 +3,7 @@ Contributors: ramiy
 Tags: elementor, press elements, elements, widgets, page builder
 Requires at least: 4.7
 Tested up to: 4.7
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -45,7 +45,7 @@ https://www.youtube.com/watch?v=yGzefuK7ngs
 
 = Included Widgets =
 
-Press Elements comes with 14 useful Elemenotr widgets, 10 of them are free of charge!
+Press Elements comes with 16 useful Elementor widgets, 10 of them are free of charge!
 
 Site Elements:
 
@@ -69,13 +69,15 @@ Integrations:
 
 - **Advanced Custom Fields (Pro)** - Fields added by [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) plugin.
 - **Gravatar (Pro)** - Display single [Gravatars](https://gravatar.com/) based on an email address.
+- **Flickr (Pro)** - Display Flickr photostream based on Flickr User ID.
+- **Pinterest (Pro)** - Display Pinterest pins based on Pinterest username.
 
 = Coming Soon =
 
 Site Elements:
 
-- **Login Form**
 - **Search Form**
+- **Login Form**
 
 Comments Elements:
 
@@ -98,6 +100,8 @@ Integrations:
 7. Site counters for Post Types, Taxonomies, Comments and Users.
 8. Custom fields as text fields and images, and linking to other custom fields.
 9. Display Gravatars based on an email address.
+10. Display Flickr photostream based on Flickr User ID.
+11. Display Pinterest pins based on Pinterest username.
 
 == Frequently Asked Questions ==
 
@@ -113,7 +117,7 @@ Yes. It works on any post type as long as it supports the relevant post element.
 
 Currently the plugin displays post elements on "single" pages. But in the future, it will support "archive" page too.
 
-= I am a theme developer, how can it help me?  =
+= I am a theme developer, how can it help me? =
 
 As a theme developer you probably use theme-functions in your workflow. Press Elements turns those functions to widgets. Replacing code with a visual builder to reduce your development time.
 
@@ -156,6 +160,21 @@ Both widgets can display custom fields as "Text" or as "Images". Each display ty
 For more advanced uses, please contact us in our [wp.org support forum](https://wordpress.org/support/plugin/press-elements). The plugin is developed based on user feedback.
 
 == Changelog ==
+
+= 1.5.0 =
+
+**General**
+
+* Move "Press Elements" menu from "Appearance" to "Settings".
+* Fix the issue with single quotes characters in "Post Title" and "Post Excerpt" widgets.
+* Escape the URL returned by the "Link to" controller in all the widgets.
+* Add warnings in widgets that dependent on external plugins like ACF.
+* Enhance "Advanced Custom Fields" widget to display fields saved as arrays.
+
+**New Widgets**
+
+* Flickr (Pro)
+* Pinterest (Pro)
 
 = 1.4.0 =
 
