@@ -18,15 +18,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
+// Load Freemius SDK
+require( __DIR__ . '/press-elements-freemius.php' );
+
+
+
 // Make sure the same methods/classes aren’t loaded twice for free/premium versions
 if ( ! function_exists( 'press_elements_load' ) ) {
-
-
-
-	// Load Freemius SDK
-	require( __DIR__ . '/press-elements-freemius.php' );
-
-
 
 	/**
 	 * Load Press Elements
@@ -62,7 +60,12 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 	}
 	add_action( 'plugins_loaded', 'press_elements_load' );
 
+}
 
+
+
+// Make sure the same methods/classes aren’t loaded twice for free/premium versions
+if ( ! function_exists( 'press_elements_admin_notice_missing_main_plugin' ) ) {
 
 	/**
 	 * Admin notice
@@ -72,17 +75,23 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 	 * @since 1.1.0
 	 */
 	function press_elements_admin_notice_missing_main_plugin() {
+
 		$message = sprintf(
 			/* translators: 1: Press Elements 2: Elementor */
 			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'press-elements' ),
 			'<strong>' . esc_html__( 'Press Elements', 'press-elements' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'press-elements' ) . '</strong>'
 		);
-
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
+
 	}
 
+}
 
+
+
+// Make sure the same methods/classes aren’t loaded twice for free/premium versions
+if ( ! function_exists( 'press_elements_admin_notice_main_plugin_required_version' ) ) {
 
 	/**
 	 * Admin notice
@@ -92,6 +101,7 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 	 * @since 1.1.0
 	 */
 	function press_elements_admin_notice_main_plugin_required_version() {
+
 		$elementor_version_required = '1.3.4';
 		$message = sprintf(
 			/* translators: 1: Press Elements 2: Elementor 3: Required Elementor version */
@@ -100,10 +110,8 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 			'<strong>' . esc_html__( 'Elementor', 'press-elements' ) . '</strong>',
 			$elementor_version_required
 		);
-
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
+
 	}
-
-
 
 }
