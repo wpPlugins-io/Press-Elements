@@ -193,6 +193,7 @@ class Press_Elements_Admin {
 						<li><?php esc_html_e( 'Advanced Custom Fields (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Gravatar (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Flickr (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Pinterest (Pro)', 'press-elements' ); ?></li>
 					</ol>
 
 					<h3><?php esc_html_e( 'Coming Soon', 'press-elements' ); ?></h3>
@@ -304,6 +305,15 @@ class Press_Elements_Admin {
 							<img src="<?php echo esc_url( plugins_url( 'screenshot-10.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Display Flickr photostream based on Flickr User ID.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Display Flickr photostream based on Flickr User ID.', 'press-elements' ); ?></figcaption>
+					</figure>
+
+					<br>
+
+					<figure>
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-11.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-11.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Display Pinterest pins based on Pinterest username.', 'press-elements' ); ?>">
+						</a>
+						<figcaption><?php esc_html_e( 'Display Pinterest pins based on Pinterest username.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 				</div>
