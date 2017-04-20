@@ -17,6 +17,7 @@ use PressElements\Widgets\Press_Elements_Post_Comments;
 
 use PressElements\Widgets\Press_Elements_Advanced_Custom_Fields;
 use PressElements\Widgets\Press_Elements_Gravatar;
+use PressElements\Widgets\Press_Elements_Flickr;
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
@@ -128,6 +129,7 @@ class Press_Elements_Plugin {
 		// Integrations
 		require_once __DIR__ . '/widgets/advanced-custom-fields.php';
 		require_once __DIR__ . '/widgets/gravatar.php';
+		require_once __DIR__ . '/widgets/flickr.php';
 	}
 
 	/**
@@ -155,6 +157,7 @@ class Press_Elements_Plugin {
 		// Integrations
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Advanced_Custom_Fields() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Gravatar() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Flickr() );
 	}
 
 }

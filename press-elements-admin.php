@@ -192,6 +192,7 @@ class Press_Elements_Admin {
 					<ol>
 						<li><?php esc_html_e( 'Advanced Custom Fields (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Gravatar (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Flickr (Pro)', 'press-elements' ); ?></li>
 					</ol>
 
 					<h3><?php esc_html_e( 'Coming Soon', 'press-elements' ); ?></h3>
@@ -294,6 +295,15 @@ class Press_Elements_Admin {
 							<img src="<?php echo esc_url( plugins_url( 'screenshot-9.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Display Gravatars based on an email address.', 'press-elements' ); ?>">
 						</a>
 						<figcaption><?php esc_html_e( 'Display Gravatars based on an email address.', 'press-elements' ); ?></figcaption>
+					</figure>
+
+					<br>
+
+					<figure>
+						<a href="<?php echo esc_url( plugins_url( 'screenshot-10.png', __FILE__ ) ); ?>" target="_blank">
+							<img src="<?php echo esc_url( plugins_url( 'screenshot-10.png', __FILE__ ) ); ?>" alt="<?php esc_attr_e( 'Display Flickr photostream based on Flickr User ID.', 'press-elements' ); ?>">
+						</a>
+						<figcaption><?php esc_html_e( 'Display Flickr photostream based on Flickr User ID.', 'press-elements' ); ?></figcaption>
 					</figure>
 
 				</div>
