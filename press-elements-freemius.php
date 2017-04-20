@@ -28,8 +28,10 @@ function press_elements_freemius() {
 			'menu'           => array(
 				'slug'        => 'press-elements',
 				'contact'     => false,
+				'support'     => false,
+				'pricing'     => false,
 				'parent'      => array(
-					'slug'     => 'themes.php',
+					'slug'     => 'options-general.php',
 				),
 			),
 		) );

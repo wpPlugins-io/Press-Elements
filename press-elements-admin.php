@@ -56,7 +56,7 @@ class Press_Elements_Admin {
 		$capability = apply_filters( 'press_elements_menu_display_capability', 'manage_options' );
 
 		// About
-		add_theme_page(
+		add_options_page(
 			esc_html__( 'Press Elements - Widgets for Elementor', 'press-elements' ),
 			esc_html__( 'Press Elements', 'press-elements' ),
 			$capability,
@@ -79,10 +79,12 @@ class Press_Elements_Admin {
 		$tab = isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : 'about';
 		?>
 		<h2 class="nav-tab-wrapper">
-			<a class="nav-tab <?php echo ( 'about'           === $tab ) ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'press-elements', 'tab' => 'about'           ), 'themes.php' ) ) ); ?>"><?php esc_html_e( 'About',           'press-elements' ); ?></a>
-			<a class="nav-tab <?php echo ( 'getting-started' === $tab ) ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'press-elements', 'tab' => 'getting-started' ), 'themes.php' ) ) ); ?>"><?php esc_html_e( 'Getting Started', 'press-elements' ); ?></a>
-			<a class="nav-tab <?php echo ( 'changelog'       === $tab ) ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'press-elements', 'tab' => 'changelog'       ), 'themes.php' ) ) ); ?>"><?php esc_html_e( 'Changelog',       'press-elements' ); ?></a>
-			<a class="nav-tab" href="<?php echo press_elements_freemius()->get_upgrade_url(); ?>"><?php esc_html_e( 'Pro Version', 'press-elements' ); ?></a>
+			<a class="nav-tab <?php echo ( 'about'           === $tab ) ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'press-elements', 'tab' => 'about'           ), 'options-general.php' ) ) ); ?>"><?php esc_html_e( 'About',           'press-elements' ); ?></a>
+			<a class="nav-tab <?php echo ( 'getting-started' === $tab ) ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'press-elements', 'tab' => 'getting-started' ), 'options-general.php' ) ) ); ?>"><?php esc_html_e( 'Getting Started', 'press-elements' ); ?></a>
+			<a class="nav-tab <?php echo ( 'changelog'       === $tab ) ? 'nav-tab-active' : ''; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'press-elements', 'tab' => 'changelog'       ), 'options-general.php' ) ) ); ?>"><?php esc_html_e( 'Changelog',       'press-elements' ); ?></a>
+			<a class="nav-tab" href="<?php echo press_elements_freemius()->get_upgrade_url(); ?>"><?php esc_html_e( 'Pricing', 'press-elements' ); ?></a>
+			<a class="nav-tab" href="<?php echo press_elements_freemius()->get_account_url(); ?>"><?php esc_html_e( 'Account', 'press-elements' ); ?></a>
+			<a class="nav-tab" href="https://wordpress.org/support/plugin/press-elements" target="_blank"><?php esc_html_e( 'Support Forum', 'press-elements' ); ?></a>
 		</h2>
 		<?php
 	}
