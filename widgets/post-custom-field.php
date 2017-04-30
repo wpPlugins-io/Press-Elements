@@ -410,6 +410,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 	protected function render() {
 
 		if ( press_elements_freemius()->is__premium_only() ) {
+
 			$settings = $this->get_settings();
 
 			$post_custom_fields = get_post_custom();
@@ -474,6 +475,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 			$html .= sprintf( '</%s>', $settings['html_tag'] );
 
 			echo $html;
+
 		}
 
 	}
@@ -481,6 +483,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 	protected function _content_template() {
 
 		if ( press_elements_freemius()->is__premium_only() ) {
+
 			$post_custom_fields = get_post_custom();
 			?>
 			<#
@@ -539,6 +542,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				print( html );
 			#>
 			<?php
+
 		}
 
 	}
