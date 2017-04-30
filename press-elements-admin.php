@@ -162,7 +162,7 @@ class Press_Elements_Admin {
 
 					<p class="about-text"><?php esc_html_e( 'When using page builders, you need to create all the page element for each page over and over again. Currently you can\'t design single page templates and apply the design on the post. When you use the template system you need to manually change titles and images for each post/page.', 'press-elements' ); ?></p>
 
-					<p class="about-text"><?php esc_html_e( 'With Press Elements you can create custom designs with post elements and save them as template. When you apply the template on other posts, it will inherite the data from the new post. No more manual updates!', 'press-elements' ); ?></p>
+					<p class="about-text"><?php esc_html_e( 'With Press Elements you can create custom designs with post elements and save them as template. When you apply the template on other posts, it will inherit the data from the new post. No more manual updates!', 'press-elements' ); ?></p>
 
 					<p class="about-text"><?php esc_html_e( 'You don\'t need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface! Now you can design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library.', 'press-elements' ); ?></p>
 
@@ -188,6 +188,12 @@ class Press_Elements_Admin {
 						<li><?php esc_html_e( 'Post Custom Field (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Post Comments', 'press-elements' ); ?></li>
 					</ol>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Effects:', 'press-elements' ); ?></p>
+					<ol>
+						<li><?php esc_html_e( 'Image Accordion (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Before After Effect (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Notes (Pro)', 'press-elements' ); ?></li>
+					</ol>
 					<p style="text-decoration: underline;"><?php esc_html_e( 'Integrations:', 'press-elements' ); ?></p>
 					<ol>
 						<li><?php esc_html_e( 'Advanced Custom Fields (Pro)', 'press-elements' ); ?></li>
@@ -209,10 +215,9 @@ class Press_Elements_Admin {
 						<li><?php esc_html_e( 'Comments List', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Comments Pagination', 'press-elements' ); ?></li>
 					</ol>
-					<p style="text-decoration: underline;"><?php esc_html_e( 'Integrations:', 'press-elements' ); ?></p>
+					<p style="text-decoration: underline;"><?php esc_html_e( 'Effects:', 'press-elements' ); ?></p>
 					<ol>
-						<li><?php esc_html_e( 'Flickr (Pro)', 'press-elements' ); ?></li>
-						<li><?php esc_html_e( 'Pinterest (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Typing Effect (Pro)', 'press-elements' ); ?></li>
 					</ol>
 
 				</div>
