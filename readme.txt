@@ -1,9 +1,9 @@
 === Press Elements - Widgets for Elementor ===
 Contributors: ramiy
-Tags: elementor, press elements, elements, widgets, page builder
+Tags: elementor, press elements, elements, widgets, page builder, builder, visual editor,
 Requires at least: 4.7
 Tested up to: 4.7
-Stable tag: 1.5.0
+Stable tag: 1.6.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -11,7 +11,7 @@ Easy-to-use widgets that help you display and design your content using Elemento
 
 == Description ==
 
-**Press Elements** combines the simplicity of [Elementor](https://wordpress.org/plugins/elementor/) with the efficiency of the built-in WordPress theme components.
+[Press Elements])(https://press-elements.com/) combines the simplicity of [Elementor](https://wordpress.org/plugins/elementor/) with the efficiency of the built-in WordPress theme components.
 
 = WordPress Elements =
 
@@ -35,17 +35,15 @@ For example, you can bulk edit several posts from your sites dashboard to change
 
 When using page builders, you need to create all the page element for each page over and over again. Currently you can't design single page templates and apply the design on the post. When you use the template system you need to manually change titles and images for each post/page.
 
-With Press Elements you can create custom designs with post elements and save them as template. When you apply the template on other posts, it will inherite the data from the new post. No more manual updates!
+With Press Elements you can create custom designs with post elements and save them as template. When you apply the template on other posts, it will inherit the data from the new post. No more manual updates!
 
 You don't need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface! Now you can design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library.
 
 With Press Elements you can use Elementor widgets to display and design your post elements! Just like developers use theme-functions to generate themes. How cool is that?!
 
-https://www.youtube.com/watch?v=yGzefuK7ngs
-
 = Included Widgets =
 
-Press Elements comes with 16 useful Elementor widgets, 10 of them are free of charge!
+Press Elements comes with 19 useful Elementor widgets, 11 of them are free of charge!
 
 Site Elements:
 
@@ -61,9 +59,15 @@ Post Elements:
 - **Post Date** - Publish date or last modified date.
 - **Post Author** - The post author information.
 - **Post Terms** - The taxonomies assigned to the post.
-- **Post Featured Image (Pro)** - An image assigned to the post.
+- **Post Featured Image** - An image assigned to the post.
 - **Post Custom Field (Pro)** - Extra information saved as WordPress meta-data.
 - **Post Comments** -  The default Comments Template included in the theme.
+
+Effects:
+
+- **Image Accordion (Pro)** - Display images in a beautiful accordion effect.
+- **Before After Effect (Pro)** - Visual differences between two images.
+- **Notes (Pro)** - Create sticky notes effect.
 
 Integrations:
 
@@ -85,10 +89,9 @@ Comments Elements:
 - **Comments List**
 - **Comments Pagination**
 
-Integrations:
+Effects:
 
-- **Flickr (Pro)**
-- **Pinterest (Pro)**
+- **Typing Effect**
 
 == Screenshots ==
 1. Post edit screen with WordPress elements.
@@ -102,12 +105,15 @@ Integrations:
 9. Display Gravatars based on an email address.
 10. Display Flickr photostream based on Flickr User ID.
 11. Display Pinterest pins based on Pinterest username.
+12. Display images in a beautiful accordion effect.
+13. Display visual differences between two images.
+14. Display sticky notes effect.
 
 == Frequently Asked Questions ==
 
 = Is Press Elements compatible with any Theme? =
 
-It sure is! Press Elements uses standard theme functions. That plugin will work on any WordPress theme!
+It sure is! Press Elements uses standard theme functions. The plugin will work on any WordPress theme!
 
 = Is Press Elements compatible with Custom Post Types? =
 
@@ -160,6 +166,18 @@ Both widgets can display custom fields as "Text" or as "Images". Each display ty
 For more advanced uses, please contact us in our [wp.org support forum](https://wordpress.org/support/plugin/press-elements). The plugin is developed based on user feedback.
 
 == Changelog ==
+
+= 1.6.0 =
+
+**General**
+
+* Release "Post Featured Image" as a free widget!!
+
+**New Widgets**
+
+* Image Accordion (Pro)
+* Before After Effect (Pro)
+* Notes (Pro)
 
 = 1.5.0 =
 
