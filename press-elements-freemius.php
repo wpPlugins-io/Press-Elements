@@ -40,8 +40,27 @@ function press_elements_freemius() {
 	return $press_elements_freemius;
 }
 
-// Init Freemius.
+/**
+ * Add header title
+ *
+ * Insets H1 title to the freemius templates.
+ *
+ * @since 1.6.0
+ */
+function press_elements_freemius_header( $html ) {
+
+	return sprintf(
+		'<h1>%1$s</h1>%2$s',
+		esc_html_e( 'Press Elements - Widgets for Elementor', 'press-elements' ),
+		$html
+	);
+
+}
+
+// Init Freemius
 press_elements_freemius();
+press_elements_freemius()->add_filter( 'templates/account.php', 'press_elements_freemius_header' );
+press_elements_freemius()->add_filter( 'templates/billing.php', 'press_elements_freemius_header' );
 
 // Signal that SDK was initiated.
 do_action( 'press_elements_freemius_loaded' );
