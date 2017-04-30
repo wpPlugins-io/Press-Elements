@@ -16,7 +16,7 @@ function press_elements_freemius() {
 
 	if ( !isset( $press_elements_freemius ) ) {
 		// Include Freemius SDK.
-		require_once dirname( __FILE__ ) . '/freemius/start.php';
+		require_once dirname( __FILE__ ) . '/libs/freemius/start.php';
 		$press_elements_freemius = fs_dynamic_init( array(
 			'id'             => '761',
 			'slug'           => 'press-elements',
