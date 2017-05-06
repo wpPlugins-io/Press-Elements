@@ -502,17 +502,6 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				]
 			);
 
-	  		/*
-			$this->add_control(
-			    'animation',
-			    [
-			        'label' => __( 'Entrance Animation', 'press-elements' ),
-			        'type' => Controls_Manager::ANIMATION,
-			        'prefix_class' => 'animated ',
-			    ]
-			);
-			*/
-
 			$this->end_controls_section();
 
 		}
