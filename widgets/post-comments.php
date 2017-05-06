@@ -1,6 +1,9 @@
 <?php
 namespace PressElements\Widgets;
 
+use Elementor\Widget_Base;
+use Elementor\Controls_Manager;
+
 
 
 // Exit if accessed directly
@@ -17,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.1.0
  */
-class Press_Elements_Post_Comments extends \Elementor\Widget_Base {
+class Press_Elements_Post_Comments extends Widget_Base {
 
 	public function get_name() {
 		return 'post-comments';
@@ -59,7 +62,7 @@ class Press_Elements_Post_Comments extends \Elementor\Widget_Base {
 		$this->add_control(
 			'info',
 			[
-				'type' => \Elementor\Controls_Manager::RAW_HTML,
+				'type' => Controls_Manager::RAW_HTML,
 				'raw' => __( 'This widget displays the default Comments Template included in the current Theme.', 'press-elements' ) .
 						'<br><br>' .
 						__( 'No custom styling can be applied as each theme uses it\'s own CSS classes and IDs.', 'press-elements' ),

@@ -1,6 +1,12 @@
 <?php
 namespace PressElements\Widgets;
 
+use Elementor\Widget_Base;
+use Elementor\Controls_Manager;
+use Elementor\Group_Control_Image_Size;
+use Elementor\Group_Control_Border;
+use Elementor\Group_Control_Box_Shadow;
+
 
 
 // Exit if accessed directly
@@ -18,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  * @since 1.6.0 Not longer a Pro widget
  */
-class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
+class Press_Elements_Post_Featured_Image extends Widget_Base {
 
 	public function get_name() {
 		return 'post-featured-image';
@@ -60,14 +66,14 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 		$this->add_control(
 			'preview',
 			[
-				'type' => \Elementor\Controls_Manager::RAW_HTML,
+				'type' => Controls_Manager::RAW_HTML,
 				'raw' => get_the_post_thumbnail(),
 				'separator' => 'none',
 			]
 		);
 
 		$this->add_group_control(
-			\Elementor\Group_Control_Image_Size::get_type(),
+			Group_Control_Image_Size::get_type(),
 			[
 				'name' => 'size',
 				'label' => __( 'Image Size', 'press-elements' ),
@@ -79,7 +85,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'align',
 			[
 				'label' => __( 'Alignment', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
 						'title' => __( 'Left', 'press-elements' ),
@@ -109,7 +115,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'link_to',
 			[
 				'label' => __( 'Link to', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::SELECT,
+				'type' => Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
 					'none' => __( 'None', 'press-elements' ),
@@ -129,7 +135,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'link',
 			[
 				'label' => __( 'Link to', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::URL,
+				'type' => Controls_Manager::URL,
 				'placeholder' => __( 'http://your-link.com', 'press-elements' ),
 				'condition' => [
 					'link_to' => 'custom',
@@ -148,7 +154,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 					__( '%s Featured Image', 'press-elements' ),
 					$post_type_object->labels->singular_name
 				),
-				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -156,7 +162,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'space',
 			[
 				'label' => __( 'Size (%)', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::SLIDER,
+				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 100,
 					'unit' => '%',
@@ -178,7 +184,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'opacity',
 			[
 				'label' => __( 'Opacity (%)', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::SLIDER,
+				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
 				],
@@ -199,7 +205,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'angle',
 			[
 				'label' => __( 'Angle (deg)', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::SLIDER,
+				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'deg' ],
 				'default' => [
 					'unit' => 'deg',
@@ -222,12 +228,12 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'hover_animation',
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
+				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
 
 		$this->add_group_control(
-			\Elementor\Group_Control_Border::get_type(),
+			Group_Control_Border::get_type(),
 			[
 				'name' => 'image_border',
 				'label' => __( 'Image Border', 'press-elements' ),
@@ -239,7 +245,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 			'image_border_radius',
 			[
 				'label' => __( 'Border Radius', 'press-elements' ),
-				'type' => \Elementor\Controls_Manager::DIMENSIONS,
+				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-featured-image img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -248,7 +254,7 @@ class Press_Elements_Post_Featured_Image extends \Elementor\Widget_Base {
 		);
 
 		$this->add_group_control(
-			\Elementor\Group_Control_Box_Shadow::get_type(),
+			Group_Control_Box_Shadow::get_type(),
 			[
 				'name' => 'image_box_shadow',
 				'selector' => '{{WRAPPER}} .press-elements-featured-image img',

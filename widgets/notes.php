@@ -1,6 +1,13 @@
 <?php
 namespace PressElements\Widgets;
 
+use Elementor\Widget_Base;
+use Elementor\Controls_Manager;
+use Elementor\Scheme_Color;
+use Elementor\Scheme_Typography;
+use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Box_Shadow;
+
 
 
 // Exit if accessed directly
@@ -17,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.6.0
  */
-class Press_Elements_Notes extends \Elementor\Widget_Base {
+class Press_Elements_Notes extends Widget_Base {
 
 	public function get_name() {
 		return 'notes';
@@ -49,7 +56,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 			$this->add_control(
 				'pro_feature',
 				[
-					'type' => \Elementor\Controls_Manager::RAW_HTML,
+					'type' => Controls_Manager::RAW_HTML,
 					'raw' =>
 						'<div class="elementor-panel-nerd-box">
 							<i class="elementor-panel-nerd-box-icon fa fa-lock"></i>
@@ -88,7 +95,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'note_title',
 				[
 					'label' => __( 'Note Title', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::TEXT,
+					'type' => Controls_Manager::TEXT,
 				]
 			);
 
@@ -96,7 +103,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'note_content',
 				[
 					'label' => __( 'Note Content', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::WYSIWYG,
+					'type' => Controls_Manager::WYSIWYG,
 				]
 			);
 
@@ -106,7 +113,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'note_style',
 				[
 					'label' => __( 'Note', 'press-elements' ),
-					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+					'tab' => Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -114,10 +121,10 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'container_color',
 				[
 					'label' => __( 'Background', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'default' => '#F7E999',
 					'selectors' => [
@@ -130,10 +137,10 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'sticker_color',
 				[
 					'label' => __( 'Sticker Color', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'default' => 'rgba(227, 200, 114, 0.4)',
 					'selectors' => [
@@ -146,7 +153,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'opacity',
 				[
 					'label' => __( 'Opacity (%)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 1,
 					],
@@ -167,7 +174,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'angle',
 				[
 					'label' => __( 'Angle (deg)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ 'deg' ],
 					'default' => [
 						'size' => 2,
@@ -190,7 +197,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'hover_animation',
 				[
 					'label' => __( 'Hover Animation', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
+					'type' => Controls_Manager::HOVER_ANIMATION,
 				]
 			);
 
@@ -198,7 +205,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'padding',
 				[
 					'label' => __( 'Padding', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::DIMENSIONS,
+					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'default' => [
 						'unit' => 'px',
@@ -214,7 +221,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 			);
 
 			$this->add_group_control(
-				\Elementor\Group_Control_Box_Shadow::get_type(),
+				Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'container_shadow',
 					'selector' => '{{WRAPPER}} .press-elements-notes',
@@ -227,7 +234,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'title_style',
 				[
 					'label' => __( 'Title', 'press-elements' ),
-					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+					'tab' => Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -235,7 +242,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'html_tag',
 				[
 					'label' => __( 'HTML Tag', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SELECT,
+					'type' => Controls_Manager::SELECT,
 					'options' => [
 						'h1' => __( 'H1', 'press-elements' ),
 						'h2' => __( 'H2', 'press-elements' ),
@@ -255,7 +262,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'title_align',
 				[
 					'label' => __( 'Alignment', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::CHOOSE,
+					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'left' => [
 							'title' => __( 'Left', 'press-elements' ),
@@ -284,11 +291,11 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'title_color',
 				[
 					'label' => __( 'Text Color', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'default' => '',
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .press-elements-notes .note-title' => 'color: {{VALUE}};',
@@ -297,10 +304,10 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 			);
 
 			$this->add_group_control(
-				\Elementor\Group_Control_Typography::get_type(),
+				Group_Control_Typography::get_type(),
 				[
 					'name' => 'title_typography',
-					'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
+					'scheme' => Scheme_Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .press-elements-notes .note-title',
 				]
 			);
@@ -311,7 +318,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'content_style',
 				[
 					'label' => __( 'Content', 'press-elements' ),
-					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+					'tab' => Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -319,7 +326,7 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'content_align',
 				[
 					'label' => __( 'Alignment', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::CHOOSE,
+					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'left' => [
 							'title' => __( 'Left', 'press-elements' ),
@@ -348,11 +355,11 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 				'content_color',
 				[
 					'label' => __( 'Text Color', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'default' => '',
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .press-elements-notes .note-content' => 'color: {{VALUE}};',
@@ -361,10 +368,10 @@ class Press_Elements_Notes extends \Elementor\Widget_Base {
 			);
 
 			$this->add_group_control(
-				\Elementor\Group_Control_Typography::get_type(),
+				Group_Control_Typography::get_type(),
 				[
 					'name' => 'content_typography',
-					'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
+					'scheme' => Scheme_Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .press-elements-notes .note-content',
 				]
 			);

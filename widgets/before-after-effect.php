@@ -1,6 +1,14 @@
 <?php
 namespace PressElements\Widgets;
 
+use Elementor\Widget_Base;
+use Elementor\Controls_Manager;
+use Elementor\Utils;
+use Elementor\Scheme_Color;
+use Elementor\Scheme_Typography;
+use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Box_Shadow;
+use Elementor\Group_Control_Border;
 
 
 // Exit if accessed directly
@@ -17,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.6.0
  */
-class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
+class Press_Elements_Before_After_Effect extends Widget_Base {
 
 	public function get_name() {
 		return 'before-after-effect';
@@ -53,7 +61,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 			$this->add_control(
 				'pro_feature',
 				[
-					'type' => \Elementor\Controls_Manager::RAW_HTML,
+					'type' => Controls_Manager::RAW_HTML,
 					'raw' =>
 						'<div class="elementor-panel-nerd-box">
 							<i class="elementor-panel-nerd-box-icon fa fa-lock"></i>
@@ -92,7 +100,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 			    'before',
 			    [
 			        'label' => __( 'Title & Image', 'press-elements' ),
-			        'type' => \Elementor\Controls_Manager::HEADING,
+			        'type' => Controls_Manager::HEADING,
 			        'separator' => 'before',
 			    ]
 			);
@@ -101,7 +109,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'before_text',
 				[
 					'label' => __( 'Text', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::TEXT,
+					'type' => Controls_Manager::TEXT,
 					'default' => __( 'Before', 'press-elements' ),
 					'label_block' => 'true',
 					'show_label' => false,
@@ -116,9 +124,9 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'before_image',
 				[
 					'label' => __( 'Image', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::MEDIA,
+					'type' => Controls_Manager::MEDIA,
 					'default' => [
-						'url' => \Elementor\Utils::get_placeholder_image_src(),
+						'url' => Utils::get_placeholder_image_src(),
 					],
 					'show_label' => false,
 					'separator' => 'none'
@@ -129,7 +137,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 			    'after',
 			    [
 			        'label' => __( 'Title & Image', 'press-elements' ),
-			        'type' => \Elementor\Controls_Manager::HEADING,
+			        'type' => Controls_Manager::HEADING,
 			        'separator' => 'before',
 			    ]
 			);
@@ -138,7 +146,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'after_text',
 				[
 					'label' => __( 'Text', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::TEXT,
+					'type' => Controls_Manager::TEXT,
 					'default' => __( 'After', 'press-elements' ),
 					'label_block' => 'true',
 					'show_label' => false,
@@ -153,9 +161,9 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'after_image',
 				[
 					'label' => __( 'Image', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::MEDIA,
+					'type' => Controls_Manager::MEDIA,
 					'default' => [
-						'url' => \Elementor\Utils::get_placeholder_image_src(),
+						'url' => Utils::get_placeholder_image_src(),
 					],
 					'show_label' => false,
 					'separator' => 'none'
@@ -166,7 +174,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 			    'settings',
 			    [
 			        'label' => __( 'Settings', 'press-elements' ),
-			        'type' => \Elementor\Controls_Manager::HEADING,
+			        'type' => Controls_Manager::HEADING,
 			        'separator' => 'before',
 			    ]
 			);
@@ -175,10 +183,10 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'orientation',
 				[
 					'label' => __( 'Orientation', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SELECT,
+					'type' => Controls_Manager::SELECT,
 			        'options' => [
-					'horizontal' => __( 'Horizontal', 'press-elements' ),
-					'vertical' => __( 'Vertical', 'press-elements' ),
+			        	'horizontal' => __( 'Horizontal', 'press-elements' ),
+			        	'vertical' => __( 'Vertical', 'press-elements' ),
 			        ],
 					'default' => 'horizontal',
 					'separator' => 'none',
@@ -189,7 +197,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'starting_position',
 				[
 					'label' => __( 'Starting Position (%)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 50,
 						'unit' => '%',
@@ -211,7 +219,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'overlay_style',
 				[
 					'label' => __( 'Overlay', 'press-elements' ),
-					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+					'tab' => Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -219,11 +227,11 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'overlay_color',
 				[
 					'label' => __( 'Overlay Color', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'default' => 'rgba(0, 0, 0, 0.5)',
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .twentytwenty-overlay:hover' => 'background-color: {{VALUE}};',
@@ -242,7 +250,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'separetor_style',
 				[
 					'label' => __( 'Separetor', 'press-elements' ),
-					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+					'tab' => Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -250,11 +258,11 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'separator_color',
 				[
 					'label' => __( 'Separetor Color', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'default' => '#ffffff',
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .twentytwenty-horizontal .twentytwenty-handle:before' => 'background: {{VALUE}};',
@@ -274,7 +282,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'separator_size',
 				[
 					'label' => __( 'Separetor Width (px)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 4,
 						'unit' => 'px',
@@ -300,7 +308,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'separator_radius',
 				[
 					'label' => __( 'Separetor Radius', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::DIMENSIONS,
+					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'default' => [
 						'top' => 50,
@@ -317,7 +325,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 
 			/*
 			$this->add_group_control(
-				\Elementor\Group_Control_Box_Shadow::get_type(),
+				Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'separator_shadow',
 					'selector' => [
@@ -338,7 +346,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_style',
 				[
 					'label' => __( 'Title', 'press-elements' ),
-					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+					'tab' => Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -346,11 +354,11 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'content_color',
 				[
 					'label' => __( 'Text Color', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'default' => '#ffffff',
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .twentytwenty-before-label:before' => 'color: {{VALUE}};',
@@ -363,11 +371,11 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_background',
 				[
 					'label' => __( 'Background Color', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::COLOR,
+					'type' => Controls_Manager::COLOR,
 					'default' => 'rgba(255, 255, 255, 0.2)',
 					'scheme' => [
-						'type' => \Elementor\Scheme_Color::get_type(),
-						'value' => \Elementor\Scheme_Color::COLOR_1,
+						'type' => Scheme_Color::get_type(),
+						'value' => Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .twentytwenty-before-label:before' => 'background-color: {{VALUE}};',
@@ -377,10 +385,10 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 			);
 
 			$this->add_group_control(
-				\Elementor\Group_Control_Typography::get_type(),
+				Group_Control_Typography::get_type(),
 				[
 					'name' => 'title_typography',
-					'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
+					'scheme' => Scheme_Typography::TYPOGRAPHY_1,
 					'selectors' => [
 						'{{WRAPPER}} .twentytwenty-before-label:before',
 						'{{WRAPPER}} .twentytwenty-after-label:before',
@@ -392,7 +400,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_horizontal_before',
 				[
 					'label' => __( '1st Title Position (%)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ '%' ],
 					'range' => [
 						'%' => [
@@ -418,7 +426,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_horizontal_after',
 				[
 					'label' => __( '2nd Title Position (%)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ '%' ],
 					'range' => [
 						'%' => [
@@ -443,7 +451,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_vertical_before',
 				[
 					'label' => __( '1st Title Position (%)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ '%' ],
 					'range' => [
 						'%' => [
@@ -469,7 +477,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_vertical_after',
 				[
 					'label' => __( '2nd Title Position (%)', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'size_units' => [ '%' ],
 					'range' => [
 						'%' => [
@@ -494,7 +502,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_margin',
 				[
 					'label' => __( 'Margin', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::DIMENSIONS,
+					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'default' => [
 						'top' => 10,
@@ -515,7 +523,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'title_padding',
 				[
 					'label' => __( 'Padding', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::DIMENSIONS,
+					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'default' => [
 						'top' => 10,
@@ -532,7 +540,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 			);
 
 			$this->add_group_control(
-				\Elementor\Group_Control_Border::get_type(),
+				Group_Control_Border::get_type(),
 				[
 					'name' => 'title_border',
 					'selector' => '{{WRAPPER}} .twentytwenty-before-label:before, {{WRAPPER}} .twentytwenty-after-label:before',
@@ -543,7 +551,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 				'label_border_radius',
 				[
 					'label' => __( 'Border Radius', 'press-elements' ),
-					'type' => \Elementor\Controls_Manager::DIMENSIONS,
+					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'default' => [
 						'top' => 5,
@@ -560,7 +568,7 @@ class Press_Elements_Before_After_Effect extends \Elementor\Widget_Base {
 			);
 
 			$this->add_group_control(
-				\Elementor\Group_Control_Box_Shadow::get_type(),
+				Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'title_shadow',
 					'selector' => '{{WRAPPER}} .twentytwenty-before-label:before, {{WRAPPER}} .twentytwenty-after-label:before',
