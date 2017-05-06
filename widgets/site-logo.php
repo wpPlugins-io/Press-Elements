@@ -258,7 +258,9 @@ class Press_Elements_Site_logo extends Widget_Base {
 
 		$settings = $this->get_settings();
 
-		$logo = has_custom_logo() ? get_custom_logo() : '';
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$image = $custom_logo_id ? wp_get_attachment_image( $custom_logo_id , 'full' ) : '';
+		$logo = has_custom_logo() ? $image : '';
 
 		if ( empty( $logo ) )
 			return;
@@ -297,9 +299,11 @@ class Press_Elements_Site_logo extends Widget_Base {
 	}
 
 	protected function _content_template() {
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$image = $custom_logo_id ? wp_get_attachment_image( $custom_logo_id , 'full' ) : '';
 		?>
 		<#
-			var logo = '<?php echo has_custom_logo() ? get_custom_logo() : ''; ?>';
+			var logo = '<?php echo has_custom_logo() ? $image : ''; ?>';
 
 			var link_url;
 			switch( settings.link_to ) {
