@@ -11,7 +11,7 @@ Easy-to-use widgets that help you display and design your content using Elemento
 
 == Description ==
 
-[Press Elements])(https://press-elements.com/) combines the simplicity of [Elementor](https://wordpress.org/plugins/elementor/) with the efficiency of the built-in WordPress theme components.
+[Press Elements](https://press-elements.com/) combines the simplicity of [Elementor](https://wordpress.org/plugins/elementor/) with the efficiency of the built-in WordPress theme components.
 
 = WordPress Elements =
 
@@ -67,7 +67,7 @@ Effects:
 
 - **Image Accordion (Pro)** - Display images in a beautiful accordion effect.
 - **Before After Effect (Pro)** - Visual differences between two images.
-- **Notes (Pro)** - Create sticky notes effect.
+- **Notes (Pro)** - Display your ordinary lists as styled sticky notes.
 
 Integrations:
 
@@ -75,23 +75,6 @@ Integrations:
 - **Gravatar (Pro)** - Display single [Gravatars](https://gravatar.com/) based on an email address.
 - **Flickr (Pro)** - Display Flickr photostream based on Flickr User ID.
 - **Pinterest (Pro)** - Display Pinterest pins based on Pinterest username.
-
-= Coming Soon =
-
-Site Elements:
-
-- **Search Form**
-- **Login Form**
-
-Comments Elements:
-
-- **Comments Form**
-- **Comments List**
-- **Comments Pagination**
-
-Effects:
-
-- **Typing Effect**
 
 == Screenshots ==
 1. Post edit screen with WordPress elements.
@@ -107,7 +90,7 @@ Effects:
 11. Display Pinterest pins based on Pinterest username.
 12. Display images in a beautiful accordion effect.
 13. Display visual differences between two images.
-14. Display sticky notes effect.
+14. Display your ordinary lists as styled sticky notes.
 
 == Frequently Asked Questions ==
 
@@ -166,6 +149,15 @@ Both widgets can display custom fields as "Text" or as "Images". Each display ty
 For more advanced uses, please contact us in our [wp.org support forum](https://wordpress.org/support/plugin/press-elements). The plugin is developed based on user feedback.
 
 == Changelog ==
+
+= 1.6.1 =
+
+**General**
+
+* Enhance "Image Accordion" widget with new image border controller.
+* Fix "Site Logo" link issue by changing the way the logo is loaded.
+* Update plugin setup process.
+* Replace PHP namespace aliases ("use" operators) with full external names.
 
 = 1.6.0 =
 
