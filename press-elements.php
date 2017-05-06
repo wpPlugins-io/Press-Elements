@@ -18,8 +18,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 
-// Load Freemius SDK
+// Load required files
 require( __DIR__ . '/press-elements-freemius.php' );
+require( __DIR__ . '/press-elements-admin.php' );
+require( __DIR__ . '/press-elements-plugin.php' );
 
 
 
@@ -38,8 +40,8 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 		// Load localization file
 		load_plugin_textdomain( 'press-elements' );
 
-		// Require admin files - displays even if Elementor is not active
-		require( __DIR__ . '/press-elements-admin.php' );
+		// Press Elements Admin - displays even if Elementor is not active
+		new \PressElements\Press_Elements_Admin();
 
 		// Notice if the Elementor is not active
 		if ( ! did_action( 'elementor/loaded' ) ) {
@@ -54,8 +56,8 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 			return;
 		}
 
-		// Require plugin files - displays only if Elementor is active
-		require( __DIR__ . '/press-elements-plugin.php' );
+		// Press Elements Plugin
+		new \PressElements\Press_Elements_Plugin();
 
 	}
 	add_action( 'plugins_loaded', 'press_elements_load' );

@@ -222,5 +222,3 @@ class Press_Elements_Plugin {
 	}
 
 }
-
-new Press_Elements_Plugin();

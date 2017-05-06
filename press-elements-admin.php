@@ -464,5 +464,3 @@ class Press_Elements_Admin {
 	}
 
 }
-
-new Press_Elements_Admin();
