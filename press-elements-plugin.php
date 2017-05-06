@@ -1,29 +1,6 @@
 <?php
 namespace PressElements;
 
-use PressElements\Widgets\Press_Elements_Site_Title;
-use PressElements\Widgets\Press_Elements_Site_Description;
-use PressElements\Widgets\Press_Elements_Site_Logo;
-use PressElements\Widgets\Press_Elements_Site_Counters;
-
-use PressElements\Widgets\Press_Elements_Post_Title;
-use PressElements\Widgets\Press_Elements_Post_Excerpt;
-use PressElements\Widgets\Press_Elements_Post_Author;
-use PressElements\Widgets\Press_Elements_Post_Date;
-use PressElements\Widgets\Press_Elements_Post_Terms;
-use PressElements\Widgets\Press_Elements_Post_Featured_Image;
-use PressElements\Widgets\Press_Elements_Post_Custom_Field;
-use PressElements\Widgets\Press_Elements_Post_Comments;
-
-use PressElements\Widgets\Press_Elements_Image_Accordion;
-use PressElements\Widgets\Press_Elements_Before_After_Effect;
-use PressElements\Widgets\Press_Elements_Notes;
-
-use PressElements\Widgets\Press_Elements_Advanced_Custom_Fields;
-use PressElements\Widgets\Press_Elements_Gravatar;
-use PressElements\Widgets\Press_Elements_Flickr;
-use PressElements\Widgets\Press_Elements_Pinterest;
-
 
 
 // Exit if accessed directly
@@ -193,31 +170,31 @@ class Press_Elements_Plugin {
 	private function register_widget() {
 
 		// Site Elements
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Title() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Description() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Logo() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Site_Counters() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Site_Title() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Site_Description() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Site_Logo() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Site_Counters() );
 
 		// Post Elements
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Title() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Excerpt() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Date() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Author() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Terms() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Featured_Image() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Custom_Field() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Post_Comments() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Title() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Excerpt() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Date() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Author() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Terms() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Featured_Image() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Custom_Field() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Post_Comments() );
 
 		// Effects
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Image_Accordion() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Before_After_Effect() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Notes() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Image_Accordion() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Before_After_Effect() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Notes() );
 
 		// Integrations
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Advanced_Custom_Fields() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Gravatar() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Flickr() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Press_Elements_Pinterest() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Advanced_Custom_Fields() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Gravatar() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Flickr() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Pinterest() );
 
 	}
 

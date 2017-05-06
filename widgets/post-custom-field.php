@@ -1,14 +1,6 @@
 <?php
 namespace PressElements\Widgets;
 
-use Elementor\Widget_Base;
-use Elementor\Controls_Manager;
-use Elementor\Scheme_Color;
-use Elementor\Scheme_Typography;
-use Elementor\Group_Control_Typography;
-use Elementor\Group_Control_Border;
-use Elementor\Group_Control_Box_Shadow;
-
 
 
 // Exit if accessed directly
@@ -25,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-class Press_Elements_Post_Custom_Field extends Widget_Base {
+class Press_Elements_Post_Custom_Field extends \Elementor\Widget_Base {
 
 	public function get_name() {
 		return 'post-custom-field';
@@ -69,7 +61,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 			$this->add_control(
 				'pro_feature',
 				[
-					'type' => Controls_Manager::RAW_HTML,
+					'type' => \Elementor\Controls_Manager::RAW_HTML,
 					'raw' =>
 						'<div class="elementor-panel-nerd-box">
 							<i class="elementor-panel-nerd-box-icon fa fa-lock"></i>
@@ -119,7 +111,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'custom_field',
 				[
 					'label' => __( 'Custom Field', 'press-elements' ),
-					'type' => Controls_Manager::SELECT,
+					'type' => \Elementor\Controls_Manager::SELECT,
 					'options' => $fields,
 				]
 			);
@@ -128,7 +120,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'display',
 				[
 					'label' => __( 'Display As', 'press-elements' ),
-					'type' => Controls_Manager::SELECT,
+					'type' => \Elementor\Controls_Manager::SELECT,
 					'options' => [
 						'text' => __( 'Text', 'press-elements' ),
 						'image' => __( 'Image', 'press-elements' ),
@@ -141,7 +133,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'html_tag',
 				[
 					'label' => __( 'HTML Tag', 'press-elements' ),
-					'type' => Controls_Manager::SELECT,
+					'type' => \Elementor\Controls_Manager::SELECT,
 					'options' => [
 						'h1' => __( 'H1', 'press-elements' ),
 						'h2' => __( 'H2', 'press-elements' ),
@@ -161,7 +153,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'align',
 				[
 					'label' => __( 'Alignment', 'press-elements' ),
-					'type' => Controls_Manager::CHOOSE,
+					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'options' => [
 						'left' => [
 							'title' => __( 'Left', 'press-elements' ),
@@ -191,7 +183,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'link_to',
 				[
 					'label' => __( 'Link to', 'press-elements' ),
-					'type' => Controls_Manager::SELECT,
+					'type' => \Elementor\Controls_Manager::SELECT,
 					'default' => 'none',
 					'options' => [
 						'none' => __( 'None', 'press-elements' ),
@@ -211,7 +203,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'link',
 				[
 					'label' => __( 'Link', 'press-elements' ),
-					'type' => Controls_Manager::URL,
+					'type' => \Elementor\Controls_Manager::URL,
 					'placeholder' => __( 'http://your-link.com', 'press-elements' ),
 					'condition' => [
 						'link_to' => 'custom',
@@ -227,7 +219,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'custom_field_link',
 				[
 					'label' => __( 'Custom Field Link', 'press-elements' ),
-					'type' => Controls_Manager::SELECT,
+					'type' => \Elementor\Controls_Manager::SELECT,
 					'options' => $fields,
 					'condition' => [
 						'link_to' => 'custom_field',
@@ -245,7 +237,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 						__( '%s Custom Field', 'press-elements' ),
 						$post_type_object->labels->singular_name
 					),
-					'tab' => Controls_Manager::TAB_STYLE,
+					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -253,10 +245,10 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'color',
 				[
 					'label' => __( 'Text Color', 'press-elements' ),
-					'type' => Controls_Manager::COLOR,
+					'type' => \Elementor\Controls_Manager::COLOR,
 					'scheme' => [
-						'type' => Scheme_Color::get_type(),
-						'value' => Scheme_Color::COLOR_1,
+						'type' => \Elementor\Scheme_Color::get_type(),
+						'value' => \Elementor\Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .press-elements-custom-field' => 'color: {{VALUE}};',
@@ -269,10 +261,10 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 			);
 
 			$this->add_group_control(
-				Group_Control_Typography::get_type(),
+				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'typography',
-					'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+					'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .press-elements-custom-field',
 					'condition' => [
 						'display' => 'text',
@@ -284,7 +276,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'space',
 				[
 					'label' => __( 'Size (%)', 'press-elements' ),
-					'type' => Controls_Manager::SLIDER,
+					'type' => \Elementor\Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 100,
 						'unit' => '%',
@@ -309,7 +301,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'opacity',
 				[
 					'label' => __( 'Opacity (%)', 'press-elements' ),
-					'type' => Controls_Manager::SLIDER,
+					'type' => \Elementor\Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 1,
 					],
@@ -333,7 +325,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'angle',
 				[
 					'label' => __( 'Angle (deg)', 'press-elements' ),
-					'type' => Controls_Manager::SLIDER,
+					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'deg' ],
 					'default' => [
 						'unit' => 'deg',
@@ -359,12 +351,12 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'hover_animation',
 				[
 					'label' => __( 'Hover Animation', 'press-elements' ),
-					'type' => Controls_Manager::HOVER_ANIMATION,
+					'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 				]
 			);
 
 			$this->add_group_control(
-				Group_Control_Border::get_type(),
+				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'image_border',
 					'label' => __( 'Image Border', 'press-elements' ),
@@ -379,7 +371,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 				'image_border_radius',
 				[
 					'label' => __( 'Border Radius', 'press-elements' ),
-					'type' => Controls_Manager::DIMENSIONS,
+					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'selectors' => [
 						'{{WRAPPER}} .press-elements-custom-field img' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -391,7 +383,7 @@ class Press_Elements_Post_Custom_Field extends Widget_Base {
 			);
 
 			$this->add_group_control(
-				Group_Control_Box_Shadow::get_type(),
+				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'image_box_shadow',
 					'selector' => '{{WRAPPER}} .press-elements-custom-field img',

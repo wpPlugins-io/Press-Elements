@@ -1,16 +1,6 @@
 <?php
 namespace PressElements\Widgets;
 
-use Elementor\Widget_Base;
-use Elementor\Controls_Manager;
-use Elementor\Utils;
-use Elementor\Group_Control_Image_Size;
-use Elementor\Group_Control_Border;
-use Elementor\Group_Control_Box_Shadow;
-use Elementor\Scheme_Color;
-use Elementor\Scheme_Typography;
-use Elementor\Group_Control_Typography;
-
 
 
 // Exit if accessed directly
@@ -27,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.6.0
  */
-class Press_Elements_Image_Accordion extends Widget_Base {
+class Press_Elements_Image_Accordion extends \Elementor\Widget_Base {
 
 	public function get_name() {
 		return 'image-accordion';
@@ -59,7 +49,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 			$this->add_control(
 				'pro_feature',
 				[
-					'type' => Controls_Manager::RAW_HTML,
+					'type' => \Elementor\Controls_Manager::RAW_HTML,
 					'raw' =>
 						'<div class="elementor-panel-nerd-box">
 							<i class="elementor-panel-nerd-box-icon fa fa-lock"></i>
@@ -98,7 +88,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'content',
 				[
 					'label' => __( 'Images', 'press-elements' ),
-					'type' => Controls_Manager::REPEATER,
+					'type' => \Elementor\Controls_Manager::REPEATER,
 					'default' => [
 						[
 							'caption' => __( 'Type out sentence', 'press-elements' ),
@@ -114,22 +104,22 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 						[
 							'name' => 'image',
 							'label' => __( 'Image', 'press-elements' ),
-							'type' => Controls_Manager::MEDIA,
+							'type' => \Elementor\Controls_Manager::MEDIA,
 							'default' => [
-	   							'url' => Utils::get_placeholder_image_src()
+								'url' => \Elementor\Utils::get_placeholder_image_src()
 							],
 						],
 						[
 							'name' => 'caption',
 							'label' => __( 'Caption', 'press-elements' ),
-							'type' => Controls_Manager::TEXT,
+							'type' => \Elementor\Controls_Manager::TEXT,
 							'placeholder' => __( 'Caption', 'press-elements' ),
 							'label_block' => true,
 						],
 						[
 							'name' => 'link',
 							'label' => __( 'Link', 'press-elements' ),
-							'type' => Controls_Manager::URL,
+							'type' => \Elementor\Controls_Manager::URL,
 							'placeholder' => __( 'http://your-link.com', 'press-elements' ),
 						]
 					],
@@ -143,7 +133,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'container_style',
 				[
 					'label' => __( 'Container', 'press-elements' ),
-					'tab' => Controls_Manager::TAB_STYLE,
+					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -151,7 +141,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'container_height',
 				[
 					'label' => __( 'Height', 'press-elements' ),
-					'type' => Controls_Manager::SLIDER,
+					'type' => \Elementor\Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 250,
 						'unit' => 'px',
@@ -174,7 +164,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'container_direction',
 				[
 					'label' => __( 'Direction', 'press-elements' ),
-					'type' => Controls_Manager::CHOOSE,
+					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'label_block' => false,
 					'options' => [
 						'rtl' => [
@@ -194,7 +184,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 			);
 
 			$this->add_group_control(
-				Group_Control_Border::get_type(),
+				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'container_border',
 					'selector' => '{{WRAPPER}} .press-elements-image-accordion',
@@ -202,7 +192,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 			);
 
 			$this->add_group_control(
-				Group_Control_Box_Shadow::get_type(),
+				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'container_shadow',
 					'selector' => '{{WRAPPER}} .press-elements-image-accordion',
@@ -215,7 +205,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'image_style',
 				[
 					'label' => __( 'Image', 'press-elements' ),
-					'tab' => Controls_Manager::TAB_STYLE,
+					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -223,7 +213,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'image_align',
 				[
 					'label' => __( 'Image Alignment', 'press-elements' ),
-					'type' => Controls_Manager::CHOOSE,
+					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'label_block' => false,
 					'options' => [
 						'left' => [
@@ -250,7 +240,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'transition_speed',
 				[
 					'label' => __( 'Transition Speed (ms)', 'press-elements' ),
-					'type' => Controls_Manager::SLIDER,
+					'type' => \Elementor\Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 500,
 						'unit' => 'ms',
@@ -277,7 +267,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'opened_image_size',
 				[
 					'label' => __( 'Opened Image Size (%)', 'press-elements' ),
-					'type' => Controls_Manager::SLIDER,
+					'type' => \Elementor\Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 100,
 						'unit' => '%'
@@ -309,7 +299,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_style',
 				[
 					'label' => __( 'Caption', 'press-elements' ),
-					'tab' => Controls_Manager::TAB_STYLE,
+					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -317,7 +307,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_align',
 				[
 					'label' => __( 'Alignment', 'press-elements' ),
-					'type' => Controls_Manager::CHOOSE,
+					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'label_block' => false,
 					'options' => [
 						'left' => [
@@ -344,7 +334,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_vertical',
 				[
 					'label' => __( 'Vertical Alignment', 'press-elements' ),
-					'type' => Controls_Manager::CHOOSE,
+					'type' => \Elementor\Controls_Manager::CHOOSE,
 					'label_block' => false,
 					'options' => [
 						'top' => [
@@ -371,11 +361,11 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_color',
 				[
 					'label' => __( 'Text Color', 'press-elements' ),
-					'type' => Controls_Manager::COLOR,
+					'type' => \Elementor\Controls_Manager::COLOR,
 					'default' => '#fff',
 					'scheme' => [
-						'type' => Scheme_Color::get_type(),
-						'value' => Scheme_Color::COLOR_1,
+						'type' => \Elementor\Scheme_Color::get_type(),
+						'value' => \Elementor\Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .press-elements-image-accordion ul li' => 'color: {{VALUE}};',
@@ -388,11 +378,11 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_background_color',
 				[
 					'label' => __( 'Background Color', 'press-elements' ),
-					'type' => Controls_Manager::COLOR,
+					'type' => \Elementor\Controls_Manager::COLOR,
 					'default' => 'rgba(255,255,255,0.3)',
 					'scheme' => [
-						'type' => Scheme_Color::get_type(),
-						'value' => Scheme_Color::COLOR_1,
+						'type' => \Elementor\Scheme_Color::get_type(),
+						'value' => \Elementor\Scheme_Color::COLOR_1,
 					],
 					'selectors' => [
 						'{{WRAPPER}} .press-elements-image-accordion ul li div' => 'background-color: {{VALUE}};',
@@ -401,10 +391,10 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 			);
 
 			$this->add_group_control(
-				Group_Control_Typography::get_type(),
+				\Elementor\Group_Control_Typography::get_type(),
 				[
 					'name' => 'typography',
-					'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+					'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
 					'selector' => '{{WRAPPER}} .press-elements-image-accordion ul li',
 				]
 			);
@@ -413,7 +403,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_html_tag',
 				[
 					'label' => __( 'HTML Tag', 'press-elements' ),
-					'type' => Controls_Manager::SELECT,
+					'type' => \Elementor\Controls_Manager::SELECT,
 					'options' => [
 						'h1' => __( 'H1', 'press-elements' ),
 						'h2' => __( 'H2', 'press-elements' ),
@@ -433,7 +423,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_margin',
 				[
 					'label' => __( 'Margin', 'press-elements' ),
-					'type' => Controls_Manager::DIMENSIONS,
+					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'default' => [
 						'top' => 10,
@@ -452,7 +442,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'caption_padding',
 				[
 					'label' => __( 'Padding', 'press-elements' ),
-					'type' => Controls_Manager::DIMENSIONS,
+					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'default' => [
 						'top' => 10,
@@ -468,7 +458,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 			);
 
 			$this->add_group_control(
-				Group_Control_Border::get_type(),
+				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'caption_border',
 					'selector' => '{{WRAPPER}} .press-elements-image-accordion ul li div',
@@ -479,7 +469,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				'image_border_radius',
 				[
 					'label' => __( 'Border Radius', 'press-elements' ),
-					'type' => Controls_Manager::DIMENSIONS,
+					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'default' => [
 						'top' => 10,
@@ -495,7 +485,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 			);
 
 			$this->add_group_control(
-				Group_Control_Box_Shadow::get_type(),
+				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'caption_shadow',
 					'selector' => '{{WRAPPER}} .press-elements-image-accordion ul li div',

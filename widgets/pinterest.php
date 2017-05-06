@@ -1,9 +1,6 @@
 <?php
 namespace PressElements\Widgets;
 
-use Elementor\Widget_Base;
-use Elementor\Controls_Manager;
-
 
 
 // Exit if accessed directly
@@ -20,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.5.0
  */
-class Press_Elements_Pinterest extends Widget_Base {
+class Press_Elements_Pinterest extends \Elementor\Widget_Base {
 
 	public function get_name() {
 		return 'pinterest';
@@ -52,7 +49,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 			$this->add_control(
 				'pro_feature',
 				[
-					'type' => Controls_Manager::RAW_HTML,
+					'type' => \Elementor\Controls_Manager::RAW_HTML,
 					'raw' =>
 						'<div class="elementor-panel-nerd-box">
 							<i class="elementor-panel-nerd-box-icon fa fa-lock"></i>
@@ -91,7 +88,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'pinterest_username',
 				[
 					'label' => __( 'Pinterest Username', 'press-elements' ),
-					'type'  => Controls_Manager::TEXT,
+					'type'  => \Elementor\Controls_Manager::TEXT,
 					'placeholder' => __( 'pinterest', 'press-elements' ),
 				]
 			);
@@ -100,7 +97,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'links',
 				[
 					'label'     => __( 'Links', 'press-elements' ),
-					'type'      => Controls_Manager::HEADING,
+					'type'      => \Elementor\Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
 			);
@@ -109,7 +106,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'link_to',
 				[
 					'label' => __( 'Link to', 'press-elements' ),
-					'type' => Controls_Manager::SELECT,
+					'type' => \Elementor\Controls_Manager::SELECT,
 					'default' => 'pinterest_image',
 					'options' => [
 						'none' => __( 'None', 'press-elements' ),
@@ -122,7 +119,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'target',
 				[
 					'label'   => __( 'Open links in', 'press-elements' ),
-					'type'    => Controls_Manager::SELECT,
+					'type'    => \Elementor\Controls_Manager::SELECT,
 					'default' => 'default',
 					'options' => [
 						'default' => __( 'Same window', 'press-elements' ),
@@ -140,7 +137,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'section_style',
 				[
 					'label' => __( 'Pinterest', 'press-elements' ),
-					'tab' => Controls_Manager::TAB_STYLE,
+					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
 
@@ -148,7 +145,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'cols',
 				[
 					'label' => __( 'Colomns Per Row', 'press-elements' ),
-					'type'  => Controls_Manager::SLIDER,
+					'type'  => \Elementor\Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 3,
 						'unit' => 'cols',
@@ -168,7 +165,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'rows',
 				[
 					'label' => __( 'Number of Rows', 'press-elements' ),
-					'type'  => Controls_Manager::SLIDER,
+					'type'  => \Elementor\Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 3,
 						'unit' => 'cols',
@@ -188,7 +185,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'opacity',
 				[
 					'label' => __( 'Opacity (%)', 'press-elements' ),
-					'type' => Controls_Manager::SLIDER,
+					'type' => \Elementor\Controls_Manager::SLIDER,
 					'range' => [
 						'px' => [
 							'max' => 1,
@@ -206,7 +203,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'hover_animation',
 				[
 					'label' => __( 'Hover Animation', 'press-elements' ),
-					'type' => Controls_Manager::HOVER_ANIMATION,
+					'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 				]
 			);
 
@@ -214,7 +211,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'padding',
 				[
 					'label' => __( 'Padding', 'press-elements' ),
-					'type' => Controls_Manager::DIMENSIONS,
+					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
 						'{{WRAPPER}} .press-elements-pinterest img' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',

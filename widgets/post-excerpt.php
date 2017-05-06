@@ -1,12 +1,6 @@
 <?php
 namespace PressElements\Widgets;
 
-use Elementor\Widget_Base;
-use Elementor\Controls_Manager;
-use Elementor\Scheme_Color;
-use Elementor\Scheme_Typography;
-use Elementor\Group_Control_Typography;
-
 
 
 // Exit if accessed directly
@@ -23,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-class Press_Elements_Post_Excerpt extends Widget_Base {
+class Press_Elements_Post_Excerpt extends \Elementor\Widget_Base {
 
 	public function get_name() {
 		return 'post-excerpt';
@@ -66,7 +60,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
+				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'h1' => __( 'H1', 'press-elements' ),
 					'h2' => __( 'H2', 'press-elements' ),
@@ -86,7 +80,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			'align',
 			[
 				'label' => __( 'Alignment', 'press-elements' ),
-				'type' => Controls_Manager::CHOOSE,
+				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
 						'title' => __( 'Left', 'press-elements' ),
@@ -116,7 +110,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			'link_to',
 			[
 				'label' => __( 'Link to', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
+				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'none',
 				'options' => [
 					'none' => __( 'None', 'press-elements' ),
@@ -135,7 +129,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			'link',
 			[
 				'label' => __( 'Link', 'press-elements' ),
-				'type' => Controls_Manager::URL,
+				'type' => \Elementor\Controls_Manager::URL,
 				'placeholder' => __( 'http://your-link.com', 'press-elements' ),
 				'condition' => [
 					'link_to' => 'custom',
@@ -157,7 +151,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 					__( '%s Excerpt', 'press-elements' ),
 					$post_type_object->labels->singular_name
 				),
-				'tab' => Controls_Manager::TAB_STYLE,
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -165,10 +159,10 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			'color',
 			[
 				'label' => __( 'Text Color', 'press-elements' ),
-				'type' => Controls_Manager::COLOR,
+				'type' => \Elementor\Controls_Manager::COLOR,
 				'scheme' => [
-					'type' => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_1,
+					'type' => \Elementor\Scheme_Color::get_type(),
+					'value' => \Elementor\Scheme_Color::COLOR_1,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-excerpt' => 'color: {{VALUE}};',
@@ -178,10 +172,10 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 		);
 
 		$this->add_group_control(
-			Group_Control_Typography::get_type(),
+			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'typography',
-				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .press-elements-excerpt',
 			]
 		);
@@ -190,7 +184,7 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			'hover_animation',
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),
-				'type' => Controls_Manager::HOVER_ANIMATION,
+				'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 			]
 		);
 

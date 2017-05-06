@@ -1,12 +1,6 @@
 <?php
 namespace PressElements\Widgets;
 
-use Elementor\Widget_Base;
-use Elementor\Controls_Manager;
-use Elementor\Scheme_Color;
-use Elementor\Scheme_Typography;
-use Elementor\Group_Control_Typography;
-
 
 
 // Exit if accessed directly
@@ -23,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.2.0
  */
-class Press_Elements_Site_Counters extends Widget_Base {
+class Press_Elements_Site_Counters extends \Elementor\Widget_Base {
 
 	public function get_name() {
 		return 'site-counters';
@@ -67,7 +61,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'display',
 			[
 				'label' => __( 'Display', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
+				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'post_type',
 				'options' => [
 					'post_type' => __( 'Post Type', 'press-elements' ),
@@ -82,7 +76,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'post_type',
 			[
 				'label' => __( 'Post Type', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
+				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => $post_types,
 				'default' => 'post',
 				'condition' => [
@@ -95,7 +89,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'taxonomy',
 			[
 				'label' => __( 'Taxonomy', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
+				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => $taxonomies,
 				'default' => 'category',
 				'condition' => [
@@ -108,7 +102,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
-				'type' => Controls_Manager::SELECT,
+				'type' => \Elementor\Controls_Manager::SELECT,
 				'options' => [
 					'h1' => __( 'H1', 'press-elements' ),
 					'h2' => __( 'H2', 'press-elements' ),
@@ -128,7 +122,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'align',
 			[
 				'label' => __( 'Alignment', 'press-elements' ),
-				'type' => Controls_Manager::CHOOSE,
+				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
 						'title' => __( 'Left', 'press-elements' ),
@@ -160,7 +154,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'section_number',
 			[
 				'label' => __( 'Number', 'press-elements' ),
-				'tab' => Controls_Manager::TAB_STYLE,
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -168,10 +162,10 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'number_color',
 			[
 				'label' => __( 'Text Color', 'press-elements' ),
-				'type' => Controls_Manager::COLOR,
+				'type' => \Elementor\Controls_Manager::COLOR,
 				'scheme' => [
-					'type' => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_1,
+					'type' => \Elementor\Scheme_Color::get_type(),
+					'value' => \Elementor\Scheme_Color::COLOR_1,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-site-counters .press-elements-total' => 'color: {{VALUE}};',
@@ -180,10 +174,10 @@ class Press_Elements_Site_Counters extends Widget_Base {
 		);
 
 		$this->add_group_control(
-			Group_Control_Typography::get_type(),
+			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'number_typography',
-				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .press-elements-site-counters .press-elements-total',
 			]
 		);
@@ -192,7 +186,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'number_hover_animation',
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),
-				'type' => Controls_Manager::HOVER_ANIMATION,
+				'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 			]
 		);
 
@@ -202,7 +196,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'section_label',
 			[
 				'label' => __( 'Label', 'press-elements' ),
-				'tab' => Controls_Manager::TAB_STYLE,
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -210,10 +204,10 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'label_color',
 			[
 				'label' => __( 'Text Color', 'press-elements' ),
-				'type' => Controls_Manager::COLOR,
+				'type' => \Elementor\Controls_Manager::COLOR,
 				'scheme' => [
-					'type' => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_2,
+					'type' => \Elementor\Scheme_Color::get_type(),
+					'value' => \Elementor\Scheme_Color::COLOR_2,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-site-counters .press-elements-label' => 'color: {{VALUE}};',
@@ -222,10 +216,10 @@ class Press_Elements_Site_Counters extends Widget_Base {
 		);
 
 		$this->add_group_control(
-			Group_Control_Typography::get_type(),
+			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'label_typography',
-				'scheme' => Scheme_Typography::TYPOGRAPHY_2,
+				'scheme' => \Elementor\Scheme_Typography::TYPOGRAPHY_2,
 				'selector' => '{{WRAPPER}} .press-elements-site-counters .press-elements-label',
 			]
 		);
@@ -234,7 +228,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			'label_hover_animation',
 			[
 				'label' => __( 'Hover Animation', 'press-elements' ),
-				'type' => Controls_Manager::HOVER_ANIMATION,
+				'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 			]
 		);
 
