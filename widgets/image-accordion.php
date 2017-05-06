@@ -295,6 +295,14 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 				]
 			);
 
+			$this->add_group_control(
+				\Elementor\Group_Control_Border::get_type(),
+				[
+					'name' => 'image_border',
+					'selector' => '{{WRAPPER}} .press-elements-image-accordion ul li',
+				]
+			);
+
 			$this->end_controls_section();
 
 			$this->start_controls_section(
