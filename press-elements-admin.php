@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-class Press_Elements_Admin {
+class Admin {
 
 	/**
 	 * Constructor

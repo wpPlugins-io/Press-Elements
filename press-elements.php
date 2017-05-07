@@ -41,7 +41,7 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 		load_plugin_textdomain( 'press-elements' );
 
 		// Press Elements Admin - displays even if Elementor is not active
-		new \PressElements\Press_Elements_Admin();
+		new \PressElements\Admin();
 
 		// Notice if the Elementor is not active
 		if ( ! did_action( 'elementor/loaded' ) ) {
@@ -57,7 +57,7 @@ if ( ! function_exists( 'press_elements_load' ) ) {
 		}
 
 		// Press Elements Plugin
-		new \PressElements\Press_Elements_Plugin();
+		new \PressElements\Plugin();
 
 	}
 	add_action( 'plugins_loaded', 'press_elements_load' );
