@@ -3,7 +3,7 @@ Contributors: ramiy
 Tags: elementor, press elements, elements, widgets, page builder, builder, visual editor,
 Requires at least: 4.7
 Tested up to: 4.7
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -157,7 +157,6 @@ For more advanced uses, please contact us in our [wp.org support forum](https://
 * Enhance "Image Accordion" widget with new image border controller.
 * Fix "Site Logo" link issue by changing the way the logo is loaded.
 * Update plugin setup process.
-* Replace PHP namespace aliases ("use" operators) with full external names.
 
 = 1.6.0 =
 
