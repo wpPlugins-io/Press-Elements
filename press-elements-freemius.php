@@ -66,8 +66,9 @@ if ( ! function_exists( 'press_elements_freemius_header' ) ) {
 	function press_elements_freemius_header( $html ) {
 
 		$title = sprintf(
-			'<h1>%1$s</h1>',
-			esc_html_e( 'Press Elements - Widgets for Elementor', 'press-elements' )
+			'<h1>%1$s</h1><p>%2$s</p>',
+			esc_html__( 'Press Elements - Widgets for Elementor', 'press-elements' ),
+			esc_html__( 'Easy-to-use widgets that help you display and design your content using Elementor page builder.', 'press-elements' )
 		);
 
 		return $title . $html;
