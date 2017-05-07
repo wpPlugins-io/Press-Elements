@@ -45,14 +45,18 @@ With Press Elements you can use Elementor widgets to display and design your pos
 
 Press Elements comes with 19 useful Elementor widgets, 11 of them are free of charge!
 
-Site Elements:
+**Site Elements**
+
+General site related components integrated in WordPress.
 
 - **Site Title** - The name of the site (set in Settings > General).
 - **Site Description** - The tagline (set in Settings > General).
 - **Site Logo** - Custom site logo (set in the Customizer).
 - **Site Counters** - General site stats for Post Types, Taxonomies, Comments and Users.
 
-Post Elements:
+**Post Elements**
+
+Post related components based on WordPress theme architecture.
 
 - **Post Title** - The title of the post.
 - **Post Excerpt** - A short description.
@@ -63,18 +67,26 @@ Post Elements:
 - **Post Custom Field (Pro)** - Extra information saved as WordPress meta-data.
 - **Post Comments** -  The default Comments Template included in the theme.
 
-Effects:
+**Effects**
 
-- **Image Accordion (Pro)** - Display images in a beautiful accordion effect.
-- **Before After Effect (Pro)** - Visual differences between two images.
-- **Notes (Pro)** - Display your ordinary lists as styled sticky notes.
+Special text effects and advanced image effects.
 
-Integrations:
+- [__Image Accordion (Pro)__](https://press-elements.com/widgets/image-accordion/) - Display images in a beautiful accordion effect.
+- [__Before After Effect (Pro)__](https://press-elements.com/widgets/before-after-effect/) - Visual differences between two images.
+- [__Notes (Pro)__](https://press-elements.com/widgets/notes/) - Display your ordinary lists as styled sticky notes.
+
+**Integrations**
+
+WordPress plugins and 3rd party services integrated into Elementor.
 
 - **Advanced Custom Fields (Pro)** - Fields added by [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) plugin.
-- **Gravatar (Pro)** - Display single [Gravatars](https://gravatar.com/) based on an email address.
+- [__Gravatar (Pro)__](https://press-elements.com/widgets/gravatar/) - Display single [Gravatars](https://gravatar.com/) based on an email address.
 - **Flickr (Pro)** - Display Flickr photostream based on Flickr User ID.
 - **Pinterest (Pro)** - Display Pinterest pins based on Pinterest username.
+
+= Translations =
+
+You can help translating the plugin to your language from [__translate.wordpress.org__](https://translate.wordpress.org/projects/wp-plugins/press-elements).
 
 == Screenshots ==
 1. Post edit screen with WordPress elements.
