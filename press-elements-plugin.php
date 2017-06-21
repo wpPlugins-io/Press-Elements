@@ -39,14 +39,22 @@ class Plugin {
 	 */
 	private function add_actions() {
 
+		// Add New Elementor Categories
 		add_action( 'elementor/init', [ $this, 'add_elementor_category' ] );
-		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'register_widget_script' ] );
+
+		// Register Widget Scripts
+		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'register_widget_scripts' ] );
+
+		// Register Widget Styles
+		add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'register_widget_styles' ] );
+
+		// Register New Widgets
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'on_widgets_registered' ] );
 
 	}
 
 	/**
-	 * On Widgets Registered
+	 * Add Elementor Categories
 	 *
 	 * @since 1.0.0
 	 *
@@ -78,13 +86,33 @@ class Plugin {
 	}
 
 	/**
-	 * Register Widget Script
+	 * Register Widget Scripts
 	 *
 	 * @since 1.6.0
 	 *
 	 * @access public
 	 */
-	public function register_widget_script() {
+	public function register_widget_scripts() {
+
+		if ( press_elements_freemius()->is__premium_only() ) {
+
+			// Before After Effect
+			wp_register_script( 'eventmove', plugins_url( 'libs/twentytwenty/jquery.event.move.js', __FILE__ ), array( 'jquery' ) );
+			wp_register_script( 'twentytwenty', plugins_url( 'libs/twentytwenty/jquery.twentytwenty.js', __FILE__ ), array( 'eventmove' ) );
+			wp_register_script( 'before-after-effect', plugins_url( 'assets/js/before-after-effect.js', __FILE__ ), array( 'twentytwenty' ) );
+
+		}
+
+	}
+
+	/**
+	 * Register Widget Styles
+	 *
+	 * @since 1.7.0
+	 *
+	 * @access public
+	 */
+	public function register_widget_styles() {
 
 		if ( press_elements_freemius()->is__premium_only() ) {
 
@@ -93,10 +121,6 @@ class Plugin {
 			wp_enqueue_style( 'image-accordion' );
 
 			// Before After Effect
-			wp_register_script( 'eventmove', plugins_url( 'libs/twentytwenty/jquery.event.move.js', __FILE__ ), array( 'jquery' ) );
-			wp_register_script( 'twentytwenty', plugins_url( 'libs/twentytwenty/jquery.twentytwenty.js', __FILE__ ), array( 'eventmove' ) );
-			wp_register_script( 'before-after-effect', plugins_url( 'assets/js/before-after-effect.js', __FILE__ ), array( 'twentytwenty' ) );
-
 			wp_register_style( 'before-after-effect', plugins_url( 'press-elements/assets/css/before-after-effect.css' ) );
 			wp_enqueue_style( 'before-after-effect' );
 
@@ -109,7 +133,7 @@ class Plugin {
 	}
 
 	/**
-	 * On Widgets Registered
+	 * Register New Widgets
 	 *
 	 * @since 1.0.0
 	 *
@@ -118,12 +142,12 @@ class Plugin {
 	public function on_widgets_registered() {
 
 		$this->includes();
-		$this->register_widget();
+		$this->register_widgets();
 
 	}
 
 	/**
-	 * Includes
+	 * Include Widgets Files
 	 *
 	 * @since 1.0.0
 	 *
@@ -161,13 +185,13 @@ class Plugin {
 	}
 
 	/**
-	 * Register Widget
+	 * Register Widgets
 	 *
 	 * @since 1.0.0
 	 *
 	 * @access private
 	 */
-	private function register_widget() {
+	private function register_widgets() {
 
 		// Site Elements
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Site_Title() );
