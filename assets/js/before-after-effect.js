@@ -2,15 +2,12 @@
 
 	var PressElementsBeforeAfterEffect = function( $scope, $ ) {
 
-		// Apply the dragging event
-		$scope.find( '.twentytwenty-container' ).each( function() {
+		var $settings = $( '.twentytwenty-container', $scope );
 
-			$(this).twentytwenty({
-				default_offset_pct: $(this).data( 'starting-position' ),
-				orientation: $(this).data( 'orientation' )
-			});
-
-		});
+		$settings.twentytwenty( {
+			default_offset_pct: $settings.data( 'starting-position' ),
+			orientation: $settings.data( 'orientation' )
+		} );
 
 	}
 
