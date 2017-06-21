@@ -103,6 +103,10 @@ class Plugin {
 
 		}
 
+		// Typing Effect
+		wp_register_script( 'typedjs', plugins_url( 'libs/typed/typed.js', __FILE__ ), array( 'jquery' ) );
+		wp_register_script( 'typing-effect', plugins_url( 'assets/js/typing-effect.js', __FILE__ ), array( 'typedjs' ), rand() );
+
 	}
 
 	/**
@@ -129,6 +133,10 @@ class Plugin {
 			wp_enqueue_style( 'notes' );
 
 		}
+
+		// Typing Effect
+		wp_register_style( 'typing-effect', plugins_url( 'press-elements/assets/css/typing-effect.css' ) );
+		wp_enqueue_style( 'typing-effect' );
 
 	}
 
@@ -175,6 +183,7 @@ class Plugin {
 		require_once( __DIR__ . '/widgets/image-accordion.php' );
 		require_once( __DIR__ . '/widgets/before-after-effect.php' );
 		require_once( __DIR__ . '/widgets/notes.php' );
+		require_once( __DIR__ . '/widgets/typing-effect.php' );
 
 		// Integrations
 		require_once( __DIR__ . '/widgets/advanced-custom-fields.php' );
@@ -213,6 +222,7 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Image_Accordion() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Before_After_Effect() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Notes() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Typing_Effect() );
 
 		// Integrations
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \PressElements\Widgets\Press_Elements_Advanced_Custom_Fields() );
