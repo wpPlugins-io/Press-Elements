@@ -264,7 +264,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			case 'taxonomy' :
 				$total = wp_count_terms( $settings['taxonomy'] );
 				$taxonomy = get_taxonomy( $settings['taxonomy'] );
-				$label = $taxonomy->labels->name;
+				$label = ( is_object( $taxonomy ) ) ? $taxonomy->labels->name : '';
 				break;
 
 			case 'post_type' :
@@ -273,7 +273,7 @@ class Press_Elements_Site_Counters extends Widget_Base {
 				$total = $query->found_posts;
 				wp_reset_postdata();
 				$post_type_object = get_post_type_object( $settings['post_type'] );
-				$label = $post_type_object->labels->name;
+				$label = ( is_object( $post_type_object ) ) ? $post_type_object->labels->name : '';
 				break;
 		}
 
