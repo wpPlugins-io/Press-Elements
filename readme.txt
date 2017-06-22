@@ -3,7 +3,7 @@ Contributors: ramiy
 Tags: elementor, press elements, elements, widgets, page builder, builder, visual editor,
 Requires at least: 4.7
 Tested up to: 4.7
-Stable tag: 1.6.1
+Stable tag: 1.7.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -11,7 +11,53 @@ Easy-to-use widgets that help you display and design your content using Elemento
 
 == Description ==
 
-[Press Elements](https://press-elements.com/) combines the simplicity of [Elementor](https://wordpress.org/plugins/elementor/) with the efficiency of the built-in WordPress theme components.
+We all enjoy simple, intuitive and visually appealing sites. But in order to create stunning websites you need to use the right tools.
+
+With [Press Elements](https://press-elements.com/) you can combine the simplicity of [Elementor](https://wordpress.org/plugins/elementor/) with the efficiency of the built-in WordPress theme components.
+
+Our goal is to give you uniquely and efficient experience to express yourself. Whether you are a designer seeking to create a breath taking effect, or a developer seeking to replacing the theme-functions with simpler Elementor drag-and-drop widgets, or even an implementor how needs to integrate WordPress plugins into Elementor.
+
+The plugin adds powerful Elementor widgets built specifically for WordPress professionals. Our Elementor widgets organized in four categories:
+
+**Site Elements**
+
+General site related components integrated in WordPress.
+
+- **Site Title** - The name of the site.
+- **Site Description** - The tagline.
+- **Site Logo** - Custom site logo.
+- **Site Counters** - General site stats for Post Types, Taxonomies, Comments and Users.
+
+**Post Elements**
+
+Post related components based on WordPress theme architecture.
+
+- **Post Title** - The title of the post.
+- **Post Excerpt** - A short description.
+- **Post Date** - Publish date or last modified date.
+- **Post Author** - The post author information.
+- **Post Terms** - The taxonomies assigned to the post.
+- **Post Featured Image** - An image assigned to the post.
+- **Post Custom Field (Pro)** - Extra information saved as WordPress meta-data.
+- **Post Comments** -  The default Comments Template included in the theme.
+
+**Effects**
+
+Special text effects and advanced image effects.
+
+- [__Image Accordion (Pro)__](https://press-elements.com/widgets/image-accordion/) - Display images in a beautiful accordion effect.
+- [__Before After Effect (Pro)__](https://press-elements.com/widgets/before-after-effect/) - Visual differences between two images.
+- [__Notes (Pro)__](https://press-elements.com/widgets/notes/) - Display your ordinary lists as styled sticky notes.
+- [__Typing Effect__](https://press-elements.com/widgets/typing-effect/) - Type out sentences and then delete them with a beautiful animation.
+
+**Integrations**
+
+WordPress plugins and 3rd party services integrated into Elementor.
+
+- **Advanced Custom Fields (Pro)** - Fields added by [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) plugin.
+- [__Gravatar (Pro)__](https://press-elements.com/widgets/gravatar/) - Display single [Gravatars](https://gravatar.com/) based on an email address.
+- **Flickr (Pro)** - Display Flickr photostream based on Flickr User ID.
+- **Pinterest (Pro)** - Display Pinterest pins based on Pinterest username.
 
 = WordPress Elements =
 
@@ -40,49 +86,6 @@ With Press Elements you can create custom designs with post elements and save th
 You don't need to hire developers to generate custom page templates - with Press Elements you can do it using a simple drag & drop interface! Now you can design different templates for different blog posts, pages and other Post Types. When creating new posts, load your predefined templates from your template library.
 
 With Press Elements you can use Elementor widgets to display and design your post elements! Just like developers use theme-functions to generate themes. How cool is that?!
-
-= Included Widgets =
-
-Press Elements comes with 19 useful Elementor widgets, 11 of them are free of charge!
-
-**Site Elements**
-
-General site related components integrated in WordPress.
-
-- **Site Title** - The name of the site (set in Settings > General).
-- **Site Description** - The tagline (set in Settings > General).
-- **Site Logo** - Custom site logo (set in the Customizer).
-- **Site Counters** - General site stats for Post Types, Taxonomies, Comments and Users.
-
-**Post Elements**
-
-Post related components based on WordPress theme architecture.
-
-- **Post Title** - The title of the post.
-- **Post Excerpt** - A short description.
-- **Post Date** - Publish date or last modified date.
-- **Post Author** - The post author information.
-- **Post Terms** - The taxonomies assigned to the post.
-- **Post Featured Image** - An image assigned to the post.
-- **Post Custom Field (Pro)** - Extra information saved as WordPress meta-data.
-- **Post Comments** -  The default Comments Template included in the theme.
-
-**Effects**
-
-Special text effects and advanced image effects.
-
-- [__Image Accordion (Pro)__](https://press-elements.com/widgets/image-accordion/) - Display images in a beautiful accordion effect.
-- [__Before After Effect (Pro)__](https://press-elements.com/widgets/before-after-effect/) - Visual differences between two images.
-- [__Notes (Pro)__](https://press-elements.com/widgets/notes/) - Display your ordinary lists as styled sticky notes.
-
-**Integrations**
-
-WordPress plugins and 3rd party services integrated into Elementor.
-
-- **Advanced Custom Fields (Pro)** - Fields added by [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) plugin.
-- [__Gravatar (Pro)__](https://press-elements.com/widgets/gravatar/) - Display single [Gravatars](https://gravatar.com/) based on an email address.
-- **Flickr (Pro)** - Display Flickr photostream based on Flickr User ID.
-- **Pinterest (Pro)** - Display Pinterest pins based on Pinterest username.
 
 = Translations =
 
@@ -162,143 +165,108 @@ For more advanced uses, please contact us in our [wp.org support forum](https://
 
 == Changelog ==
 
+= 1.7.0 =
+
+* New - Typing Effect widget.
+* Fix - Solve "Site Counters" error in some post-types and taxonomies.
+* Fix - Update "Before After Effect" widget JS.
+* Tweak - Update plugin setup process.
+* Tweak - Check for minimum required PHP version.
+* Tweak - Upgrade Freemius SDK to version 1.2.1.7.1.
+
 = 1.6.1 =
 
-**General**
-
-* Enhance "Image Accordion" widget with new image border controller.
-* Fix "Site Logo" link issue by changing the way the logo is loaded.
-* Update plugin setup process.
+* Fix - Solve "Site Logo" link issue by changing the way the logo is loaded.
+* Tweak - Enhance "Image Accordion" widget with new image border controller.
+* Tweak - Update plugin setup process.
 
 = 1.6.0 =
 
-**General**
-
-* Release "Post Featured Image" as a free widget!!
-
-**New Widgets**
-
-* Image Accordion (Pro)
-* Before After Effect (Pro)
-* Notes (Pro)
+* New - Image Accordion (Pro) widget.
+* New - Before After Effect (Pro) widget.
+* New - Notes (Pro) widget.
+* Tweak - Release "Post Featured Image" as a free widget!!
 
 = 1.5.0 =
 
-**General**
-
-* Move "Press Elements" menu from "Appearance" to "Settings".
-* Fix the issue with single quotes characters in "Post Title" and "Post Excerpt" widgets.
-* Escape the URL returned by the "Link to" controller in all the widgets.
-* Add warnings in widgets that dependent on external plugins like ACF.
-* Enhance "Advanced Custom Fields" widget to display fields saved as arrays.
-
-**New Widgets**
-
-* Flickr (Pro)
-* Pinterest (Pro)
+* New - Flickr (Pro) widget.
+* New - Pinterest (Pro) widget.
+* Fix - Solve single quotes characters issue in "Post Title" and "Post Excerpt" widgets.
+* Fix - Escape the URL returned by the "Link to" controller in all the widgets.
+* Tweak - Move "Press Elements" menu from "Appearance" to "Settings".
+* Tweak - Add warnings in widgets that dependent on external plugins like ACF.
+* Tweak - Enhance "Advanced Custom Fields" widget to display fields saved as arrays.
 
 = 1.4.0 =
 
-**General**
-
-* Fix "Site Counters" post types display and taxonomy total count.
-* Update "Custom Field" widget with display condition to the image angle controller.
-* Enhance "Post Author" widget "Style" tab. Different design controllers for author images and other author data.
-* Upgrade Minimum Requirements to PHP 5.4 - like Elementor.
-
-**New Widgets**
-
-* Advanced Custom Fields (Pro)
-* Gravatar (Pro)
+* New - Advanced Custom Fields (Pro) widget.
+* New - Gravatar (Pro) widget.
+* Fix - The "Site Counters" post types display.
+* Fix - The "Site Counters" taxonomy total count.
+* Tweak - Update "Custom Field" widget with display condition to the image angle controller.
+* Tweak - Enhance "Post Author" widget "Style" tab. Different design controllers for author images and other author data.
+* Tweak - Upgrade Minimum Requirements to PHP 5.4, like Elementor.
 
 = 1.3.1 =
 
-**General**
-
-* Fix images rotation angle controller to allow 360deg image rotation.
-* Fix "Post Terms" to display only the post-terms not all the terms.
+* Fix - Allow image rotation angle controller to set 360deg rotation.
+* Fix - Enhance "Post Terms" to display only the post-terms not all the terms.
 
 = 1.3.0 =
 
-**General**
-
-* Remove redundant hidden control in "Site Title" and "Site Description" widgets.
-* Enhance "Post Custom Field" widget with links to other custom fields.
-* Enhance "Post Custom Field" widget with "Display as" as control to display as simple text or an image.
-* Enhance "Post Custom Field" widget "Style" tab. Different fields for simple text values and images.
-* Enhance "Site Logo", "Post Featured Image" and "Post Custom Field" with an image rotation feature.
+* New - Enhance "Post Custom Field" widget with links to other custom fields.
+* New - Enhance "Post Custom Field" widget with "Display as" as control to display as simple text or an image.
+* New - Enhance "Post Custom Field" widget "Style" tab. Different fields for simple text values and images.
+* New - Enhance "Site Logo", "Post Featured Image" and "Post Custom Field" with an image rotation feature.
+* Tweak - Remove redundant hidden control in "Site Title" and "Site Description" widgets.
 
 = 1.2.2 =
 
-**General**
-
-* Bug fix - When adding new widgets the design is not applied because of undefined hover animation.
+* Fix - When adding new widgets the design is not applied because of an undefined hover animation.
 
 = 1.2.1 =
 
-**General**
-
-* Add an admin menu linking to the plugin support forum.
-* Bug fix - display plugin admin even if Elementor is not active.
+* Fix - Display plugin admin even if Elementor is not active.
+* Tweak - Add an admin menu linking to the plugin support forum.
 
 = 1.2.0 =
 
-**General**
-
-* Add Hover Animation field to all the widgets.
-* Enhance the "Post Date" with new select field to choose either "Publish Date" or "Last Modified Date".
-* Remove redundant hidden control in Post Title, Excerpt and Date widgets.
-* Fix reload glitch on "Post Author" widget.
-* Upgrade Minimum Requirements to WordPress 4.7 for the site logo feature.
-
-**New Widgets**
-
-* Site Logo
-* Site Counters
+* New - Site Logo widget.
+* New - Site Counters widget.
+* New - Add Hover Animation field to all the widgets.
+* Fix - Solve reload glitch on "Post Author" widget.
+* Tweak - Enhance the "Post Date" with new select field to choose either "Publish Date" or "Last Modified Date".
+* Tweak - Remove redundant hidden control in Post Title, Excerpt and Date widgets.
+* Tweak - Upgrade Minimum Requirements to WordPress 4.7 for the site logo feature.
 
 = 1.1.2 =
 
-**General**
-
-* Fix Freemius opt-in issue.
-* Upgrade Minimum Requirements to PHP 5.3.
-* Merge similar translation strings.
+* Fix - Solve Freemius opt-in issue.
+* Tweak - Upgrade Minimum Requirements to PHP 5.3.
+* Tweak - Merge similar translation strings.
 
 = 1.1.1 =
 
-**General**
-
-* Fix Freemius "first-path" parameter on plugin activation.
-* Update translators comments for string placeholders.
+* Fix - Update Freemius "first-path" parameter on plugin activation.
+* Tweak - Update translators comments for string placeholders.
 
 = 1.1.0 =
 
-**General**
-
-* Add admin notices for missing parent plugin and minimum required Elementor version.
-* Move Freemius init functions to a separate file.
-* Upgrade Freemius SDK to version 1.2.1.6.1
-* Fix animations in "Post Featured Image" widget.
-* Extend the link field for all widgets.
-
-**New Widgets**
-
-* Post Terms
-* Post Comments
+* New - Post Terms widget.
+* New - Post Comments widget.
+* Fix - Add admin notices for missing parent plugin and minimum required Elementor version.
+* Fix - Solve animation issue in "Post Featured Image" widget.
+* Tweak - Move Freemius init functions to a separate file.
+* Tweak - Upgrade Freemius SDK to version 1.2.1.6.1
+* Tweak - Extend the link field for all widgets.
 
 = 1.0.0 =
 
-**General**
-
-* Initial release.
-
-**New Widgets**
-
-* Site Title
-* Site Description
-* Post Title
-* Post Excerpt
-* Post Date
-* Post Author
-* Post Featured Image (Pro)
-* Post Custom Field (Pro)
+* New - Site Title widget.
+* New - Site Description widget.
+* New - Post Title widget.
+* New - Post Excerpt widget.
+* New - Post Date widget.
+* New - Post Author widget.
+* New - Post Featured Image (Pro) widget.
+* New - Post Custom Field (Pro) widget.
