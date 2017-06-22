@@ -193,6 +193,7 @@ class Admin {
 						<li><?php esc_html_e( 'Image Accordion (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Before After Effect (Pro)', 'press-elements' ); ?></li>
 						<li><?php esc_html_e( 'Notes (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Typing Effect', 'press-elements' ); ?></li>
 					</ol>
 					<p style="text-decoration: underline;"><?php esc_html_e( 'Integrations:', 'press-elements' ); ?></p>
 					<ol>
@@ -217,7 +218,9 @@ class Admin {
 					</ol>
 					<p style="text-decoration: underline;"><?php esc_html_e( 'Effects:', 'press-elements' ); ?></p>
 					<ol>
-						<li><?php esc_html_e( 'Typing Effect (Pro)', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'News Ticker', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Timeline', 'press-elements' ); ?></li>
+						<li><?php esc_html_e( 'Image Hotspots', 'press-elements' ); ?></li>
 					</ol>
 
 				</div>
