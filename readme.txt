@@ -2,7 +2,7 @@
 Contributors: ramiy
 Tags: elementor, press elements, elements, widgets, page builder, builder, visual editor,
 Requires at least: 4.7
-Tested up to: 4.7
+Tested up to: 4.8
 Stable tag: 1.7.0
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
