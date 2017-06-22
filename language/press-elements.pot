@@ -19,7 +19,7 @@ msgstr ""
 msgid "Press Elements - Widgets for Elementor"
 msgstr ""
 
-#: press-elements-admin.php:121, press-elements.php:167, press-elements.php:221
+#: press-elements-admin.php:121, press-elements.php:501, press-elements.php:545, press-elements.php:589
 msgid "Press Elements"
 msgstr ""
 
@@ -27,11 +27,11 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: press-elements-admin.php:165, press-elements-admin.php:689
+#: press-elements-admin.php:165, press-elements-admin.php:695
 msgid "Getting Started"
 msgstr ""
 
-#: press-elements-admin.php:167, press-elements-admin.php:843
+#: press-elements-admin.php:167, press-elements-admin.php:849
 msgid "Changelog"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Support Forum"
 msgstr ""
 
-#: press-elements-admin.php:265
+#: press-elements-admin.php:265, press-elements-freemius.php:80
 msgid "Easy-to-use widgets that help you display and design your content using Elementor page builder."
 msgstr ""
 
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Included Widgets"
 msgstr ""
 
-#: press-elements-admin.php:345, press-elements-admin.php:413
+#: press-elements-admin.php:345, press-elements-admin.php:415
 msgid "Site Elements:"
 msgstr ""
 
@@ -171,7 +171,7 @@ msgstr ""
 msgid "Post Comments"
 msgstr ""
 
-#: press-elements-admin.php:381, press-elements-admin.php:435
+#: press-elements-admin.php:381, press-elements-admin.php:437
 msgid "Effects:"
 msgstr ""
 
@@ -187,188 +187,208 @@ msgstr ""
 msgid "Notes (Pro)"
 msgstr ""
 
-#: press-elements-admin.php:393
+#: press-elements-admin.php:391, widgets/typing-effect.php:33
+msgid "Typing Effect"
+msgstr ""
+
+#: press-elements-admin.php:395
 msgid "Integrations:"
 msgstr ""
 
-#: press-elements-admin.php:397
+#: press-elements-admin.php:399
 msgid "Advanced Custom Fields (Pro)"
 msgstr ""
 
-#: press-elements-admin.php:399
+#: press-elements-admin.php:401
 msgid "Gravatar (Pro)"
 msgstr ""
 
-#: press-elements-admin.php:401
+#: press-elements-admin.php:403
 msgid "Flickr (Pro)"
 msgstr ""
 
-#: press-elements-admin.php:403
+#: press-elements-admin.php:405
 msgid "Pinterest (Pro)"
 msgstr ""
 
-#: press-elements-admin.php:409
+#: press-elements-admin.php:411
 msgid "Coming Soon"
 msgstr ""
 
-#: press-elements-admin.php:417
+#: press-elements-admin.php:419
 msgid "Login Form"
 msgstr ""
 
-#: press-elements-admin.php:419
+#: press-elements-admin.php:421
 msgid "Search Form"
 msgstr ""
 
-#: press-elements-admin.php:423
+#: press-elements-admin.php:425
 msgid "Comments Elements:"
 msgstr ""
 
-#: press-elements-admin.php:427
+#: press-elements-admin.php:429
 msgid "Comments Form"
 msgstr ""
 
-#: press-elements-admin.php:429
+#: press-elements-admin.php:431
 msgid "Comments List"
 msgstr ""
 
-#: press-elements-admin.php:431
+#: press-elements-admin.php:433
 msgid "Comments Pagination"
 msgstr ""
 
-#: press-elements-admin.php:439
-msgid "Typing Effect (Pro)"
+#: press-elements-admin.php:441
+msgid "News Ticker"
 msgstr ""
 
-#: press-elements-admin.php:457, press-elements-admin.php:461
+#: press-elements-admin.php:443
+msgid "Timeline"
+msgstr ""
+
+#: press-elements-admin.php:445
+msgid "Image Hotspots"
+msgstr ""
+
+#: press-elements-admin.php:463, press-elements-admin.php:467
 msgid "Post edit screen with WordPress elements."
 msgstr ""
 
-#: press-elements-admin.php:475, press-elements-admin.php:479
+#: press-elements-admin.php:481, press-elements-admin.php:485
 msgid "Elementor widgets for each site and post element."
 msgstr ""
 
-#: press-elements-admin.php:493, press-elements-admin.php:497
+#: press-elements-admin.php:499, press-elements-admin.php:503
 msgid "Styling post title with a dedicated Elementor widget."
 msgstr ""
 
-#: press-elements-admin.php:511, press-elements-admin.php:515
+#: press-elements-admin.php:517, press-elements-admin.php:521
 msgid "Display post custom fields."
 msgstr ""
 
-#: press-elements-admin.php:529, press-elements-admin.php:533
+#: press-elements-admin.php:535, press-elements-admin.php:539
 msgid "Create your own author bio section."
 msgstr ""
 
-#: press-elements-admin.php:547, press-elements-admin.php:551
+#: press-elements-admin.php:553, press-elements-admin.php:557
 msgid "Widgets for your site logo, site name and site description."
 msgstr ""
 
-#: press-elements-admin.php:565, press-elements-admin.php:569
+#: press-elements-admin.php:571, press-elements-admin.php:575
 msgid "Site counters for Post Types, Taxonomies, Comments and Users."
 msgstr ""
 
-#: press-elements-admin.php:583, press-elements-admin.php:587
+#: press-elements-admin.php:589, press-elements-admin.php:593
 msgid "Custom fields as text fields and images, and linking to other custom fields."
 msgstr ""
 
-#: press-elements-admin.php:601, press-elements-admin.php:605
+#: press-elements-admin.php:607, press-elements-admin.php:611
 msgid "Display Gravatars based on an email address."
 msgstr ""
 
-#: press-elements-admin.php:619, press-elements-admin.php:623
+#: press-elements-admin.php:625, press-elements-admin.php:629
 msgid "Display Flickr photostream based on Flickr User ID."
 msgstr ""
 
-#: press-elements-admin.php:637, press-elements-admin.php:641
+#: press-elements-admin.php:643, press-elements-admin.php:647
 msgid "Display Pinterest pins based on Pinterest username."
 msgstr ""
 
-#: press-elements-admin.php:693
+#: press-elements-admin.php:699
 msgid "Welcome to Press Elements getting started guide."
 msgstr ""
 
-#: press-elements-admin.php:701
+#: press-elements-admin.php:707
 msgid "Getting started with Press Elements is easy! We put together this quick start guide to help first time users of the plugin. Our goal is to get you up and running in no time. Let's begin!"
 msgstr ""
 
-#: press-elements-admin.php:713
+#: press-elements-admin.php:719
 msgid "STEP 1: Create a new post"
 msgstr ""
 
-#: press-elements-admin.php:717
+#: press-elements-admin.php:723
 msgid "Navigate to \"Posts\" > \"Add New\" to create a new post. Enter a post title, write an excerpt, select a featured image, set an author, select a publish date and publish the post."
 msgstr ""
 
-#: press-elements-admin.php:737
+#: press-elements-admin.php:743
 msgid "STEP 2: Design your own template"
 msgstr ""
 
-#: press-elements-admin.php:741
+#: press-elements-admin.php:747
 msgid "Click the \"Edit with Elementor\" button and start designing the page layout. Design a page header, footer, and the content area."
 msgstr ""
 
-#: press-elements-admin.php:745
+#: press-elements-admin.php:751
 msgid "Use \"Press Elements\" widgets to display the post title, post excerpt, post date and the other fields used by WordPress. Don't forget to style those elements!"
 msgstr ""
 
-#: press-elements-admin.php:765
+#: press-elements-admin.php:771
 msgid "STEP 3: Save the template"
 msgstr ""
 
-#: press-elements-admin.php:769
+#: press-elements-admin.php:775
 msgid "Click on the \"Add Template\" button located at the bottom, and save the design. You will see the newly created template at the \"My Templates\" tab."
 msgstr ""
 
-#: press-elements-admin.php:773
+#: press-elements-admin.php:779
 msgid "You can save several templates for blogs posts, pages, and other post types. Or even several templates for a particular post type."
 msgstr ""
 
-#: press-elements-admin.php:793
+#: press-elements-admin.php:799
 msgid "STEP 4: Apply the design to new posts"
 msgstr ""
 
-#: press-elements-admin.php:797
+#: press-elements-admin.php:803
 msgid "For each new post you create, load the desired template and apply it to the post. The post will enherite the design but the elements will be updated with the current post data."
 msgstr ""
 
-#: press-elements-admin.php:847
+#: press-elements-admin.php:853
 msgid "Press Elements changelog."
 msgstr ""
 
-#: press-elements-admin.php:855
+#: press-elements-admin.php:861
 msgid "The Press Elements plugin is developed continuasly, this is the full changelog."
 msgstr ""
 
-#: press-elements-admin.php:897
+#: press-elements-admin.php:903
 msgid "No valid changelog was found."
 msgstr ""
 
-#: press-elements-plugin.php:117
+#: press-elements-plugin.php:133
 msgid "Site Elements"
 msgstr ""
 
-#: press-elements-plugin.php:127
+#: press-elements-plugin.php:143
 msgid "Post Elements"
 msgstr ""
 
-#: press-elements-plugin.php:137
+#: press-elements-plugin.php:153
 msgid "Press Elements Pro Effects"
 msgstr ""
 
-#: press-elements-plugin.php:147
+#: press-elements-plugin.php:163
 msgid "Press Elements Pro Integrations"
 msgstr ""
 
-#: press-elements.php:165
+#: press-elements.php:225, press-elements.php:261
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: press-elements.php:499
 msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
 msgstr ""
 
-#: press-elements.php:169, press-elements.php:223
+#: press-elements.php:503, press-elements.php:547
 msgid "Elementor"
 msgstr ""
 
-#: press-elements.php:219
+#: press-elements.php:543, press-elements.php:587
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: press-elements.php:591
+msgid "PHP"
 msgstr ""
 
 #: widgets/advanced-custom-fields.php:69, widgets/advanced-custom-fields.php:105, widgets/advanced-custom-fields.php:141, widgets/advanced-custom-fields.php:177, widgets/advanced-custom-fields.php:277, widgets/advanced-custom-fields.php:527
@@ -407,7 +427,7 @@ msgstr ""
 msgid "Display As"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:315, widgets/before-after-effect.php:221, widgets/before-after-effect.php:295, widgets/post-custom-field.php:265
+#: widgets/advanced-custom-fields.php:315, widgets/before-after-effect.php:221, widgets/before-after-effect.php:295, widgets/post-custom-field.php:265, widgets/typing-effect.php:60
 msgid "Text"
 msgstr ""
 
@@ -415,43 +435,43 @@ msgstr ""
 msgid "Image"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:335, widgets/gravatar.php:207, widgets/image-accordion.php:829, widgets/notes.php:487, widgets/post-author.php:159, widgets/post-custom-field.php:285, widgets/post-date.php:161, widgets/post-excerpt.php:135, widgets/post-terms.php:157, widgets/post-title.php:135, widgets/site-counters.php:219, widgets/site-description.php:111, widgets/site-logo.php:125, widgets/site-title.php:111
+#: widgets/advanced-custom-fields.php:335, widgets/gravatar.php:207, widgets/image-accordion.php:829, widgets/notes.php:487, widgets/post-author.php:159, widgets/post-custom-field.php:285, widgets/post-date.php:161, widgets/post-excerpt.php:135, widgets/post-terms.php:157, widgets/post-title.php:135, widgets/site-counters.php:219, widgets/site-description.php:111, widgets/site-logo.php:125, widgets/site-title.php:111, widgets/typing-effect.php:116
 msgid "HTML Tag"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:341, widgets/gravatar.php:213, widgets/image-accordion.php:835, widgets/notes.php:493, widgets/post-author.php:165, widgets/post-custom-field.php:291, widgets/post-date.php:167, widgets/post-excerpt.php:141, widgets/post-terms.php:163, widgets/post-title.php:141, widgets/site-counters.php:225, widgets/site-description.php:117, widgets/site-logo.php:131, widgets/site-title.php:117
+#: widgets/advanced-custom-fields.php:341, widgets/gravatar.php:213, widgets/image-accordion.php:835, widgets/notes.php:493, widgets/post-author.php:165, widgets/post-custom-field.php:291, widgets/post-date.php:167, widgets/post-excerpt.php:141, widgets/post-terms.php:163, widgets/post-title.php:141, widgets/site-counters.php:225, widgets/site-description.php:117, widgets/site-logo.php:131, widgets/site-title.php:117, widgets/typing-effect.php:119
 msgid "H1"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:343, widgets/gravatar.php:215, widgets/image-accordion.php:837, widgets/notes.php:495, widgets/post-author.php:167, widgets/post-custom-field.php:293, widgets/post-date.php:169, widgets/post-excerpt.php:143, widgets/post-terms.php:165, widgets/post-title.php:143, widgets/site-counters.php:227, widgets/site-description.php:119, widgets/site-logo.php:133, widgets/site-title.php:119
+#: widgets/advanced-custom-fields.php:343, widgets/gravatar.php:215, widgets/image-accordion.php:837, widgets/notes.php:495, widgets/post-author.php:167, widgets/post-custom-field.php:293, widgets/post-date.php:169, widgets/post-excerpt.php:143, widgets/post-terms.php:165, widgets/post-title.php:143, widgets/site-counters.php:227, widgets/site-description.php:119, widgets/site-logo.php:133, widgets/site-title.php:119, widgets/typing-effect.php:120
 msgid "H2"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:345, widgets/gravatar.php:217, widgets/image-accordion.php:839, widgets/notes.php:497, widgets/post-author.php:169, widgets/post-custom-field.php:295, widgets/post-date.php:171, widgets/post-excerpt.php:145, widgets/post-terms.php:167, widgets/post-title.php:145, widgets/site-counters.php:229, widgets/site-description.php:121, widgets/site-logo.php:135, widgets/site-title.php:121
+#: widgets/advanced-custom-fields.php:345, widgets/gravatar.php:217, widgets/image-accordion.php:839, widgets/notes.php:497, widgets/post-author.php:169, widgets/post-custom-field.php:295, widgets/post-date.php:171, widgets/post-excerpt.php:145, widgets/post-terms.php:167, widgets/post-title.php:145, widgets/site-counters.php:229, widgets/site-description.php:121, widgets/site-logo.php:135, widgets/site-title.php:121, widgets/typing-effect.php:121
 msgid "H3"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:347, widgets/gravatar.php:219, widgets/image-accordion.php:841, widgets/notes.php:499, widgets/post-author.php:171, widgets/post-custom-field.php:297, widgets/post-date.php:173, widgets/post-excerpt.php:147, widgets/post-terms.php:169, widgets/post-title.php:147, widgets/site-counters.php:231, widgets/site-description.php:123, widgets/site-logo.php:137, widgets/site-title.php:123
+#: widgets/advanced-custom-fields.php:347, widgets/gravatar.php:219, widgets/image-accordion.php:841, widgets/notes.php:499, widgets/post-author.php:171, widgets/post-custom-field.php:297, widgets/post-date.php:173, widgets/post-excerpt.php:147, widgets/post-terms.php:169, widgets/post-title.php:147, widgets/site-counters.php:231, widgets/site-description.php:123, widgets/site-logo.php:137, widgets/site-title.php:123, widgets/typing-effect.php:122
 msgid "H4"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:349, widgets/gravatar.php:221, widgets/image-accordion.php:843, widgets/notes.php:501, widgets/post-author.php:173, widgets/post-custom-field.php:299, widgets/post-date.php:175, widgets/post-excerpt.php:149, widgets/post-terms.php:171, widgets/post-title.php:149, widgets/site-counters.php:233, widgets/site-description.php:125, widgets/site-logo.php:139, widgets/site-title.php:125
+#: widgets/advanced-custom-fields.php:349, widgets/gravatar.php:221, widgets/image-accordion.php:843, widgets/notes.php:501, widgets/post-author.php:173, widgets/post-custom-field.php:299, widgets/post-date.php:175, widgets/post-excerpt.php:149, widgets/post-terms.php:171, widgets/post-title.php:149, widgets/site-counters.php:233, widgets/site-description.php:125, widgets/site-logo.php:139, widgets/site-title.php:125, widgets/typing-effect.php:123
 msgid "H5"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:351, widgets/gravatar.php:223, widgets/image-accordion.php:845, widgets/notes.php:503, widgets/post-author.php:175, widgets/post-custom-field.php:301, widgets/post-date.php:177, widgets/post-excerpt.php:151, widgets/post-terms.php:173, widgets/post-title.php:151, widgets/site-counters.php:235, widgets/site-description.php:127, widgets/site-logo.php:141, widgets/site-title.php:127
+#: widgets/advanced-custom-fields.php:351, widgets/gravatar.php:223, widgets/image-accordion.php:845, widgets/notes.php:503, widgets/post-author.php:175, widgets/post-custom-field.php:301, widgets/post-date.php:177, widgets/post-excerpt.php:151, widgets/post-terms.php:173, widgets/post-title.php:151, widgets/site-counters.php:235, widgets/site-description.php:127, widgets/site-logo.php:141, widgets/site-title.php:127, widgets/typing-effect.php:124
 msgid "H6"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:353, widgets/gravatar.php:225, widgets/image-accordion.php:847, widgets/notes.php:505, widgets/post-author.php:177, widgets/post-custom-field.php:303, widgets/post-date.php:179, widgets/post-excerpt.php:153, widgets/post-terms.php:175, widgets/post-title.php:153, widgets/site-counters.php:237, widgets/site-description.php:129, widgets/site-logo.php:143, widgets/site-title.php:129
+#: widgets/advanced-custom-fields.php:353, widgets/gravatar.php:225, widgets/image-accordion.php:847, widgets/notes.php:505, widgets/post-author.php:177, widgets/post-custom-field.php:303, widgets/post-date.php:179, widgets/post-excerpt.php:153, widgets/post-terms.php:175, widgets/post-title.php:153, widgets/site-counters.php:237, widgets/site-description.php:129, widgets/site-logo.php:143, widgets/site-title.php:129, widgets/typing-effect.php:125
 msgid "p"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:355, widgets/gravatar.php:227, widgets/image-accordion.php:849, widgets/notes.php:507, widgets/post-author.php:179, widgets/post-custom-field.php:305, widgets/post-date.php:181, widgets/post-excerpt.php:155, widgets/post-terms.php:177, widgets/post-title.php:155, widgets/site-counters.php:239, widgets/site-description.php:131, widgets/site-logo.php:145, widgets/site-title.php:131
+#: widgets/advanced-custom-fields.php:355, widgets/gravatar.php:227, widgets/image-accordion.php:849, widgets/notes.php:507, widgets/post-author.php:179, widgets/post-custom-field.php:305, widgets/post-date.php:181, widgets/post-excerpt.php:155, widgets/post-terms.php:177, widgets/post-title.php:155, widgets/site-counters.php:239, widgets/site-description.php:131, widgets/site-logo.php:145, widgets/site-title.php:131, widgets/typing-effect.php:126
 msgid "div"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:357, widgets/gravatar.php:229, widgets/image-accordion.php:851, widgets/notes.php:509, widgets/post-author.php:181, widgets/post-custom-field.php:307, widgets/post-date.php:183, widgets/post-excerpt.php:157, widgets/post-terms.php:179, widgets/post-title.php:157, widgets/site-counters.php:241, widgets/site-description.php:133, widgets/site-logo.php:147, widgets/site-title.php:133
+#: widgets/advanced-custom-fields.php:357, widgets/gravatar.php:229, widgets/image-accordion.php:851, widgets/notes.php:509, widgets/post-author.php:181, widgets/post-custom-field.php:307, widgets/post-date.php:183, widgets/post-excerpt.php:157, widgets/post-terms.php:179, widgets/post-title.php:157, widgets/site-counters.php:241, widgets/site-description.php:133, widgets/site-logo.php:147, widgets/site-title.php:133, widgets/typing-effect.php:127
 msgid "span"
 msgstr ""
 
@@ -511,7 +531,7 @@ msgstr ""
 msgid "Link to ACF Field"
 msgstr ""
 
-#: widgets/advanced-custom-fields.php:543, widgets/before-after-effect.php:711, widgets/image-accordion.php:745, widgets/notes.php:585, widgets/notes.php:713, widgets/post-author.php:359, widgets/post-custom-field.php:509, widgets/post-date.php:359, widgets/post-excerpt.php:333, widgets/post-terms.php:311, widgets/post-title.php:333, widgets/site-counters.php:339, widgets/site-counters.php:423, widgets/site-description.php:291, widgets/site-title.php:291
+#: widgets/advanced-custom-fields.php:543, widgets/before-after-effect.php:711, widgets/image-accordion.php:745, widgets/notes.php:585, widgets/notes.php:713, widgets/post-author.php:359, widgets/post-custom-field.php:509, widgets/post-date.php:359, widgets/post-excerpt.php:333, widgets/post-terms.php:311, widgets/post-title.php:333, widgets/site-counters.php:339, widgets/site-counters.php:423, widgets/site-description.php:291, widgets/site-title.php:291, widgets/typing-effect.php:264, widgets/typing-effect.php:341, widgets/typing-effect.php:375
 msgid "Text Color"
 msgstr ""
 
@@ -555,7 +575,7 @@ msgstr ""
 msgid "After"
 msgstr ""
 
-#: widgets/before-after-effect.php:351
+#: widgets/before-after-effect.php:351, widgets/typing-effect.php:109
 msgid "Settings"
 msgstr ""
 
@@ -779,7 +799,7 @@ msgstr ""
 msgid "Sticker Color"
 msgstr ""
 
-#: widgets/notes.php:639
+#: widgets/notes.php:639, widgets/typing-effect.php:53
 msgid "Content"
 msgstr ""
 
@@ -949,4 +969,84 @@ msgstr ""
 
 #: widgets/site-counters.php:407
 msgid "Label"
+msgstr ""
+
+#: widgets/typing-effect.php:64
+msgid "Type out sentences"
+msgstr ""
+
+#: widgets/typing-effect.php:67
+msgid "and then delete them"
+msgstr ""
+
+#: widgets/typing-effect.php:70
+msgid "with a beautiful animation"
+msgstr ""
+
+#: widgets/typing-effect.php:76, widgets/typing-effect.php:78, widgets/typing-effect.php:79
+msgid "String"
+msgstr ""
+
+#: widgets/typing-effect.php:89
+msgid "Prefix Text"
+msgstr ""
+
+#: widgets/typing-effect.php:98
+msgid "Suffix Text"
+msgstr ""
+
+#: widgets/typing-effect.php:136
+msgid "Speed (ms)"
+msgstr ""
+
+#: widgets/typing-effect.php:156
+msgid "Back-spacing Speed (ms)"
+msgstr ""
+
+#: widgets/typing-effect.php:176
+msgid "Time before typing starts (ms)"
+msgstr ""
+
+#: widgets/typing-effect.php:196
+msgid "Time before back-spacing (ms)"
+msgstr ""
+
+#: widgets/typing-effect.php:216
+msgid "Loop"
+msgstr ""
+
+#: widgets/typing-effect.php:219, widgets/typing-effect.php:232
+msgid "True"
+msgstr ""
+
+#: widgets/typing-effect.php:220, widgets/typing-effect.php:233
+msgid "False"
+msgstr ""
+
+#: widgets/typing-effect.php:229
+msgid "Show Cursor"
+msgstr ""
+
+#: widgets/typing-effect.php:242
+msgid "Cursor Char"
+msgstr ""
+
+#: widgets/typing-effect.php:256
+msgid "Style Strings"
+msgstr ""
+
+#: widgets/typing-effect.php:290
+msgid "Style Cursor"
+msgstr ""
+
+#: widgets/typing-effect.php:301
+msgid "Cursor Color"
+msgstr ""
+
+#: widgets/typing-effect.php:333
+msgid "Style Prefix"
+msgstr ""
+
+#: widgets/typing-effect.php:367
+msgid "Style Suffix"
 msgstr ""
