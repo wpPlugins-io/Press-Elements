@@ -78,6 +78,7 @@ class Press_Elements_Post_Featured_Image extends Widget_Base {
 				'name' => 'size',
 				'label' => __( 'Image Size', 'press-elements' ),
 				'default' => 'large',
+				'exclude' => [ 'custom' ],
 			]
 		);
 
