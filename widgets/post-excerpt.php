@@ -6,6 +6,7 @@ use Elementor\Controls_Manager;
 use Elementor\Scheme_Color;
 use Elementor\Scheme_Typography;
 use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Text_Shadow;
 
 
 
@@ -182,6 +183,14 @@ class Press_Elements_Post_Excerpt extends Widget_Base {
 			[
 				'name' => 'typography',
 				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+				'selector' => '{{WRAPPER}} .press-elements-excerpt',
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'text_shadow',
 				'selector' => '{{WRAPPER}} .press-elements-excerpt',
 			]
 		);

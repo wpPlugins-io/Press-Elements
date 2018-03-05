@@ -6,6 +6,7 @@ use Elementor\Controls_Manager;
 use Elementor\Scheme_Color;
 use Elementor\Scheme_Typography;
 use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Text_Shadow;
 
 
 
@@ -188,6 +189,14 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			]
 		);
 
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'number_shadow',
+				'selector' => '{{WRAPPER}} .press-elements-site-counters .press-elements-total',
+			]
+		);
+
 		$this->add_control(
 			'number_hover_animation',
 			[
@@ -226,6 +235,14 @@ class Press_Elements_Site_Counters extends Widget_Base {
 			[
 				'name' => 'label_typography',
 				'scheme' => Scheme_Typography::TYPOGRAPHY_2,
+				'selector' => '{{WRAPPER}} .press-elements-site-counters .press-elements-label',
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'label_shadow',
 				'selector' => '{{WRAPPER}} .press-elements-site-counters .press-elements-label',
 			]
 		);

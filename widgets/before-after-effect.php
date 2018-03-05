@@ -7,6 +7,7 @@ use Elementor\Utils;
 use Elementor\Scheme_Color;
 use Elementor\Scheme_Typography;
 use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Text_Shadow;
 use Elementor\Group_Control_Box_Shadow;
 use Elementor\Group_Control_Border;
 
@@ -389,6 +390,17 @@ class Press_Elements_Before_After_Effect extends Widget_Base {
 				[
 					'name' => 'title_typography',
 					'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+					'selectors' => [
+						'{{WRAPPER}} .twentytwenty-before-label:before',
+						'{{WRAPPER}} .twentytwenty-after-label:before',
+					],
+				]
+			);
+
+			$this->add_group_control(
+				Group_Control_Text_Shadow::get_type(),
+				[
+					'name' => 'title_shadow',
 					'selectors' => [
 						'{{WRAPPER}} .twentytwenty-before-label:before',
 						'{{WRAPPER}} .twentytwenty-after-label:before',

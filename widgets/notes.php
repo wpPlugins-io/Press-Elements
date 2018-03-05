@@ -6,6 +6,7 @@ use Elementor\Controls_Manager;
 use Elementor\Scheme_Color;
 use Elementor\Scheme_Typography;
 use Elementor\Group_Control_Typography;
+use Elementor\Group_Control_Text_Shadow;
 use Elementor\Group_Control_Box_Shadow;
 
 
@@ -312,6 +313,16 @@ class Press_Elements_Notes extends Widget_Base {
 				]
 			);
 
+			$this->add_group_control(
+				Group_Control_Text_Shadow::get_type(),
+				[
+					'name' => 'title_shadow',
+					'selectors' => [
+					'selector' => '{{WRAPPER}} .press-elements-notes .note-title',
+					],
+				]
+			);
+
 			$this->end_controls_section();
 
 			$this->start_controls_section(
@@ -372,6 +383,14 @@ class Press_Elements_Notes extends Widget_Base {
 				[
 					'name' => 'content_typography',
 					'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+					'selector' => '{{WRAPPER}} .press-elements-notes .note-content',
+				]
+			);
+
+			$this->add_group_control(
+				Group_Control_Text_Shadow::get_type(),
+				[
+					'name' => 'content_shadow',
 					'selector' => '{{WRAPPER}} .press-elements-notes .note-content',
 				]
 			);
