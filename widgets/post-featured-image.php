@@ -136,7 +136,7 @@ class Press_Elements_Post_Featured_Image extends Widget_Base {
 			[
 				'label' => __( 'Link to', 'press-elements' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'http://your-link.com', 'press-elements' ),
+				'placeholder' => __( 'https://your-link.com', 'press-elements' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],

@@ -119,7 +119,7 @@ class Press_Elements_Site_Title extends Widget_Base {
 			[
 				'label' => __( 'Link', 'press-elements' ),
 				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'http://your-link.com', 'press-elements' ),
+				'placeholder' => __( 'https://your-link.com', 'press-elements' ),
 				'condition' => [
 					'link_to' => 'custom',
 				],

@@ -130,7 +130,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 							'name' => 'link',
 							'label' => __( 'Link', 'press-elements' ),
 							'type' => Controls_Manager::URL,
-							'placeholder' => __( 'http://your-link.com', 'press-elements' ),
+							'placeholder' => __( 'https://your-link.com', 'press-elements' ),
 						]
 					],
 					'title_field' => '{{{ caption }}}',
