@@ -97,15 +97,15 @@ class Plugin {
 		if ( press_elements_freemius()->is__premium_only() ) {
 
 			// Before After Effect
-			wp_register_script( 'eventmove', plugins_url( 'libs/twentytwenty/jquery.event.move.js', __FILE__ ), array( 'jquery' ) );
-			wp_register_script( 'twentytwenty', plugins_url( 'libs/twentytwenty/jquery.twentytwenty.js', __FILE__ ), array( 'eventmove' ) );
-			wp_register_script( 'before-after-effect', plugins_url( 'assets/js/before-after-effect.js', __FILE__ ), array( 'twentytwenty' ) );
+			wp_register_script( 'eventmove', plugins_url( 'press-elements/libs/twentytwenty/jquery.event.move.js' ), array( 'jquery' ) );
+			wp_register_script( 'twentytwenty', plugins_url( 'press-elements/libs/twentytwenty/jquery.twentytwenty.js' ), array( 'eventmove' ) );
+			wp_register_script( 'before-after-effect', plugins_url( 'press-elements/assets/js/before-after-effect.min.js' ), array( 'twentytwenty' ) );
 
 		}
 
 		// Typing Effect
-		wp_register_script( 'typedjs', plugins_url( 'libs/typed/typed.js', __FILE__ ), array( 'jquery' ) );
-		wp_register_script( 'typing-effect', plugins_url( 'assets/js/typing-effect.js', __FILE__ ), array( 'typedjs' ), rand() );
+		wp_register_script( 'typedjs', plugins_url( 'press-elements/libs/typed/typed.js' ), array( 'jquery' ) );
+		wp_register_script( 'typing-effect', plugins_url( 'press-elements/assets/js/typing-effect.min.js' ), array( 'typedjs' ), rand() );
 
 	}
 
@@ -121,21 +121,21 @@ class Plugin {
 		if ( press_elements_freemius()->is__premium_only() ) {
 
 			// Image Accordion
-			wp_register_style( 'image-accordion', plugins_url( 'press-elements/assets/css/image-accordion.css' ) );
+			wp_register_style( 'image-accordion', plugins_url( 'press-elements/assets/css/image-accordion.min.css' ) );
 			wp_enqueue_style( 'image-accordion' );
 
 			// Before After Effect
-			wp_register_style( 'before-after-effect', plugins_url( 'press-elements/assets/css/before-after-effect.css' ) );
+			wp_register_style( 'before-after-effect', plugins_url( 'press-elements/assets/css/before-after-effect.min.css' ) );
 			wp_enqueue_style( 'before-after-effect' );
 
 			// Notes
-			wp_register_style( 'notes', plugins_url( 'press-elements/assets/css/notes.css' ) );
+			wp_register_style( 'notes', plugins_url( 'press-elements/assets/css/notes.min.css' ) );
 			wp_enqueue_style( 'notes' );
 
 		}
 
 		// Typing Effect
-		wp_register_style( 'typing-effect', plugins_url( 'press-elements/assets/css/typing-effect.css' ) );
+		wp_register_style( 'typing-effect', plugins_url( 'press-elements/assets/css/typing-effect.min.css' ) );
 		wp_enqueue_style( 'typing-effect' );
 
 	}

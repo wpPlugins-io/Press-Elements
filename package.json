@@ -7,6 +7,9 @@
     "gulp-util": "^3.0.7",
     "gulp-sort": "^2.0.0",
     "gulp-wp-pot": "^1.2.2",
-    "gulp-checktextdomain": "^1.0.2"
+	"gulp-checktextdomain": "^1.0.2",
+	"gulp-rename": "^1.2.2",
+	"gulp-clean-css": "^3.9.2",
+	"gulp-jsmin": "0.1.5"
   }
 }
