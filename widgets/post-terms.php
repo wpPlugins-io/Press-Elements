@@ -75,6 +75,15 @@ class Press_Elements_Post_Terms extends Widget_Base {
 		);
 
 		$this->add_control(
+			'separator',
+			[
+				'label' => __( 'Separator', 'press-elements' ),
+				'type' => Controls_Manager::TEXT,
+				'default' => ', ',
+			]
+		);
+
+		$this->add_control(
 			'html_tag',
 			[
 				'label' => __( 'HTML Tag', 'press-elements' ),
@@ -214,14 +223,14 @@ class Press_Elements_Post_Terms extends Widget_Base {
 		switch ( $settings['link_to'] ) {
 			case 'term' :
 				foreach ( $term_list as $term ) {
-					$html .= sprintf( '<a href="%1$s">%2$s</a>, ', esc_url( get_term_link( $term ) ), $term->name );
+					$html .= sprintf( '<a href="%1$s">%2$s</a>%3$s', esc_url( get_term_link( $term ) ), $term->name, $settings['separator'] );
 				}
 				break;
 
 			case 'none' :
 			default:
 				foreach ( $term_list as $term ) {
-					$html .= $term->name . ', ';
+					$html .= $term->name . $settings['separator'];
 				}
 				break;
 		}
@@ -261,14 +270,14 @@ class Press_Elements_Post_Terms extends Widget_Base {
 			switch( settings.link_to ) {
 				case 'term':
 					while ( all_terms[ settings.taxonomy ][i] ) {
-						terms += "<a href='" + all_terms[ settings.taxonomy ][i].url + "'>" + all_terms[ settings.taxonomy ][i].name + "</a>, ";
+						terms += "<a href='" + all_terms[ settings.taxonomy ][i].url + "'>" + all_terms[ settings.taxonomy ][i].name + "</a>" + settings.separator;
 						i++;
 					}
 					break;
 				case 'none':
 				default:
 					while ( all_terms[ settings.taxonomy ][i] ) {
-						terms += all_terms[ settings.taxonomy ][i].name + ", ";
+						terms += all_terms[ settings.taxonomy ][i].name + settings.separator;
 						i++;
 					}
 					break;
