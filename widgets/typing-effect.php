@@ -280,6 +280,14 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 			]
 		);
 
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'text_shadow',
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-strings',
+			]
+		);
+
 		$this->end_controls_section();
 
 		$this->start_controls_section(
@@ -323,6 +331,17 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 			]
 		);
 
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'text_shadow_cursor',
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typed-cursor',
+				'condition' => [
+					'show_cursor' => '1'
+				],
+			]
+		);
+
 		$this->end_controls_section();
 
 		$this->start_controls_section(
@@ -357,6 +376,14 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 			]
 		);
 
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'text_shadow_prefix',
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-prefix',
+			]
+		);
+
 		$this->end_controls_section();
 
 		$this->start_controls_section(
@@ -387,6 +414,14 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 			[
 				'name' => 'typography_suffix',
 				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix',
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'text_shadow_suffix',
 				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix',
 			]
 		);
