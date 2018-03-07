@@ -17,7 +17,7 @@ if ( ! function_exists( 'press_elements_freemius' ) ) {
 	 * @since 1.0.0
 	 */
 	function press_elements_freemius() {
-		global  $press_elements_freemius ;
+		global $press_elements_freemius ;
 
 		if ( !isset( $press_elements_freemius ) ) {
 			// Include Freemius SDK.
@@ -59,7 +59,7 @@ if ( ! function_exists( 'press_elements_freemius_header' ) ) {
 	 *
 	 * @since 1.6.0
 	 *
-	 * @param string Template html.
+	 * @param string $html Template html.
 	 *
 	 * @return string Updated template html.
 	 */
