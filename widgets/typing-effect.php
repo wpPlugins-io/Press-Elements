@@ -55,6 +55,24 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 		);
 
 		$this->add_control(
+			'prefix_text',
+			[
+				'label' => __( 'Prefix Text', 'press-elements' ),
+				'type' => Controls_Manager::TEXT,
+				'label_block' => false,
+			]
+		);
+
+		$this->add_control(
+			'suffix_text',
+			[
+				'label' => __( 'Suffix Text', 'press-elements' ),
+				'type' => Controls_Manager::TEXT,
+				'label_block' => false,
+			]
+		);
+
+		$this->add_control(
 			'typed_text',
 			[
 				'label' => __( 'Text', 'press-elements' ),
@@ -80,24 +98,6 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 					],
 				],
 				'title_field' => '{{{ string }}}',
-			]
-		);
-
-		$this->add_control(
-			'prefix_text',
-			[
-				'label' => __( 'Prefix Text', 'press-elements' ),
-				'type' => Controls_Manager::TEXT,
-				'label_block' => false,
-			]
-		);
-
-		$this->add_control(
-			'suffix_text',
-			[
-				'label' => __( 'Suffix Text', 'press-elements' ),
-				'type' => Controls_Manager::TEXT,
-				'label_block' => false,
 			]
 		);
 
