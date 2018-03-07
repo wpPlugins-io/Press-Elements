@@ -108,7 +108,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 							'caption' => __( 'and delete them', 'press-elements' ),
 						],
 						[
-							'caption' => __( 'with beautifull animation', 'press-elements' ),
+							'caption' => __( 'with beautiful animation', 'press-elements' ),
 						],
 					],
 					'fields' => [
