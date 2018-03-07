@@ -250,6 +250,90 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
+			'style_prefix',
+			[
+				'label' => __( 'Style Prefix', 'press-elements' ),
+				'tab' => Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'color_prefix',
+			[
+				'label' => __( 'Text Color', 'press-elements' ),
+				'type' => Controls_Manager::COLOR,
+				'scheme' => [
+					'type' => Scheme_Color::get_type(),
+					'value' => Scheme_Color::COLOR_1,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-typing-effect .typing-effect-prefix' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'typography_prefix',
+				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-prefix',
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'text_shadow_prefix',
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-prefix',
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
+			'style_suffix',
+			[
+				'label' => __( 'Style Suffix', 'press-elements' ),
+				'tab' => Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'color_suffix',
+			[
+				'label' => __( 'Text Color', 'press-elements' ),
+				'type' => Controls_Manager::COLOR,
+				'scheme' => [
+					'type' => Scheme_Color::get_type(),
+					'value' => Scheme_Color::COLOR_1,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Typography::get_type(),
+			[
+				'name' => 'typography_suffix',
+				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix',
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Text_Shadow::get_type(),
+			[
+				'name' => 'text_shadow_suffix',
+				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix',
+			]
+		);
+
+		$this->end_controls_section();
+
+		$this->start_controls_section(
 			'style_strings',
 			[
 				'label' => __( 'Style Strings', 'press-elements' ),
@@ -340,90 +424,6 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 				'condition' => [
 					'show_cursor' => '1'
 				],
-			]
-		);
-
-		$this->end_controls_section();
-
-		$this->start_controls_section(
-			'style_prefix',
-			[
-				'label' => __( 'Style Prefix', 'press-elements' ),
-				'tab' => Controls_Manager::TAB_STYLE,
-			]
-		);
-
-		$this->add_control(
-			'color_prefix',
-			[
-				'label' => __( 'Text Color', 'press-elements' ),
-				'type' => Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_1,
-				],
-				'selectors' => [
-					'{{WRAPPER}} .press-elements-typing-effect .typing-effect-prefix' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name' => 'typography_prefix',
-				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
-				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-prefix',
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Text_Shadow::get_type(),
-			[
-				'name' => 'text_shadow_prefix',
-				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-prefix',
-			]
-		);
-
-		$this->end_controls_section();
-
-		$this->start_controls_section(
-			'style_suffix',
-			[
-				'label' => __( 'Style Suffix', 'press-elements' ),
-				'tab' => Controls_Manager::TAB_STYLE,
-			]
-		);
-
-		$this->add_control(
-			'color_suffix',
-			[
-				'label' => __( 'Text Color', 'press-elements' ),
-				'type' => Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_1,
-				],
-				'selectors' => [
-					'{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix' => 'color: {{VALUE}};',
-				],
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name' => 'typography_suffix',
-				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
-				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix',
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Text_Shadow::get_type(),
-			[
-				'name' => 'text_shadow_suffix',
-				'selector' => '{{WRAPPER}} .press-elements-typing-effect .typing-effect-suffix',
 			]
 		);
 
