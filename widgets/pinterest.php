@@ -91,7 +91,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'pinterest_username',
 				[
 					'label' => __( 'Pinterest Username', 'press-elements' ),
-					'type'  => Controls_Manager::TEXT,
+					'type' => Controls_Manager::TEXT,
 					'placeholder' => __( 'pinterest', 'press-elements' ),
 				]
 			);
@@ -99,8 +99,8 @@ class Press_Elements_Pinterest extends Widget_Base {
 			$this->add_control(
 				'links',
 				[
-					'label'     => __( 'Links', 'press-elements' ),
-					'type'      => Controls_Manager::HEADING,
+					'label' => __( 'Links', 'press-elements' ),
+					'type' => Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
 			);
@@ -121,12 +121,12 @@ class Press_Elements_Pinterest extends Widget_Base {
 			$this->add_control(
 				'target',
 				[
-					'label'   => __( 'Open links in', 'press-elements' ),
-					'type'    => Controls_Manager::SELECT,
+					'label' => __( 'Open links in', 'press-elements' ),
+					'type' => Controls_Manager::SELECT,
 					'default' => 'default',
 					'options' => [
 						'default' => __( 'Same window', 'press-elements' ),
-						'new'     => __( 'New window',  'press-elements' ),
+						'new' => __( 'New window', 'press-elements' ),
 					],
 					'condition' => [
 						'link_to' => 'pinterest_image'
@@ -148,7 +148,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'cols',
 				[
 					'label' => __( 'Colomns Per Row', 'press-elements' ),
-					'type'  => Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 3,
 						'unit' => 'cols',
@@ -156,8 +156,8 @@ class Press_Elements_Pinterest extends Widget_Base {
 					'size_units' => [ 'cols' ],
 					'range' => [
 						'cols' => [
-							'min'  => 1,
-							'max'  => 16,
+							'min' => 1,
+							'max' => 16,
 							'step' => 1,
 						],
 					],
@@ -168,7 +168,7 @@ class Press_Elements_Pinterest extends Widget_Base {
 				'rows',
 				[
 					'label' => __( 'Number of Rows', 'press-elements' ),
-					'type'  => Controls_Manager::SLIDER,
+					'type' => Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 3,
 						'unit' => 'cols',
@@ -176,8 +176,8 @@ class Press_Elements_Pinterest extends Widget_Base {
 					'size_units' => [ 'cols' ],
 					'range' => [
 						'cols' => [
-							'min'  => 1,
-							'max'  => 16,
+							'min' => 1,
+							'max' => 16,
 							'step' => 1,
 						],
 					],
@@ -235,15 +235,15 @@ class Press_Elements_Pinterest extends Widget_Base {
 			$settings = $this->get_settings();
 
 			$username = $settings['pinterest_username'];
-			$rows     = $settings['rows']['size'];
-			$cols     = $settings['cols']['size'];
+			$rows = $settings['rows']['size'];
+			$cols = $settings['cols']['size'];
 
-			$row      = 0;
-			$col      = 0;
-			$width    = 100/$cols . '%';
+			$row = 0;
+			$col = 0;
+			$width = 100/$cols . '%';
 
-			$target   = $settings['target'];
-			$window   = ( 'new' == $target ) ? ' target=\"_blank\"' : '';
+			$target = $settings['target'];
+			$window = ( 'new' == $target ) ? ' target=\"_blank\"' : '';
 
 			$animation_class = ! empty( $settings['hover_animation'] ) ? 'elementor-animation-' . $settings['hover_animation'] : '';
 
@@ -255,9 +255,9 @@ class Press_Elements_Pinterest extends Widget_Base {
 					if ( $col == 0 ) {
 						echo '<div class="row">' . "\n";
 					}
-					$title  = $pin['title'];
-					$url    = $pin['url'];
-					$image  = $pin['image'];
+					$title = $pin['title'];
+					$url = $pin['url'];
+					$image = $pin['image'];
 					switch ( $settings['link_to'] ) {
 						case 'flickr_image' :
 							$link = $item->get_permalink();
@@ -303,14 +303,14 @@ class Press_Elements_Pinterest extends Widget_Base {
 			return null;
 		}
 
-		$maxitems  = $rss->get_item_quantity( $total_pins );
+		$maxitems = $rss->get_item_quantity( $total_pins );
 		$rss_items = $rss->get_items( 0, $maxitems );
 
 		if ( is_null( $rss_items ) )
 			return null;
 
 		// Build patterns to search/replace in the image urls. Pattern to replace for the images.
-		$search  = array( '_b.jpg' );
+		$search = array( '_b.jpg' );
 		$replace = array( '_t.jpg' );
 
 		// Make urls protocol relative
@@ -319,16 +319,16 @@ class Press_Elements_Pinterest extends Widget_Base {
 
 		$pins = array();
 		foreach ( $rss_items as $item ) {
-			$title       = $item->get_title();
+			$title = $item->get_title();
 			$description = $item->get_description();
-			$url         = $item->get_permalink();
+			$url = $item->get_permalink();
 			if ( preg_match_all( '/<img src="([^"]*)".*>/i', $description, $matches ) ) {
 				$image = str_replace( $search, $replace, $matches[1][0] );
 			}
 			array_push( $pins, array(
 				'title' => $title,
 				'image' => $image,
-				'url'   => $url
+				'url' => $url
 			) );
 		}
 

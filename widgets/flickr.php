@@ -90,8 +90,8 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'flickrid',
 				[
-					'label'       => __( 'Flickr ID', 'press-elements' ),
-					'type'        => Controls_Manager::TEXT,
+					'label' => __( 'Flickr ID', 'press-elements' ),
+					'type' => Controls_Manager::TEXT,
 					'placeholder' => '123456789@N00'
 				]
 			);
@@ -99,8 +99,8 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'links',
 				[
-					'label'     => __( 'Links', 'press-elements' ),
-					'type'      => Controls_Manager::HEADING,
+					'label' => __( 'Links', 'press-elements' ),
+					'type' => Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
 			);
@@ -121,12 +121,12 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'target',
 				[
-					'label'   => __( 'Open links in', 'press-elements' ),
-					'type'    => Controls_Manager::SELECT,
+					'label' => __( 'Open links in', 'press-elements' ),
+					'type' => Controls_Manager::SELECT,
 					'default' => 'default',
 					'options' => [
 						'default' => __( 'Same window', 'press-elements' ),
-						'new'     => __( 'New window',  'press-elements' ),
+						'new' => __( 'New window', 'press-elements' ),
 					],
 					'condition' => [
 						'link_to' => 'flickr_image'
@@ -147,12 +147,12 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'size',
 				[
-					'label'   => __( 'Size', 'press-elements' ),
-					'type'    => Controls_Manager::SELECT,
+					'label' => __( 'Size', 'press-elements' ),
+					'type' => Controls_Manager::SELECT,
 					'default' => 'fullsize',
 					'options' => [
-						'thumbnails' => __( 'Thumbnails Grid',  'press-elements' ),
-						'fullsize'   => __( 'Full Images Grid', 'press-elements' ),
+						'thumbnails' => __( 'Thumbnails Grid', 'press-elements' ),
+						'fullsize' => __( 'Full Images Grid', 'press-elements' ),
 					],
 				]
 			);
@@ -160,8 +160,8 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'cols',
 				[
-					'label'   => __( 'Colomns Per Row', 'press-elements' ),
-					'type'    => Controls_Manager::SLIDER,
+					'label' => __( 'Colomns Per Row', 'press-elements' ),
+					'type' => Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 3,
 						'unit' => 'cols',
@@ -169,8 +169,8 @@ class Press_Elements_Flickr extends Widget_Base {
 					'size_units' => [ 'cols' ],
 					'range' => [
 						'cols' => [
-							'min'  => 1,
-							'max'  => 16,
+							'min' => 1,
+							'max' => 16,
 							'step' => 1,
 						],
 					],
@@ -180,8 +180,8 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'rows',
 				[
-					'label'   => __( 'Number of Rows', 'press-elements' ),
-					'type'    => Controls_Manager::SLIDER,
+					'label' => __( 'Number of Rows', 'press-elements' ),
+					'type' => Controls_Manager::SLIDER,
 					'default' => [
 						'size' => 3,
 						'unit' => 'cols',
@@ -189,8 +189,8 @@ class Press_Elements_Flickr extends Widget_Base {
 					'size_units' => [ 'cols' ],
 					'range' => [
 						'cols' => [
-							'min'  => 1,
-							'max'  => 16,
+							'min' => 1,
+							'max' => 16,
 							'step' => 1,
 						],
 					],
@@ -200,8 +200,8 @@ class Press_Elements_Flickr extends Widget_Base {
 			$this->add_control(
 				'opacity',
 				[
-					'label'   => __( 'Opacity (%)', 'press-elements' ),
-					'type'    => Controls_Manager::SLIDER,
+					'label' => __( 'Opacity (%)', 'press-elements' ),
+					'type' => Controls_Manager::SLIDER,
 					'range' => [
 						'px' => [
 							'max' => 1,
@@ -248,16 +248,16 @@ class Press_Elements_Flickr extends Widget_Base {
 			$settings = $this->get_settings();
 
 			$flickrid = $settings['flickrid'];
-			$size     = $settings['size'];
-			$rows     = $settings['rows']['size'];
-			$cols     = $settings['cols']['size'];
+			$size = $settings['size'];
+			$rows = $settings['rows']['size'];
+			$cols = $settings['cols']['size'];
 
-			$row      = 0;
-			$col      = 0;
-			$width    = 100/$cols . '%';
+			$row = 0;
+			$col = 0;
+			$width = 100/$cols . '%';
 
-			$target   = $settings['target'];
-			$window   = ( 'new' == $target ) ? ' target="_blank"' : '';
+			$target = $settings['target'];
+			$window = ( 'new' == $target ) ? ' target="_blank"' : '';
 
 			$animation_class = ! empty( $settings['hover_animation'] ) ? 'elementor-animation-' . $settings['hover_animation'] : '';
 
@@ -295,9 +295,9 @@ class Press_Elements_Flickr extends Widget_Base {
 						if ( $col == 0 ) {
 							echo '<div class="row">' . "\n";
 						}
-						$title  = $item->get_title();
-						$url    = $item->get_permalink();
-						$image  = $image['url'];
+						$title = $item->get_title();
+						$url = $item->get_permalink();
+						$image = $image['url'];
 						switch ( $settings['link_to'] ) {
 							case 'flickr_image' :
 								$link = $item->get_permalink();

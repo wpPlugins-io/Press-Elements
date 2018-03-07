@@ -181,8 +181,8 @@ class Press_Elements_Post_Author extends Widget_Base {
 				'label' => __( 'Text Color', 'press-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
-				    'type' => Scheme_Color::get_type(),
-				    'value' => Scheme_Color::COLOR_1,
+					'type' => Scheme_Color::get_type(),
+					'value' => Scheme_Color::COLOR_1,
 				],
 				'selectors' => [
 					'{{WRAPPER}} .press-elements-author' => 'color: {{VALUE}};',

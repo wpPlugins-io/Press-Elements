@@ -117,7 +117,7 @@ class Press_Elements_Image_Accordion extends Widget_Base {
 							'label' => __( 'Image', 'press-elements' ),
 							'type' => Controls_Manager::MEDIA,
 							'default' => [
-	   							'url' => Utils::get_placeholder_image_src()
+								'url' => Utils::get_placeholder_image_src()
 							],
 						],
 						[

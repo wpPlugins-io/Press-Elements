@@ -93,7 +93,7 @@ class Press_Elements_Gravatar extends Widget_Base {
 				'gravatar_email',
 				[
 					'label' => __( 'Email', 'press-elements' ),
-					'type'  => Controls_Manager::TEXT,
+					'type' => Controls_Manager::TEXT,
 					'placeholder' => __( 'your@email.com', 'press-elements' ),
 				]
 			);

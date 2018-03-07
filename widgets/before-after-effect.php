@@ -98,12 +98,12 @@ class Press_Elements_Before_After_Effect extends Widget_Base {
 			);
 
 			$this->add_control(
-			    'before',
-			    [
-			        'label' => __( 'Title & Image', 'press-elements' ),
-			        'type' => Controls_Manager::HEADING,
-			        'separator' => 'before',
-			    ]
+				'before',
+				[
+					'label' => __( 'Title & Image', 'press-elements' ),
+					'type' => Controls_Manager::HEADING,
+					'separator' => 'before',
+				]
 			);
 
 			$this->add_control(
@@ -135,12 +135,12 @@ class Press_Elements_Before_After_Effect extends Widget_Base {
 			);
 
 			$this->add_control(
-			    'after',
-			    [
-			        'label' => __( 'Title & Image', 'press-elements' ),
-			        'type' => Controls_Manager::HEADING,
-			        'separator' => 'before',
-			    ]
+				'after',
+				[
+					'label' => __( 'Title & Image', 'press-elements' ),
+					'type' => Controls_Manager::HEADING,
+					'separator' => 'before',
+				]
 			);
 
 			$this->add_control(
@@ -172,12 +172,12 @@ class Press_Elements_Before_After_Effect extends Widget_Base {
 			);
 
 			$this->add_control(
-			    'settings',
-			    [
-			        'label' => __( 'Settings', 'press-elements' ),
-			        'type' => Controls_Manager::HEADING,
-			        'separator' => 'before',
-			    ]
+				'settings',
+				[
+					'label' => __( 'Settings', 'press-elements' ),
+					'type' => Controls_Manager::HEADING,
+					'separator' => 'before',
+				]
 			);
 
 			$this->add_control(
@@ -185,10 +185,10 @@ class Press_Elements_Before_After_Effect extends Widget_Base {
 				[
 					'label' => __( 'Orientation', 'press-elements' ),
 					'type' => Controls_Manager::SELECT,
-			        'options' => [
-			        	'horizontal' => __( 'Horizontal', 'press-elements' ),
-			        	'vertical' => __( 'Vertical', 'press-elements' ),
-			        ],
+					'options' => [
+						'horizontal' => __( 'Horizontal', 'press-elements' ),
+						'vertical' => __( 'Vertical', 'press-elements' ),
+					],
 					'default' => 'horizontal',
 					'separator' => 'none',
 				]
@@ -296,10 +296,10 @@ class Press_Elements_Before_After_Effect extends Widget_Base {
 						],
 					],
 					'selectors' => [
-						'{{WRAPPER}} .twentytwenty-horizontal .twentytwenty-handle:before' => 'width: {{SIZE}}{{UNIT}};', /*  margin-left: {{SIZE}}{{UNIT}} / 2 */
-						'{{WRAPPER}} .twentytwenty-horizontal .twentytwenty-handle:after' => 'width: {{SIZE}}{{UNIT}};',  /*  margin-left: {{SIZE}}{{UNIT}} / 2 */
-						'{{WRAPPER}} .twentytwenty-vertical .twentytwenty-handle:before' => 'height: {{SIZE}}{{UNIT}};',  /*  margin-top: {{SIZE}}{{UNIT}} / 2 */
-						'{{WRAPPER}} .twentytwenty-vertical .twentytwenty-handle:after' => 'height: {{SIZE}}{{UNIT}};',   /*  margin-top: {{SIZE}}{{UNIT}} / 2 */
+						'{{WRAPPER}} .twentytwenty-horizontal .twentytwenty-handle:before' => 'width: {{SIZE}}{{UNIT}};', /* margin-left: {{SIZE}}{{UNIT}} / 2 */
+						'{{WRAPPER}} .twentytwenty-horizontal .twentytwenty-handle:after' => 'width: {{SIZE}}{{UNIT}};', /* margin-left: {{SIZE}}{{UNIT}} / 2 */
+						'{{WRAPPER}} .twentytwenty-vertical .twentytwenty-handle:before' => 'height: {{SIZE}}{{UNIT}};', /* margin-top: {{SIZE}}{{UNIT}} / 2 */
+						'{{WRAPPER}} .twentytwenty-vertical .twentytwenty-handle:after' => 'height: {{SIZE}}{{UNIT}};', /* margin-top: {{SIZE}}{{UNIT}} / 2 */
 						'{{WRAPPER}} .twentytwenty-handle' => 'border-width: {{SIZE}}{{UNIT}};',
 					],
 				]
