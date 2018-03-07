@@ -2,8 +2,9 @@
 Contributors: ramiy
 Tags: elementor, press elements, elements, widgets, page builder, builder, visual editor,
 Requires at least: 4.7
-Tested up to: 4.8
-Stable tag: 1.7.0
+Tested up to: 4.9
+Requires PHP: 5.4
+Stable tag: 1.7.1
 License: GPLv3
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -15,7 +16,7 @@ We all enjoy simple, intuitive and visually appealing sites. But in order to cre
 
 With [Press Elements](https://press-elements.com/) you can combine the simplicity of [Elementor](https://wordpress.org/plugins/elementor/) with the efficiency of the built-in WordPress theme components.
 
-Our goal is to give you uniquely and efficient experience to express yourself. Whether you are a designer seeking to create a breath taking effect, or a developer seeking to replacing the theme-functions with simpler Elementor drag-and-drop widgets, or even an implementor how needs to integrate WordPress plugins into Elementor.
+Our goal is to give you uniquely and efficient experience to express yourself. Whether you are a designer seeking to create a breath taking effect, or a developer seeking to replacing the theme-functions with simpler Elementor drag-and-drop widgets, or even an implementer who needs to integrate WordPress plugins into Elementor.
 
 The plugin adds powerful Elementor widgets built specifically for WordPress professionals. Our Elementor widgets organized in four categories:
 
@@ -123,7 +124,7 @@ Currently the plugin displays post elements on "single" pages. But in the future
 
 = I am a theme developer, how can it help me? =
 
-As a theme developer you probably use theme-functions in your workflow. Press Elements turns those functions to widgets. Replacing code with a visual builder to reduce your development time.
+As a theme developer you probably use theme-functions in your work-flow. Press Elements turns those functions to widgets. Replacing code with a visual builder to reduce your development time.
 
 = Can I optimize the source code for SEO? =
 
@@ -134,7 +135,7 @@ Yes you can! Each element has an "HTML Tag" field, which is used as a container 
 **Minimum Requirements**
 
 * WordPress version 4.7 or greater.
-* Elementor version 1.3.4 or greater.
+* Elementor version 1.7.0 or greater.
 * PHP version 5.4 or greater.
 * MySQL version 5.0 or greater.
 
@@ -165,6 +166,17 @@ For more advanced uses, please contact us in our [wp.org support forum](https://
 
 == Changelog ==
 
+= 1.7.1 =
+
+* Fix - In the "Post Featured Image" widget, use only WordPress generated sizes.
+* Tweak - Add new "Text Shadow" control to ALL the widgets that use the "Typography" control.
+* Tweak - Enhance the "Post Terms" widget with a new "Separator" control to change the comma character between the terms.
+* Tweak - Remove the "Changelog" tab from the admin screen.
+* Tweak - Remove the "Getting Started" admin tab and move the content to the "About" tab.
+* Tweak - Minify all the CSS & JS files for better performance.
+* Tweak - Upgrade Freemius SDK to version 1.2.4.
+* Tweak - Upgrade Minimum Requirements from Elementor 1.3.4 to Elementor 1.7.0.
+
 = 1.7.0 =
 
 * New - Typing Effect widget.
@@ -177,7 +189,7 @@ For more advanced uses, please contact us in our [wp.org support forum](https://
 = 1.6.1 =
 
 * Fix - Solve "Site Logo" link issue by changing the way the logo is loaded.
-* Tweak - Enhance "Image Accordion" widget with new image border controller.
+* Tweak - Enhance "Image Accordion" widget with new image border control.
 * Tweak - Update plugin setup process.
 
 = 1.6.0 =
@@ -192,7 +204,7 @@ For more advanced uses, please contact us in our [wp.org support forum](https://
 * New - Flickr (Pro) widget.
 * New - Pinterest (Pro) widget.
 * Fix - Solve single quotes characters issue in "Post Title" and "Post Excerpt" widgets.
-* Fix - Escape the URL returned by the "Link to" controller in all the widgets.
+* Fix - Escape the URL returned by the "Link to" control in all the widgets.
 * Tweak - Move "Press Elements" menu from "Appearance" to "Settings".
 * Tweak - Add warnings in widgets that dependent on external plugins like ACF.
 * Tweak - Enhance "Advanced Custom Fields" widget to display fields saved as arrays.
@@ -203,13 +215,13 @@ For more advanced uses, please contact us in our [wp.org support forum](https://
 * New - Gravatar (Pro) widget.
 * Fix - The "Site Counters" post types display.
 * Fix - The "Site Counters" taxonomy total count.
-* Tweak - Update "Custom Field" widget with display condition to the image angle controller.
-* Tweak - Enhance "Post Author" widget "Style" tab. Different design controllers for author images and other author data.
+* Tweak - Update "Custom Field" widget with display condition to the image angle control.
+* Tweak - Enhance "Post Author" widget "Style" tab. Different design controls for author images and other author data.
 * Tweak - Upgrade Minimum Requirements to PHP 5.4, like Elementor.
 
 = 1.3.1 =
 
-* Fix - Allow image rotation angle controller to set 360deg rotation.
+* Fix - Allow image rotation angle control to set 360deg rotation.
 * Fix - Enhance "Post Terms" to display only the post-terms not all the terms.
 
 = 1.3.0 =
