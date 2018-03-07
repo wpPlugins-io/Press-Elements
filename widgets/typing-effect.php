@@ -136,8 +136,8 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 				'size_units' => [ 'ms' ],
 				'range' => [
 					'ms' => [
-						'min'  => 0,
-						'max'  => 1000,
+						'min' => 0,
+						'max' => 1000,
 						'step' => 1,
 					],
 				],
@@ -156,8 +156,8 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 				'size_units' => [ 'ms' ],
 				'range' => [
 					'ms' => [
-						'min'  => 0,
-						'max'  => 1000,
+						'min' => 0,
+						'max' => 1000,
 						'step' => 1,
 					],
 				],
@@ -176,8 +176,8 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 				'size_units' => [ 'ms' ],
 				'range' => [
 					'ms' => [
-						'min'  => 0,
-						'max'  => 1000,
+						'min' => 0,
+						'max' => 1000,
 						'step' => 1,
 					],
 				],
@@ -196,8 +196,8 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 				'size_units' => [ 'ms' ],
 				'range' => [
 					'ms' => [
-						'min'  => 0,
-						'max'  => 1000,
+						'min' => 0,
+						'max' => 1000,
 						'step' => 1,
 					],
 				],
@@ -217,7 +217,7 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 					'1' => __( 'True', 'press-elements' ),
 					'0' => __( 'False', 'press-elements' ),
 				],
-				'default' => '0',
+				'default' => '1',
 			]
 		);
 
@@ -230,7 +230,7 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 					'1' => __( 'True', 'press-elements' ),
 					'0' => __( 'False', 'press-elements' ),
 				],
-				'default' => '0',
+				'default' => '1',
 			]
 		);
 
