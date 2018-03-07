@@ -91,10 +91,8 @@ class Press_Elements_Typing_Effect extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'string',
-						'label' => __( 'String', 'press-elements' ),
+						'label' => __( 'Text', 'press-elements' ),
 						'type' => Controls_Manager::TEXT,
-						'default' => __( 'String', 'press-elements' ),
-						'placeholder' => __( 'String', 'press-elements' ),
 					],
 				],
 				'title_field' => '{{{ string }}}',
