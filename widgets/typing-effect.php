@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * Elementor widget for text typing effect.
  *
- * @since 1.6.0
+ * @since 1.7.0
  */
 class Press_Elements_Typing_Effect extends Widget_Base {
 
