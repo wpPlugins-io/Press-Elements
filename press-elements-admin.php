@@ -131,7 +131,7 @@ class Admin {
 
 			<div id="col-container">
 
-				<div id="col-right">
+				<div id="col-left">
 
 					<div class="col-wrap">
 
@@ -236,7 +236,7 @@ class Admin {
 
 				</div>
 
-				<div id="col-left">
+				<div id="col-right">
 
 					<div class="col-wrap">
 
@@ -268,47 +268,9 @@ class Admin {
 
 						<p><?php esc_html_e( 'With Press Elements you can use Elementor widgets to display and design your post elements! Just like developers use theme-functions to generate themes. How cool is that?!', 'press-elements' ); ?></p>
 
-						<h3><?php esc_html_e( 'Included Widgets', 'press-elements' ); ?></h3>
-
-						<p style="text-decoration: underline;"><?php esc_html_e( 'Site Elements:', 'press-elements' ); ?></p>
-						<ol>
-							<li><?php esc_html_e( 'Site Title', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Site Description', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Site Logo', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Site Counters', 'press-elements' ); ?></li>
-						</ol>
-
-						<p style="text-decoration: underline;"><?php esc_html_e( 'Post Elements:', 'press-elements' ); ?></p>
-						<ol>
-							<li><?php esc_html_e( 'Post Title', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Post Excerpt', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Post Date', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Post Author', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Post Terms', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Post Featured Image (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Post Custom Field (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Post Comments', 'press-elements' ); ?></li>
-						</ol>
-
-						<p style="text-decoration: underline;"><?php esc_html_e( 'Effects:', 'press-elements' ); ?></p>
-						<ol>
-							<li><?php esc_html_e( 'Image Accordion (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Before After Effect (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Notes (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Typing Effect', 'press-elements' ); ?></li>
-						</ol>
-
-						<p style="text-decoration: underline;"><?php esc_html_e( 'Integrations:', 'press-elements' ); ?></p>
-						<ol>
-							<li><?php esc_html_e( 'Advanced Custom Fields (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Gravatar (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Flickr (Pro)', 'press-elements' ); ?></li>
-							<li><?php esc_html_e( 'Pinterest (Pro)', 'press-elements' ); ?></li>
-						</ol>
-
 						<h3><?php esc_html_e( 'Usage', 'press-elements' ); ?></h3>
 
-						<p><?php esc_html_e( 'Getting started with Press Elements is easy! We put together this quick start guide to help first time users of the plugin. Our goal is to get you up and running in no time. Let\'s begin!', 'press-elements' ); ?></p>
+						<p><?php esc_html_e( 'We put together this quick start guide to help first time users of the plugin. Our goal is to get you up and running in no time. Let\'s begin!', 'press-elements' ); ?></p>
 
 						<p style="text-decoration: underline;"><?php esc_html_e( 'STEP 1: Create a new post', 'press-elements' ); ?></p>
 
@@ -329,6 +291,44 @@ class Admin {
 						<p style="text-decoration: underline;"><?php esc_html_e( 'STEP 4: Apply the design to new posts', 'press-elements' ); ?></p>
 
 						<p><?php esc_html_e( 'For each new post you create, load the desired template and apply it to the post. The post will enherite the design but the elements will be updated with the current post data.', 'press-elements' ); ?></p>
+
+						<h3><?php esc_html_e( 'Included Widgets', 'press-elements' ); ?></h3>
+
+						<p style="text-decoration: underline;"><?php esc_html_e( 'Site Elements:', 'press-elements' ); ?></p>
+						<ol>
+							<li><?php esc_html_e( 'Site Title', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Site Description', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Site Logo', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Site Counters', 'press-elements' ); ?></li>
+						</ol>
+
+						<p style="text-decoration: underline;"><?php esc_html_e( 'Post Elements:', 'press-elements' ); ?></p>
+						<ol>
+							<li><?php esc_html_e( 'Post Title', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Post Excerpt', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Post Date', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Post Author', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Post Terms', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Post Featured Image', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Post Custom Field (Pro)', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Post Comments', 'press-elements' ); ?></li>
+						</ol>
+
+						<p style="text-decoration: underline;"><?php esc_html_e( 'Effects:', 'press-elements' ); ?></p>
+						<ol>
+							<li><?php esc_html_e( 'Image Accordion (Pro)', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Before After Effect (Pro)', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Notes (Pro)', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Typing Effect', 'press-elements' ); ?></li>
+						</ol>
+
+						<p style="text-decoration: underline;"><?php esc_html_e( 'Integrations:', 'press-elements' ); ?></p>
+						<ol>
+							<li><?php esc_html_e( 'Advanced Custom Fields (Pro)', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Gravatar (Pro)', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Flickr (Pro)', 'press-elements' ); ?></li>
+							<li><?php esc_html_e( 'Pinterest (Pro)', 'press-elements' ); ?></li>
+						</ol>
 
 					</div>
 
